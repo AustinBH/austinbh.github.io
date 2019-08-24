@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.670e72a6.chunk.css",
-    "main.js": "/portfolio/static/js/main.2df40ce0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2df40ce0.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.5830d1a5.chunk.css",
+    "main.js": "/portfolio/static/js/main.6a8864de.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6a8864de.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.e9a507a1.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.e9a507a1.js.map",
-    "static/js/2.268b1aa3.chunk.js": "/portfolio/static/js/2.268b1aa3.chunk.js",
-    "static/js/2.268b1aa3.chunk.js.map": "/portfolio/static/js/2.268b1aa3.chunk.js.map",
+    "static/js/2.adb25d73.chunk.js": "/portfolio/static/js/2.adb25d73.chunk.js",
+    "static/js/2.adb25d73.chunk.js.map": "/portfolio/static/js/2.adb25d73.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.9264450ed9a3cdb6723b40a56b57c60e.js": "/portfolio/precache-manifest.9264450ed9a3cdb6723b40a56b57c60e.js",
+    "precache-manifest.2ecedde613a22cf74347d54ce9b06310.js": "/portfolio/precache-manifest.2ecedde613a22cf74347d54ce9b06310.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.670e72a6.chunk.css.map": "/portfolio/static/css/main.670e72a6.chunk.css.map",
+    "static/css/main.5830d1a5.chunk.css.map": "/portfolio/static/css/main.5830d1a5.chunk.css.map",
     "static/media/finalFMSample.png": "/portfolio/static/media/finalFMSample.6401295a.png",
-    "static/media/headshot.JPG": "/portfolio/static/media/headshot.51c3d156.JPG",
     "static/media/myTrailsSample.png": "/portfolio/static/media/myTrailsSample.697d24a8.png",
     "static/media/pokemonTeamsSample.png": "/portfolio/static/media/pokemonTeamsSample.1c94fbe8.png"
   }
