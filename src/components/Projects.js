@@ -24,7 +24,7 @@ const Projects = props => {
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column>
-                    <a href='https://my-trails.herokuapp.com' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://my-trails.info' target='_blank' rel='noopener noreferrer'>
                         <Image className='project-image' src={myTrailsSample} size='medium' />
                     </a>
                 </Grid.Column>

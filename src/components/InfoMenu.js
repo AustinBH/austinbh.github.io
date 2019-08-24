@@ -6,7 +6,7 @@ import Projects from './Projects';
 
 const InfoMenu = props => {
     return <Router>
-                <Menu pointing secondary color='teal'>
+                <Menu pointing secondary color='blue'>
                     <Menu.Item icon='map' as={NavLink} exact to='/about' activeClassName='active' name='About' />
                     <Menu.Item icon='sitemap' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                 </Menu>
