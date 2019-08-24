@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2566358c.chunk.css",
+    "main.css": "/portfolio/static/css/main.b8773cdc.chunk.css",
     "main.js": "/portfolio/static/js/main.8ed880b1.chunk.js",
     "main.js.map": "/portfolio/static/js/main.8ed880b1.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.e9a507a1.js",
@@ -8,9 +8,9 @@
     "static/js/2.fea59991.chunk.js": "/portfolio/static/js/2.fea59991.chunk.js",
     "static/js/2.fea59991.chunk.js.map": "/portfolio/static/js/2.fea59991.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ed0893646aafcff0bfa26ea4adcb2779.js": "/portfolio/precache-manifest.ed0893646aafcff0bfa26ea4adcb2779.js",
+    "precache-manifest.c3d8c7920ac3b564fe4d9b66aba512c5.js": "/portfolio/precache-manifest.c3d8c7920ac3b564fe4d9b66aba512c5.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.2566358c.chunk.css.map": "/portfolio/static/css/main.2566358c.chunk.css.map",
+    "static/css/main.b8773cdc.chunk.css.map": "/portfolio/static/css/main.b8773cdc.chunk.css.map",
     "static/media/finalFMSample.png": "/portfolio/static/media/finalFMSample.6401295a.png",
     "static/media/myTrailsSample.png": "/portfolio/static/media/myTrailsSample.697d24a8.png",
     "static/media/pokemonTeamsSample.png": "/portfolio/static/media/pokemonTeamsSample.1c94fbe8.png"
