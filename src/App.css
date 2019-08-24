@@ -22,3 +22,14 @@
 .project-image {
   height: 200px !important;
 }
+
+.project-button {
+  display: block !important;
+  margin: auto !important;
+  margin-bottom: 3px !important;
+}
+
+.section-holder {
+  background-color: #97B0AA !important;
+  width: 80%;
+}
