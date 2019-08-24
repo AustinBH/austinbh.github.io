@@ -4,7 +4,7 @@ import { Segment, Header, Icon, Button } from 'semantic-ui-react';
 const SocialMedia = props => {
     return <>
         <Segment className='section-holder' textAlign='center'>
-            <Header as='h1' dividing icon textAlign='center'>
+            <Header as='h3' dividing icon textAlign='center'>
                 <Icon name='phone' circular />
                 <Header.Content>Connect</Header.Content>
             </Header>

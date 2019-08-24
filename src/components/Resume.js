@@ -3,7 +3,7 @@ import { Segment, Header, Icon } from 'semantic-ui-react';
 
 const Resume = props => {
     return <Segment className='section-holder'>
-        <Header as='h1' dividing icon textAlign='center'>
+        <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular />
             <Header.Content>Resume</Header.Content>
         </Header>

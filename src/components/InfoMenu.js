@@ -12,6 +12,7 @@ const InfoMenu = props => {
                     <Menu.Item icon='sitemap' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />
                 </Menu>
+                <Route path='/' exact render={null} />
                 <Route path='/about' exact render={props => <About {...props} />} />
                 <Route path='/projects' exact render={props => <Projects {...props} />} />
                 <Route path='/resume' exact render={props => <Resume {...props} />} />

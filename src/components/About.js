@@ -3,7 +3,7 @@ import { Segment, Header, Icon } from 'semantic-ui-react';
 
 const About = props => {
     return <Segment className='section-holder'>
-        <Header as='h1' dividing icon textAlign='center'>
+        <Header as='h3' dividing icon textAlign='center'>
             <Icon name='info' circular />
             <Header.Content>About</Header.Content>
         </Header>

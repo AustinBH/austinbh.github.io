@@ -6,8 +6,8 @@ import pokemonTeamsSample from '../images/pokemonTeamsSample.png'
 
 const Projects = props => {
     return <Segment className='section-holder'>
-        <Header as='h1' dividing icon textAlign='center'>
-            <Icon name='code' circular />
+        <Header as='h3' dividing icon textAlign='center'>
+            <Icon name='code' circular size='mini'/>
             <Header.Content>Projects</Header.Content>
         </Header>
         <Grid columns={3} textAlign='center'>
