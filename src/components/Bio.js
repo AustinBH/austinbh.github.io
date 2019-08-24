@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Segment, Image } from 'semantic-ui-react';
 import headshot from '../images/headshot.JPG';
+import SocialMedia from './SocialMedia';
 
 const Bio = props => {
     return <>
@@ -11,6 +12,7 @@ const Bio = props => {
                 <Header.Content>Austin Harlow</Header.Content>
             </Header>
             <p>Full Stack Developer</p>
+            <SocialMedia />
         </Segment>
     </>
 }
