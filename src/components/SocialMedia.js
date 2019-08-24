@@ -16,6 +16,7 @@ const SocialMedia = props => {
         <a href='https://dev.to/austinbh' target='_blank' rel='noopener noreferrer'>
             <Button className='contact-button' icon='book' color='green' content='Blog' />
         </a>
+        <p>Email: <a href='mailto:harlowaustin2@gmail.com'>harlowaustin2@gmail.com</a></p>
     </Segment>
 }
 

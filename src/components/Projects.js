@@ -40,6 +40,23 @@ const Projects = props => {
                 </Grid.Column>
             </Grid.Row>
             <Grid.Row>
+                <Grid.Column className='project-info'>
+                    <p><em>A trail finding app that uses the Google Maps API to display maps with trail info.</em><br/><br/>
+                    Technologies Used:<br/>
+                    Google Maps API, AWS S3, Geolocation API, Redux, React, Semantic UI React, CSS3, HTML5</p>
+                </Grid.Column>
+                <Grid.Column className='project-info'>
+                    <p><em>A song and concert search app that allows users to save their favorite songs.</em><br/><br/>
+                    Technologies Used:<br/>
+                    Ticketmaster API, React, Ruby on Rails, React Bootstrap, HTML5, CSS3</p>
+                </Grid.Column>
+                <Grid.Column className='project-info'>
+                    <p><em>A Pokedex app for fans of Pokemon to create teams using their favorite Pokemon.</em><br/><br/>
+                    Technologies Used:<br/>
+                    HTML5, CSS3, Ruby on Rails, Vanilla JavaScript</p>
+                </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
                 <Grid.Column>
                     <a href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer'>
                         <Button className='project-button' color='black' icon='github' content='Frontend' />
@@ -50,18 +67,18 @@ const Projects = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer'>
-                        <Button className='project-button' color='black' icon='github' content='Frontend' />
+                        <Button color='black' icon='github' content='Frontend' />
                     </a>
                     <a href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button className='project-button' color='black' icon='github' content='Backend' />
+                        <Button color='black' icon='github' content='Backend' />
                     </a>
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer'>
-                        <Button className='project-button' color='black' icon='github' content='Frontend' />
+                        <Button color='black' icon='github' content='Frontend' />
                     </a>
                     <a href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button className='project-button' color='black' icon='github' content='Backend' />
+                        <Button color='black' icon='github' content='Backend' />
                     </a>
                 </Grid.Column>
             </Grid.Row>

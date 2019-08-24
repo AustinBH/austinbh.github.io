@@ -9,6 +9,7 @@
 }
 
 .App-header {
+  font-family: 'Comfortaa', cursive;
   background-color: #97B0AA;
   min-height: 100vh;
   display: flex;
@@ -19,17 +20,25 @@
   color: white;
 }
 
-.project-image {
-  height: 200px !important;
+h1 {
+  font-family: 'Comfortaa', cursive !important;
 }
 
-.project-button {
-  display: block !important;
-  margin: auto !important;
-  margin-bottom: 3px !important;
+a {
+  font-family: 'Comfortaa', cursive !important;
+}
+
+.project-image {
+  height: 90% !important;
+  width: 90% !important;
+}
+
+.project-info {
+  text-align: left !important;
 }
 
 .section-holder {
   background-color: #97B0AA !important;
   width: 80%;
+  text-align: center;
 }
