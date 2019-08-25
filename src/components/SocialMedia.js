@@ -5,13 +5,6 @@ const SocialMedia = props => {
     return <Grid columns={1} widths='equal'>
         <Grid.Row>
             <Grid.Column width={16}>
-                <a
-                    href='https://docs.google.com/document/d/1ZhfCdV35E5LYpiLtYayQuO2wdbALZLm-UZ7V_AdJVgI/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    <Button compact className='contact-button' icon='file pdf' color='blue' content='Resume' />
-                </a>
                 <a href='https://github.com/AustinBH' target='_blank' rel='noopener noreferrer'>
                     <Button compact className='contact-button' icon='github' color='black' content='Github' />
                 </a>

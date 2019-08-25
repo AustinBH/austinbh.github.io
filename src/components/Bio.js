@@ -11,7 +11,7 @@ const Bio = props => {
                 <Image src={headshot} circular/>
                 <Header.Content>Austin Harlow</Header.Content>
             </Header>
-            <p>Full Stack Developer</p>
+            <p>Full Stack Software Developer</p>
             <SocialMedia />
         </Segment>
     </>

@@ -1,16 +1,22 @@
 import React from 'react';
-import { Image, Header, Grid, Icon, Segment, Button } from 'semantic-ui-react';
+import { Image, Header, Grid, Icon, Segment, Button, List } from 'semantic-ui-react';
 import finalFMSample from '../images/finalFMSample.png'
 import myTrailsSample from '../images/myTrailsSample.png'
 import pokemonTeamsSample from '../images/pokemonTeamsSample.png'
 
 const Projects = props => {
+
+    const handleClick = () => {
+        props.history.push('/')
+    }
+
     return <Segment className='section-holder'>
+        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleClick} />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='code' circular size='mini'/>
             <Header.Content>Projects</Header.Content>
         </Header>
-        <Grid columns={3} textAlign='center'>
+        <Grid columns={3} textAlign='center' stackable>
             <Grid.Row>
                 <Grid.Column>
                     <Header as='h3' content='My Trails' />
@@ -41,19 +47,40 @@ const Projects = props => {
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column className='project-info'>
-                    <p><em>A trail finding app that uses the Google Maps API to display maps with trail info.</em><br/><br/>
-                    Technologies Used:<br/>
-                    Google Maps API, AWS S3, Geolocation API, Redux, React, Semantic UI React, CSS3, HTML5</p>
+                    <p><em>A trail finding app that uses the Google Maps API to display maps with trail info.</em></p>
+                    <p>Technologies Used:</p>
+                    <List>
+                        <List.Item icon='google' content='Google Maps API' />
+                        <List.Item icon='aws' content='AWS S3' />
+                        <List.Item icon='map marker alternate' content='Geolocation API' />
+                        <List.Item icon='registered' content='Redux' />
+                        <List.Item icon='react' content='React' />
+                        <List.Item icon='sun' content='Semantic UI React' />
+                        <List.Item icon='css3' content='CSS3' />
+                        <List.Item icon='html5' content='HTML5' />
+                    </List>
                 </Grid.Column>
                 <Grid.Column className='project-info'>
-                    <p><em>A song and concert search app that allows users to save their favorite songs.</em><br/><br/>
-                    Technologies Used:<br/>
-                    Ticketmaster API, React, Ruby on Rails, React Bootstrap, HTML5, CSS3</p>
+                    <p><em>A song and concert search app that allows users to save their favorite songs.</em></p>
+                    <p>Technologies Used:</p>
+                    <List>
+                        <List.Item icon='ticket' content='Ticketmaster API' />
+                        <List.Item icon='react' content='React' />
+                        <List.Item icon='gem' content='Ruby on Rails' />
+                        <List.Item icon='bold' content='React Bootstrap' />
+                        <List.Item icon='html5' content='HTML5' />
+                        <List.Item icon='css3' content='CSS3' />
+                    </List>
                 </Grid.Column>
                 <Grid.Column className='project-info'>
-                    <p><em>A Pokedex app for fans of Pokemon to create teams using their favorite Pokemon.</em><br/><br/>
-                    Technologies Used:<br/>
-                    HTML5, CSS3, Ruby on Rails, Vanilla JavaScript</p>
+                    <p><em>A Pokedex app for fans of Pokemon to create teams using their favorite Pokemon.</em></p>
+                    <p>Technologies Used:</p>
+                    <List>
+                        <List.Item icon='js' content='Vanilla JavaScript' />
+                        <List.Item icon='gem' content='Ruby on Rails' />
+                        <List.Item icon='html5' content='HTML5' />
+                        <List.Item icon='css3' content='CSS3' />
+                    </List>
                 </Grid.Column>
             </Grid.Row>
             <Grid.Row>
