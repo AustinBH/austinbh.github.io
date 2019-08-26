@@ -55,7 +55,7 @@ const Projects = props => {
                         <List.Item icon='map marker alternate' content='Geolocation API' />
                         <List.Item icon='registered' content='Redux' />
                         <List.Item icon='react' content='React' />
-                        <List.Item icon='sun' content='Semantic UI React' />
+                        <List.Item icon='speakap' content='Semantic UI React' />
                         <List.Item icon='css3' content='CSS3' />
                         <List.Item icon='html5' content='HTML5' />
                     </List>
