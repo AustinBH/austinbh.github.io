@@ -94,18 +94,18 @@ const Projects = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact color='black' icon='github' content='Frontend' />
+                        <Button compact className='project-button' color='black' icon='github' content='Frontend' />
                     </a>
                     <a href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact color='black' icon='github' content='Backend' />
+                        <Button compact className='project-button' color='black' icon='github' content='Backend' />
                     </a>
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer'>
-                        <Button compact color='black' icon='github' content='Frontend' />
+                        <Button compact className='project-button' color='black' icon='github' content='Frontend' />
                     </a>
                     <a href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact color='black' icon='github' content='Backend' />
+                        <Button compact className='project-button' color='black' icon='github' content='Backend' />
                     </a>
                 </Grid.Column>
             </Grid.Row>

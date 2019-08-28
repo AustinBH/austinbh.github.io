@@ -8,7 +8,7 @@ const Bio = props => {
         <div/>
         <Segment className='section-holder' style={{marginTop: '50'}}>
             <Header as='h1' dividing icon textAlign='center'>
-                <Image src={headshot} circular/>
+                <Image src={headshot} circular alt='headshot'/>
                 <Header.Content>Austin Harlow</Header.Content>
             </Header>
             <p>Full Stack Software Developer</p>

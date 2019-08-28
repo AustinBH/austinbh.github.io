@@ -23,7 +23,7 @@ const Resume = props => {
         Ruby, Ruby on Rails, JavaScript, SQL, Bootstrap, React.js, Semantic UI, React bootstrap, Redux.js, HTML, CSS, AWS S3
         <Header as='h3' dividing content='Experience' textAlign='center' />
         <p><strong>Amazon</strong>, Seattle, WA June 2017 - December 2018</p>
-        <p><em>Seller Support Associate</em></p>
+        <em>Seller Support Associate</em>
         <List animated bulleted>
             <List.Item content='Assisted Sellers, Service Providers, and Content Creators with the Selling on Amazon, Amazon Selling Services, and Merch by Amazon programs respectively.' />
             <List.Item content='Designed process improvements for program material which were used by the rest of the Merch by Amazon team.' />
@@ -31,13 +31,13 @@ const Resume = props => {
             <List.Item content='Created and managed a team SharePoint for 9 months as a member of the Merch by Amazon team.' />
         </List>
         <p><strong>Sound Outreach</strong>, Tacoma, WA June 2016 - August 2016</p>
-        <p><em>Intern</em></p>
+        <em>Intern</em>
         <List animated bulleted>
             <List.Item content='Created an all purpose reference manual for clients and office staff.' />
             <List.Item content='Responsible for client intake, communication, scheduling and referrals to local social service organizations.' />
         </List> 
         <p><strong>Oles, Morrison, Rinker & Baker</strong>, Seattle, WA May 2016</p>
-        <p><em>Intern/Assistant</em></p>
+        <em>Intern/Assistant</em>
         <List animated bulleted>
             <List.Item content='Coordinated internal office move for local law firm with multiple offices in 3 states and more than 50 employees.' />
             <List.Item content='Organized office supply room, central filing, and relocation of IT equipment.' />
