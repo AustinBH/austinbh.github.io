@@ -3,15 +3,17 @@ import { Segment, Header, Icon, List, Button } from 'semantic-ui-react';
 
 const Resume = props => {
 
-    const handleClick = () => {
-        props.history.push('/')
+    const handleEvent = (ev) => {
+        if (ev.type === 'click') {
+            props.history.push('/')
+        } else if (ev.which === 13) {
+            props.history.push('/')
+        }
     }
 
     return <Segment className='section-holder' style={{textAlign: 'left'}}>
-        <Icon name='close' style={{float: 'right', cursor: 'pointer'}} onClick={handleClick}/>
-        <a href='https://learn.co/austin/resume' target='_blank' rel='noopener noreferrer'>
-            <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }}/>
-        </a>
+        <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} href='https://learn.co/austin/resume' target='_blank' rel='noopener noreferrer'/>
+        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleEvent} onKeyPress={handleEvent} tabIndex='0' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular size='mini' />
             <Header.Content>Resume</Header.Content>

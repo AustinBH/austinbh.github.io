@@ -6,12 +6,16 @@ import pokemonTeamsSample from '../images/pokemonTeamsSample.png'
 
 const Projects = props => {
 
-    const handleClick = () => {
-        props.history.push('/')
+    const handleEvent = (ev) => {
+        if (ev.type === 'click') {
+            props.history.push('/')
+        } else if (ev.which === 13) {
+            props.history.push('/')
+        }
     }
 
     return <Segment className='section-holder'>
-        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleClick} />
+        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleEvent} onKeyPress={handleEvent} tabIndex='0' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='code' circular size='mini'/>
             <Header.Content>Projects</Header.Content>
@@ -85,28 +89,16 @@ const Projects = props => {
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column>
-                    <a href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact className='project-button' color='black' icon='github' content='Frontend' />
-                    </a>
-                    <a href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact className='project-button' color='black' icon='github' content='Backend' />
-                    </a>
+                        <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer' />
+                        <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer' />
                 </Grid.Column>
                 <Grid.Column>
-                    <a href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact className='project-button' color='black' icon='github' content='Frontend' />
-                    </a>
-                    <a href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact className='project-button' color='black' icon='github' content='Backend' />
-                    </a>
+                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer'/>
+                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer'/>
                 </Grid.Column>
                 <Grid.Column>
-                    <a href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer'>
-                        <Button compact className='project-button' color='black' icon='github' content='Frontend' />
-                    </a>
-                    <a href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer'>
-                        <Button compact className='project-button' color='black' icon='github' content='Backend' />
-                    </a>
+                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer'/>
+                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer'/>
                 </Grid.Column>
             </Grid.Row>
         </Grid>
