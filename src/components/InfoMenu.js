@@ -7,7 +7,7 @@ import Resume from './Resume';
 
 const InfoMenu = props => {
     return <Router>
-                <Menu pointing secondary color='blue'>
+                <Menu pointing secondary >
                     <Menu.Item icon='map' as={NavLink} exact to='/about' activeClassName='active' name='About' />
                     <Menu.Item icon='file code' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file alternate' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />

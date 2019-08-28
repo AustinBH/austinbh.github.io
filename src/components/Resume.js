@@ -10,7 +10,7 @@ const Resume = props => {
     return <Segment className='section-holder' style={{textAlign: 'left'}}>
         <Icon name='close' style={{float: 'right', cursor: 'pointer'}} onClick={handleClick}/>
         <a href='https://learn.co/austin/resume' target='_blank' rel='noopener noreferrer'>
-            <Button icon='file' content='Downloadable version' color='blue'/>
+            <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }}/>
         </a>
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular size='mini' />

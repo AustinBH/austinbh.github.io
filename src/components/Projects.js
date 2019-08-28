@@ -31,17 +31,17 @@ const Projects = props => {
             <Grid.Row>
                 <Grid.Column>
                     <a href='https://my-trails.info' target='_blank' rel='noopener noreferrer'>
-                        <Image className='project-image' src={myTrailsSample} size='medium' />
+                        <Image className='project-image' src={myTrailsSample} size='medium' alt='My Trails' />
                     </a>
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer'>
-                        <Image className='project-image' src={finalFMSample} size='medium' />
+                        <Image className='project-image' src={finalFMSample} size='medium' alt='Final FM' />
                     </a>
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer'>
-                        <Image className='project-image' src={pokemonTeamsSample} size='medium' />
+                        <Image className='project-image' src={pokemonTeamsSample} size='medium' alt='Pokemon Teams' />
                     </a>
                 </Grid.Column>
             </Grid.Row>
