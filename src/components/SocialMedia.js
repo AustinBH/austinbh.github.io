@@ -11,8 +11,8 @@ const SocialMedia = props => {
         </Grid.Row>
         <Grid.Row>
             <Grid.Column width={16}>
-                <Button className='contact-button' icon='book' color='green' content='Blog' style={{ color: 'black' }} href='https://dev.to/austinbh' target='_blank' rel='noopener noreferrer'/>
-                <Button className='contact-button' icon='telegram plane' color='blue' content='Email' style={{ color: 'black' }} href='mailto:harlowaustin2@gmail.com'/>
+                <Button className='contact-button' icon='telegram plane' color='vk' content='Email' style={{ color: 'black' }} href='mailto:harlowaustin2@gmail.com'/>
+                <Button className='contact-button' icon='book' color='green' content='Blog' style={{ color: 'black' }} href='https://dev.to/austinbh' target='_blank' rel='noopener noreferrer' />
             </Grid.Column>
         </Grid.Row>
     </Grid>

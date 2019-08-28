@@ -89,8 +89,8 @@ const Projects = props => {
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column>
-                        <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer' />
-                        <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer' />
+                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer' />
+                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer' />
                 </Grid.Column>
                 <Grid.Column>
                     <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer'/>
