@@ -32,6 +32,11 @@ h1 {
   margin-bottom: .25rem !important;
 }
 
+.skills-image {
+  width: 100px;
+  height: 100px;
+}
+
 .section-holder {
   background-color: #97B0AA !important;
   width: 80%;

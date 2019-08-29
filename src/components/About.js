@@ -32,7 +32,7 @@ const About = props => {
         <p>
             I live in Seattle, WA with my dog, Lucy.
             I have had a lot of fun working with React/Redux, and Rails.
-            I am always trying to learn new things and am currently getting into Node.js.
+            I am always trying to learn new things and am currently getting into Node.js and Python.
         </p>
     </Segment>
 }
