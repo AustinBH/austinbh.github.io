@@ -12,7 +12,7 @@ const Experience = props => {
             <Grid columns={1} celled='internally'>
                 <Grid.Row>
                     <Grid.Column textAlign='center'>
-                        <Image src='http://www.amanida.com/wp-content/uploads/2018/04/amazon-logo-a-smile-black.png' alt='Amazon logo' size='tiny' centered />
+                        <Image src='https://www.dreamar.org/wp-content/uploads/2018/08/amazon-logo-black-square-e1440610992440.png' alt='Amazon logo' size='tiny' centered />
                         <p><strong>Amazon</strong>, Seattle, WA June 2017 - December 2018</p>
                         <em>Seller Support Associate</em>
                     </Grid.Column>
