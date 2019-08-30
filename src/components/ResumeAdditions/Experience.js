@@ -1,16 +1,23 @@
 import React from 'react'
-import { Header, Grid, Image, List } from 'semantic-ui-react';
+import { Header, Grid, Image, List, Divider, Icon } from 'semantic-ui-react';
 
 const Experience = props => {
     return <>
-        <Header as='h3' dividing content='Experience' textAlign='center' />
-            <Grid columns={2} celled='internally'>
+        <Divider horizontal>
+            <Header as='h3'>
+                <Icon name='briefcase' />
+                Experience
+            </Header>
+        </Divider>
+            <Grid columns={1} celled='internally'>
                 <Grid.Row>
                     <Grid.Column textAlign='center'>
                         <Image src='http://www.amanida.com/wp-content/uploads/2018/04/amazon-logo-a-smile-black.png' alt='Amazon logo' size='tiny' centered />
                         <p><strong>Amazon</strong>, Seattle, WA June 2017 - December 2018</p>
                         <em>Seller Support Associate</em>
                     </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
                     <Grid.Column>
                         <List animated bulleted>
                             <List.Item content='Assisted Sellers, Service Providers, and Content Creators with the Selling on Amazon, Amazon Selling Services, and Merch by Amazon programs respectively.' />
@@ -26,6 +33,8 @@ const Experience = props => {
                         <p><strong>Sound Outreach</strong>, Tacoma, WA June 2016 - August 2016</p>
                         <em>Intern</em>
                     </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
                     <Grid.Column>
                         <List animated bulleted>
                             <List.Item content='Created an all purpose reference manual for clients and office staff.' />
@@ -39,6 +48,8 @@ const Experience = props => {
                         <p><strong>Oles, Morrison, Rinker & Baker</strong>, Seattle, WA May 2016</p>
                         <em>Intern/Assistant</em>
                     </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
                     <Grid.Column>
                         <List animated bulleted>
                             <List.Item content='Coordinated internal office move for local law firm with multiple offices in 3 states and more than 50 employees.' />

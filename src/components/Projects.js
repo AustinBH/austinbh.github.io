@@ -20,7 +20,7 @@ const Projects = props => {
             <Icon name='code' circular size='mini'/>
             <Header.Content>Projects</Header.Content>
         </Header>
-        <Grid columns={3} textAlign='center' stackable>
+        <Grid columns={3} textAlign='center' stackable container>
             <Grid.Row>
                 <Grid.Column>
                     <Header as='h3' content='My Trails' />
@@ -35,17 +35,17 @@ const Projects = props => {
             <Grid.Row>
                 <Grid.Column>
                     <a href='https://my-trails.info' target='_blank' rel='noopener noreferrer'>
-                        <Image className='project-image' src={myTrailsSample} size='medium' alt='My Trails' />
+                        <Image className='project-image' src={myTrailsSample} size='medium' alt='My Trails'/>
                     </a>
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer'>
-                        <Image className='project-image' src={finalFMSample} size='medium' alt='Final FM' />
+                        <Image className='project-image' src={finalFMSample} size='medium' alt='Final FM'/>
                     </a>
                 </Grid.Column>
                 <Grid.Column>
                     <a href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer'>
-                        <Image className='project-image' src={pokemonTeamsSample} size='medium' alt='Pokemon Teams' />
+                        <Image className='project-image' src={pokemonTeamsSample} size='medium' alt='Pokemon Teams'/>
                     </a>
                 </Grid.Column>
             </Grid.Row>

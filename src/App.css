@@ -22,6 +22,7 @@ h1 {
 .project-image {
   height: 90% !important;
   width: 90% !important;
+  margin: auto;
 }
 
 .project-info {
@@ -41,6 +42,10 @@ h1 {
   background-color: #97B0AA !important;
   width: 80%;
   text-align: center;
+}
+
+.copyright {
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 800px) {

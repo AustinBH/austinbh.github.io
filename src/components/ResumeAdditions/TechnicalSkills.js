@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Grid, Image } from 'semantic-ui-react';
+import { Divider, Grid, Image, Header, Icon } from 'semantic-ui-react';
 import Bootstrap from '../../images/skills/Bootstrap_logo.svg'
 import Ruby from '../../images/skills/Ruby_logo.svg'
 import Rails from '../../images/skills/Ruby_on_Rails_logo.svg'
@@ -12,7 +12,12 @@ import Postgres from '../../images/skills/Postgresql_elephant.svg'
 
 const TechnicalSkills = props => {
     return <>
-        <Header as='h3' dividing content='Technical Skills' textAlign='center' />
+        <Divider horizontal>
+            <Header as='h3'>
+                <Icon name='computer' />
+                Technical Skills
+            </Header>
+        </Divider>
         <Grid columns={5} celled='internally' textAlign='center'>
             <Grid.Row>
                 <Grid.Column>
