@@ -33,12 +33,22 @@ h1 {
 }
 
 .skills-image {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .section-holder {
   background-color: #97B0AA !important;
   width: 80%;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .skills-image {
+    width: 26px;
+    height: 26px;
+  }
+  .skills-text {
+    display: none;
+  }
 }

@@ -13,49 +13,49 @@ import Postgres from '../../images/skills/Postgresql_elephant.svg'
 const TechnicalSkills = props => {
     return <>
         <Header as='h3' dividing content='Technical Skills' textAlign='center' />
-        <Grid columns={5} celled='internally' textAlign='center' stackable>
+        <Grid columns={5} celled='internally' textAlign='center'>
             <Grid.Row>
                 <Grid.Column>
                     <Image src={Ruby} alt='Ruby logo' className='skills-image' centered />
-                    Ruby
+                    <p className='skills-text'>Ruby</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={Rails} alt='Ruby on Rails logo' className='skills-image' centered/>
-                    Ruby on Rails
+                    <p className='skills-text'>Ruby on Rails</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={HTML} alt='HTML5 logo' className='skills-image' centered/>
-                    HTML5
+                    <p className='skills-text'>HTML5</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={CSS} alt='CSS3 logo' className='skills-image' centered/>
-                    CSS3
+                    <p className='skills-text'>CSS3</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={JS} alt='JavaScript logo' className='skills-image' centered/>
-                    JavaScript
+                    <p className='skills-text'>JavaScript</p>
                 </Grid.Column>
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column>
                     <Image src={ReactLogo} alt='React logo' className='skills-image' centered/>
-                    React
+                    <p className='skills-text'>React</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={Redux} alt='Redux logo' className='skills-image' centered/>
-                    Redux
+                    <p className='skills-text'>Redux</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src='https://react.semantic-ui.com/logo.png' alt='Semantic UI logo' className='skills-image' centered/>
-                    Semantic UI
+                    <p className='skills-text'>Semantic UI</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={Bootstrap} alt='Bootstrap logo' className='skills-image' centered/>
-                    Bootstrap
+                    <p className='skills-text'>Bootstrap</p>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={Postgres} alt='Postgresql logo' className='skills-image' centered/>
-                    Postgresql
+                    <p className='skills-text'>Postgresql</p>
                 </Grid.Column>
             </Grid.Row>
         </Grid>

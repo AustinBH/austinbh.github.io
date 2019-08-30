@@ -18,7 +18,7 @@ const Education = props => {
             </Grid.Row>
             <Grid.Row>
                 <Grid.Column textAlign='center'>
-                    <Image src='https://sites.redlands.edu/contentassets/ba075ec251804ce2aaed4560924aba88/redlands_style3_1815-web-300ppi.jpg' alt='University of Redlands logo' size='tiny' centered />
+                    <Image id='1' src='https://sites.redlands.edu/contentassets/ba075ec251804ce2aaed4560924aba88/redlands_style3_1815-web-300ppi.jpg' alt='University of Redlands logo' size='tiny' centered />
                     <p><strong>University of Redlands</strong>, Redlands, CA September 2013 - April 2017</p>
                     <em>B.A. History</em>
                 </Grid.Column>
