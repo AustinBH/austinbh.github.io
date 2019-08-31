@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
 import Resume from './Resume';
