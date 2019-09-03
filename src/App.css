@@ -20,7 +20,6 @@ h1 {
 }
 
 .project-image {
-  height: 90% !important;
   width: 90% !important;
   margin: auto;
 }
@@ -30,12 +29,16 @@ h1 {
 }
 
 .project-button {
-  margin-bottom: .25rem !important;
+  margin-top: .25rem !important;
 }
 
 .skills-image {
   width: 80px;
   height: 80px;
+}
+
+.project-info-header {
+  display: none;
 }
 
 .section-holder {
@@ -55,5 +58,8 @@ h1 {
   }
   .skills-text {
     display: none;
+  }
+  .project-info-header {
+    display: inline;
   }
 }
