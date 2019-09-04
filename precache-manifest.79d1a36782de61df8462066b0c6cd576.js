@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33a9676298a002a37b27347996ef9675",
+    "revision": "06e451eaac9e0648b2b6b35bdd747f99",
     "url": "/index.html"
   },
   {
-    "revision": "2dcae38a5bfad6a5a745",
-    "url": "/static/css/main.f89e53d4.chunk.css"
+    "revision": "b398d765df53606a43b5",
+    "url": "/static/css/main.1e08d86f.chunk.css"
   },
   {
     "revision": "159ff941adddc3399ca4",
     "url": "/static/js/2.3bb52701.chunk.js"
   },
   {
-    "revision": "2dcae38a5bfad6a5a745",
-    "url": "/static/js/main.03d40f37.chunk.js"
+    "revision": "b398d765df53606a43b5",
+    "url": "/static/js/main.11b68437.chunk.js"
   },
   {
     "revision": "7c23a43b52e067a1c7c0",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Unofficial_JavaScript_logo_2.dd60b11e.svg"
   },
   {
-    "revision": "6401295a9b7cd99cd99f10a57e3e9579",
-    "url": "/static/media/finalFMSample.6401295a.png"
+    "revision": "f2c1603cecee41e2b8097e4b11494920",
+    "url": "/static/media/finalFMSample.f2c1603c.png"
   },
   {
     "revision": "51c3d156e43ece1293ed81fa780a3c13",
@@ -64,11 +64,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "697d24a8ae50ee514ac437cd6b4b6322",
-    "url": "/static/media/myTrailsSample.697d24a8.png"
+    "revision": "a9bedcad77900464e60c167dc11b6499",
+    "url": "/static/media/myTrailsSample.a9bedcad.png"
   },
   {
-    "revision": "1c94fbe8538eaa052e81394cc5efbf9a",
-    "url": "/static/media/pokemonTeamsSample.1c94fbe8.png"
+    "revision": "69ea9051c66d9268b1c4da8e4a562fa2",
+    "url": "/static/media/pokemonTeamsSample.69ea9051.png"
   }
 ]);
