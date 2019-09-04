@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06e451eaac9e0648b2b6b35bdd747f99",
+    "revision": "fe2981b292a665e0a35353aeb821b5df",
     "url": "/index.html"
   },
   {
-    "revision": "b398d765df53606a43b5",
+    "revision": "b98d6d40c8a93cad6ad6",
     "url": "/static/css/main.1e08d86f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.3bb52701.chunk.js"
   },
   {
-    "revision": "b398d765df53606a43b5",
-    "url": "/static/js/main.11b68437.chunk.js"
+    "revision": "b98d6d40c8a93cad6ad6",
+    "url": "/static/js/main.bc2e3275.chunk.js"
   },
   {
     "revision": "7c23a43b52e067a1c7c0",
@@ -52,23 +52,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Unofficial_JavaScript_logo_2.dd60b11e.svg"
   },
   {
-    "revision": "f2c1603cecee41e2b8097e4b11494920",
-    "url": "/static/media/finalFMSample.f2c1603c.png"
+    "revision": "74773e7f364fb159155cbc154ece0816",
+    "url": "/static/media/finalFMSample.74773e7f.svg"
   },
   {
-    "revision": "51c3d156e43ece1293ed81fa780a3c13",
-    "url": "/static/media/headshot.51c3d156.JPG"
+    "revision": "9e1e7beef3c9129148fa2fb1027278e3",
+    "url": "/static/media/headshot.9e1e7bee.svg"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "a9bedcad77900464e60c167dc11b6499",
-    "url": "/static/media/myTrailsSample.a9bedcad.png"
+    "revision": "13a6ffbd4fd013752700b5b5efd4b2ff",
+    "url": "/static/media/myTrailsSample.13a6ffbd.svg"
   },
   {
-    "revision": "69ea9051c66d9268b1c4da8e4a562fa2",
-    "url": "/static/media/pokemonTeamsSample.69ea9051.png"
+    "revision": "2ff7c8ae4a6a53d7378367ae84eace9c",
+    "url": "/static/media/pokemonTeamsSample.2ff7c8ae.svg"
   }
 ]);
