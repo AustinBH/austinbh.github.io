@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Segment, Image } from 'semantic-ui-react';
-import headshot from '../images/headshot.JPG';
+import headshot from '../images/headshot.svg';
 import SocialMedia from './SocialMedia';
 
 const Bio = props => {

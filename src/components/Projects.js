@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Header, Grid, Icon, Segment, Button, List } from 'semantic-ui-react';
-import finalFMSample from '../images/finalFMSample.png'
-import myTrailsSample from '../images/myTrailsSample.png'
-import pokemonTeamsSample from '../images/pokemonTeamsSample.png'
+import finalFMSample from '../images/finalFMSample.svg'
+import myTrailsSample from '../images/myTrailsSample.svg'
+import pokemonTeamsSample from '../images/pokemonTeamsSample.svg'
 
 const Projects = props => {
 
