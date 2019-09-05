@@ -18,7 +18,7 @@ const About = props => {
             <Header.Content>About</Header.Content>
         </Header>
         <p>
-            My name is Austin Harlow and I am a Software Developer with a passion for learning and creating new things.
+            My name is Austin Harlow and I am a Software Engineer with a passion for learning and creating new things.
             My goal is to create applications that are both functional and interesting.
         </p>
         <p>
@@ -27,8 +27,7 @@ const About = props => {
             In college I chanelled my passion into a History degree and continued to expand on my writing abilities.
             It was through my interests in both creating and writing, as well as through my friends and co-workers at Amazon, that I found out about programming.
             My journey in programming so far has been wonderful, I have learned many new things in such a short time and cannot wait for the next step in my new journey.
-        </p>
-            
+        </p>    
         <p>
             I live in Seattle, WA with my dog, Lucy.
             I have had a lot of fun working with React/Redux, and Rails.
