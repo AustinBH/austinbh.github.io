@@ -6,12 +6,12 @@ import SocialMedia from './SocialMedia';
 const Bio = props => {
     return <>
         <div/>
-        <Segment className='section-holder' style={{marginTop: '50'}}>
+        <Segment className='section-holder'>
             <Header as='h1' dividing icon textAlign='center'>
                 <Image src={headshot} circular alt='headshot'/>
                 <Header.Content>Austin Harlow</Header.Content>
             </Header>
-            <p>Full Stack Software Engineer</p>
+            <p>Full-Stack Software Engineer</p>
             <SocialMedia />
         </Segment>
     </>
