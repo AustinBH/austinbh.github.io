@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c3a6c837b85cd190135cf149bd72727",
+    "revision": "f4f1332ec8a5f5f0db0d88f7590ba3ba",
     "url": "/index.html"
   },
   {
-    "revision": "2debd6954aa47b260303",
-    "url": "/static/css/main.1e08d86f.chunk.css"
+    "revision": "8039bd489724c8d16187",
+    "url": "/static/css/main.73d11a0a.chunk.css"
   },
   {
-    "revision": "159ff941adddc3399ca4",
-    "url": "/static/js/2.3bb52701.chunk.js"
+    "revision": "e85723c72947c8387e83",
+    "url": "/static/js/2.5395634d.chunk.js"
   },
   {
-    "revision": "2debd6954aa47b260303",
-    "url": "/static/js/main.4bd56180.chunk.js"
+    "revision": "8039bd489724c8d16187",
+    "url": "/static/js/main.c9d5a318.chunk.js"
   },
   {
     "revision": "7c23a43b52e067a1c7c0",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "45e46bc025b8fd350c09492ce01d4549",
     "url": "/static/media/Postgresql_elephant.45e46bc0.svg"
+  },
+  {
+    "revision": "165420291a1c68311078c748b9b05862",
+    "url": "/static/media/Python_logo.16542029.svg"
   },
   {
     "revision": "ed5f9644ff41004b2d22af06c56c5952",
