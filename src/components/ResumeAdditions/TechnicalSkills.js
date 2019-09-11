@@ -24,6 +24,7 @@ const TechnicalSkills = props => {
             <Grid.Row>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='top right'
                         content='Ruby'
@@ -34,8 +35,9 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
-                        position='top center'
+                        position='top right'
                         content='Ruby on Rails'
                         on='click'
                         pinned
@@ -44,8 +46,9 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
-                        position='top center'
+                        position='top left'
                         content='HTML5'
                         on='click'
                         pinned
@@ -54,6 +57,7 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='top left'
                         content='CSS3'
@@ -66,6 +70,7 @@ const TechnicalSkills = props => {
             <Grid.Row>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='bottom right'
                         content='JavaScript'
@@ -76,6 +81,7 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='bottom right'
                         content='React'
@@ -86,6 +92,7 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='bottom left'
                         content='Redux'
@@ -96,6 +103,7 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='bottom left'
                         content='Semantic UI'
@@ -108,8 +116,9 @@ const TechnicalSkills = props => {
             <Grid.Row>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
-                        position='bottom center'
+                        position='bottom right'
                         content='Bootstrap'
                         on='click'
                         pinned
@@ -118,6 +127,7 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
                         position='bottom center'
                         content='PostgreSQL'
@@ -128,8 +138,9 @@ const TechnicalSkills = props => {
                 </Grid.Column>
                 <Grid.Column>
                     <Popup
+                        inverted
                         size='tiny'
-                        position='bottom center'
+                        position='bottom left'
                         content='Python'
                         on='click'
                         pinned
