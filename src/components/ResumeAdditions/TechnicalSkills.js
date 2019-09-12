@@ -26,7 +26,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='top right'
+                        position='top center'
                         content='Ruby'
                         on='click'
                         pinned
@@ -37,7 +37,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='top right'
+                        position='top center'
                         content='Ruby on Rails'
                         on='click'
                         pinned
@@ -48,7 +48,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='top left'
+                        position='top center'
                         content='HTML5'
                         on='click'
                         pinned
@@ -59,7 +59,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='top left'
+                        position='top center'
                         content='CSS3'
                         on='click'
                         pinned
@@ -70,7 +70,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom right'
+                        position='bottom center'
                         content='JavaScript'
                         on='click'
                         pinned
@@ -83,7 +83,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom right'
+                        position='bottom center'
                         content='React'
                         on='click'
                         pinned
@@ -94,7 +94,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom left'
+                        position='bottom center'
                         content='Redux'
                         on='click'
                         pinned
@@ -105,7 +105,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom left'
+                        position='bottom center'
                         content='Semantic UI'
                         on='click'
                         pinned
@@ -148,7 +148,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom left'
+                        position='top center'
                         content='Python'
                         on='click'
                         pinned
