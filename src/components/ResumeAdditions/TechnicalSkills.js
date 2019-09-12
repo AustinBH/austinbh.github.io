@@ -20,7 +20,7 @@ const TechnicalSkills = props => {
                 Technical Skills
             </Header>
         </Divider>
-        <Grid columns={4} celled='internally' textAlign='center'>
+        <Grid columns={5} celled='internally' textAlign='center'>
             <Grid.Row>
                 <Grid.Column>
                     <Popup
@@ -66,8 +66,6 @@ const TechnicalSkills = props => {
                         trigger={<Image src={CSS} alt='CSS3 logo' className='skills-image' centered />}
                     />
                 </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
                 <Grid.Column>
                     <Popup
                         inverted
@@ -79,6 +77,8 @@ const TechnicalSkills = props => {
                         trigger={<Image src={JS} alt='JavaScript logo' className='skills-image' centered />}
                     />
                 </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
                 <Grid.Column>
                     <Popup
                         inverted
@@ -112,8 +112,6 @@ const TechnicalSkills = props => {
                         trigger={<Image src='https://react.semantic-ui.com/logo.png' alt='Semantic UI logo' className='skills-image' centered />}
                     />
                 </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
                 <Grid.Column>
                     <Popup
                         inverted
@@ -136,6 +134,16 @@ const TechnicalSkills = props => {
                         trigger={<Image src={Postgres} alt='Postgresql logo' className='skills-image' centered />}
                     />
                 </Grid.Column>
+            </Grid.Row>
+        </Grid>
+        <Divider horizontal>
+            <Header as='h3'>
+                <Icon name='keyboard' />
+                Learning...
+            </Header>
+        </Divider>
+        <Grid columns={4} celled='internally' textAlign='center'>
+            <Grid.Row>
                 <Grid.Column>
                     <Popup
                         inverted
