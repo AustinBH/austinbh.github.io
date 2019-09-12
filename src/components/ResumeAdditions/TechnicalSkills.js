@@ -70,7 +70,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom center'
+                        position='top center'
                         content='JavaScript'
                         on='click'
                         pinned
