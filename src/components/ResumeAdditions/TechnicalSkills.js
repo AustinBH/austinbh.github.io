@@ -116,7 +116,7 @@ const TechnicalSkills = props => {
                     <Popup
                         inverted
                         size='tiny'
-                        position='bottom right'
+                        position='bottom center'
                         content='Bootstrap'
                         on='click'
                         pinned
