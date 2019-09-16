@@ -27,6 +27,18 @@ h1 {
   margin: auto;
 }
 
+p img {
+  width: 100%;
+}
+
+ul li a {
+  word-wrap: break-word;
+}
+
+pre {
+  border: 1px solid #ccc;
+}
+
 .project-image {
   width: 90% !important;
   margin: auto;

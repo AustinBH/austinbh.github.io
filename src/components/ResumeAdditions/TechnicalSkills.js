@@ -19,8 +19,9 @@ const TechnicalSkills = props => {
         setShow(true)
     }
 
+
     useEffect(() => {
-        setTimeout(() => setShow(false), 5000)
+         setTimeout(() => setShow(false), 5000)
     }, [show])
 
     return <div style={{textAlign: 'center'}}>
