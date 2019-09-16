@@ -413,7 +413,7 @@ As I continue my JavaScript journey I want to take advantage of these blogs to n
 
 ## What is the spread operator?
 
-\`MDN's definition can seem a bit confusing at first.\` Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+MDN's definition can seem a bit confusing at first. Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
 Here is a brief example of one use of the spread operator.
 \`\`\`js

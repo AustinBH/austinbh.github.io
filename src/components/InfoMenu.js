@@ -12,7 +12,7 @@ const InfoMenu = props => {
                     <Menu.Item icon='map' as={NavLink} exact to='/about' activeClassName='active' name='About' />
                     <Menu.Item icon='file code' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file alternate' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />
-                    <Menu.Item icon='book' as={NavLink} exact to='/blog' activeClassName='active' name='Blog' />
+                    <Menu.Item icon='book' as={NavLink} exact to='/blog/6' activeClassName='active' name='Blog' />
                 </Menu>
                 <Switch>
                     <Route path='/' exact render={null} />
