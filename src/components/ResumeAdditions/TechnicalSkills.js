@@ -1,5 +1,5 @@
-import React from 'react'
-import { Divider, Grid, Image, Header, Icon, Popup } from 'semantic-ui-react';
+import React, { useState, useEffect } from 'react'
+import { Divider, Grid, Image, Header, Icon, Popup, Message } from 'semantic-ui-react';
 import Bootstrap from '../../images/skills/Bootstrap_logo.svg'
 import Ruby from '../../images/skills/Ruby_logo.svg'
 import Rails from '../../images/skills/Ruby_on_Rails_logo.svg'
@@ -13,13 +13,30 @@ import Python from '../../images/skills/Python_logo.svg'
 
 const TechnicalSkills = props => {
 
-    return <>
-        <Divider horizontal>
+    const [show, setShow] = useState(true)
+
+    const handleClick = () => {
+        setShow(true)
+    }
+
+    useEffect(() => {
+        setTimeout(() => setShow(false), 5000)
+    }, [show])
+
+    return <div style={{textAlign: 'center'}}>
+        <Divider horizontal onClick={handleClick}>
             <Header as='h3'>
                 <Icon name='computer' />
                 Technical Skills
             </Header>
         </Divider>
+        {show ? 
+            <Message compact>
+                <Message.Header>Click the images for more info</Message.Header>
+            </Message>
+        :
+            null
+        }
         <Grid columns={5} celled='internally' textAlign='center'>
             <Grid.Row>
                 <Grid.Column>
@@ -157,7 +174,7 @@ const TechnicalSkills = props => {
                 </Grid.Column>
             </Grid.Row>
         </Grid>
-    </>
+    </div>
 }
 
 export default TechnicalSkills;
