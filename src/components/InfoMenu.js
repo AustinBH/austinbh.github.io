@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
-import { HashRouter as Router, Route, NavLink, Redirect, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
 import Resume from './Resume';
@@ -19,8 +19,7 @@ const InfoMenu = props => {
                     <Route path='/about' exact render={props => <About {...props} />} />
                     <Route path='/projects' exact render={props => <Projects {...props} />} />
                     <Route path='/resume' exact render={props => <Resume {...props} />} />
-                    <Route path='/blog' exact render={props => <Blog {...props} />} />
-                    <Redirect from='*' to='/' />
+                    <Route path='/blog' render={props => <Blog {...props} />} />
                 </Switch>
                 <div/>
         </Router>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
-import { blogs } from './blogs/1'
-import CodeBlock from './blogs/code-block'
+import { blogs } from './blogs/BlogHolder'
+import CodeBlock from './blogs/CodeBlock'
 
 const BlogPost = props => {
 
@@ -10,7 +10,6 @@ const BlogPost = props => {
         let postNum = props.match.url.slice(-1)
         switch (postNum) {
             case '1':
-                console.log('1 here')
                 return <ReactMarkdown source={blogs.one} renderers={{code: CodeBlock}}/>
             case '2':
                 return <ReactMarkdown source={blogs.two} renderers={{ code: CodeBlock }}/>

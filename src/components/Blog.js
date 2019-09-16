@@ -1,6 +1,6 @@
 import React from 'react';
 import { Segment, Icon, Header, Grid, Dropdown, Button } from 'semantic-ui-react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import BlogPost from './BlogPost';
 
 const Blog = props => {
@@ -25,8 +25,7 @@ const Blog = props => {
                     <Grid.Column textAlign='center'>
                         <Button.Group color='teal'>
                             <Button icon='pencil alternate' style={{ color: 'black' }} content='Blog Posts'/>
-                            <Dropdown className='button icon' floating
-                            >
+                            <Dropdown className='button icon' floating>
                                 <Dropdown.Menu>
                                     <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/1`} activeClassName='active' text='How I learned to stop worrying and love the MVP' />
                                     <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/2`} activeClassName='active' text='Rails Layouts' />
@@ -41,7 +40,7 @@ const Blog = props => {
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column>
-                        <Route path={`${props.match.url}/:id`} render={props => <BlogPost {...props} />} />
+                        <Route path={`${props.match.path}/:id`} render={props => <BlogPost {...props} />} />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
