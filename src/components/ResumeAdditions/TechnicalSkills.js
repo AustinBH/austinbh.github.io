@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Divider, Grid, Image, Header, Icon, Popup, Message } from 'semantic-ui-react';
 import Bootstrap from '../../images/skills/Bootstrap_logo.svg'
 import Ruby from '../../images/skills/Ruby_logo.svg'
@@ -18,6 +18,11 @@ const TechnicalSkills = props => {
     const handleClick = () => {
         setShow(!show)
     }
+
+    useEffect(() => {
+        let timer = setTimeout(() => setShow(false), 4000);
+        return () => clearTimeout(timer)
+    })
 
     return <div style={{textAlign: 'center'}}>
         <Divider horizontal onClick={handleClick}>
