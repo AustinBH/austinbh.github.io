@@ -24,7 +24,7 @@ const Blog = props => {
                 <Grid.Row>
                     <Grid.Column textAlign='center'>
                         <Button.Group color='teal'>
-                            <Button icon='pencil alternate' style={{ color: 'black' }} content='Blog Posts' target='_blank' rel='noopener noreferrer' href='https://dev.to/austinbh'/>
+                            <Button icon='pencil alternate' style={{ color: 'black' }} content='All Posts' target='_blank' rel='noopener noreferrer' href='https://dev.to/austinbh'/>
                             <Dropdown className='button icon' floating>
                                 <Dropdown.Menu>
                                     <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/1`} activeClassName='active' text='How I learned to stop worrying and love the MVP' />
