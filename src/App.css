@@ -67,6 +67,10 @@ pre {
   text-align: center;
 }
 
+.skills-image {
+  cursor: pointer;
+}
+
 .copyright {
   font-size: 12px;
 }

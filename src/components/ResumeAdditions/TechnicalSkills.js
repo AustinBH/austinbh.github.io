@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Divider, Grid, Image, Header, Icon, Popup, Message } from 'semantic-ui-react';
 import Bootstrap from '../../images/skills/Bootstrap_logo.svg'
 import Ruby from '../../images/skills/Ruby_logo.svg'
@@ -16,17 +16,12 @@ const TechnicalSkills = props => {
     const [show, setShow] = useState(true)
 
     const handleClick = () => {
-        setShow(true)
+        setShow(!show)
     }
-
-
-    useEffect(() => {
-         setTimeout(() => setShow(false), 5000)
-    }, [show])
 
     return <div style={{textAlign: 'center'}}>
         <Divider horizontal onClick={handleClick}>
-            <Header as='h3'>
+            <Header as='h3' style={{cursor: 'pointer'}}>
                 <Icon name='computer' />
                 Technical Skills
             </Header>

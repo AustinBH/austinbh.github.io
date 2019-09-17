@@ -12,7 +12,6 @@ const SocialMedia = props => {
         <Grid.Row>
             <Grid.Column width={16}>
                 <Button className='contact-button' icon='telegram plane' color='vk' content='Email' href='mailto:harlowaustin2@gmail.com'/>
-                <Button className='contact-button' icon='pencil' color='teal' content='Dev.to' style={{ color: 'black' }} href='https://dev.to/austinbh' target='_blank' rel='noopener noreferrer' />
             </Grid.Column>
         </Grid.Row>
     </Grid>
