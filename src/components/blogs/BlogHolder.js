@@ -1,6 +1,7 @@
 // Adding blog posts
 
-const one = `# How I learned to Stop Worrying and Love the MVP
+const one = {
+    title: 'How I learned to stop worrying and love the MVP', text: `# How I learned to Stop Worrying and Love the MVP
 When I first started looking into coding bootcamps, I had no idea if this was something that I wanted to do. After a few months I found a few different ones I was interested in but I still felt unsure. Even after enrolling in the Software Engineering course at the Flatiron school I was unsure about my decision.
 
 As I learned more about Ruby and object orientation I felt more confident in the material and my ability to understand it but something was still missing. I didn't have that 'Aha' moment where I knew that I had made the correct decision. It was not until we began working on our CLI application projects last week that I felt certain that this was something that I wanted to do.
@@ -18,8 +19,9 @@ Luckily, as a result of this coordinated planning and preparation we were able t
 Even though it was just a simple CLI application, this project proved to me that taking some time to plan it out before you get started can completely change the way you approach a project. I had no idea if I was going to like working on a CLI app or if I was going to like this coding bootcamp. However, after making something that works and turning it into something that looks and functions much better, I can say that I made the right choice and can't wait for what comes next!\n
 
 You can find RJ and I's project on [Github](https://github.com/vizushu/module-one-final-project-guidelines-seattle-web-051319)`
+}
 
-const two = `# Rails Layouts
+const two = {title: 'Rails Layouts', text: `# Rails Layouts
 In my coding bootcamp we have started the Rails section of the curriculum. Last week it seemed very overwhelming, as if there was so much Rails content that I would not be able to understand enough to build an app.
 
 At the start of this week, I still feel that I have barely scraped the surface of what Rails can really do.However, I did find one thing in particular that I really enjoy about the Rails apps we have made so far.
@@ -54,8 +56,9 @@ By default your controller will look for a layout file that matches the controll
 ### Moving Forward ###
 
 Layouts are an excellent way of keeping your code dry as something such as a 'Home' link might be found on nearly every page of your app.They also have the benefit of allowing you to include links that help you to navigate and test your app quickly.While it may not seem like much, I very much appreciate the ability to navigate my apps directly without having to manually enter URLs.`
+}
 
-const three = `# For Loops, for...of, and forEach Oh My!
+const three = {title: 'For Loops, for...of, and forEach Oh My!', text: `# For Loops, for...of, and forEach Oh My!
 As someone who has spent the better part of the past month and a half learning and writing in Ruby, transitioning to Javascript has been a bit disorienting.
 
 Arrays in particular are a type of data that I have had the opportunity to play around with quite a bit over the past month and a half. As a result of using primarily Ruby, I am quite familiar with the each enumerable.
@@ -67,7 +70,7 @@ array1 = [1, 2, 3, 4]
 def return_all(array)
 array.each do | number |
     puts number
-  end
+end
 end
 
 return_all(array)
@@ -160,8 +163,8 @@ The forEach method is a bit different from both our for loop and the for ... of 
 One particular proverb that I have heard quite a few times is "There is more than one way to skin a cat". Although I have never really liked this particular proverb because of it's imagery, I have always been able to appreciate it's message. In my programming journey so far, I have found that this particular proverb is particularly apt.
 
 When looking at the 3 different iterators above, I can say that the for ... of statement is particularly clear to me. I will undoubtedly have to use for loops much more often as I continue my Javascript journey but for now, I have found a particular way of iterating that makes the most sense to me.`
-
-const four = `# Classes as an Organizational Tool
+}
+const four = {title: 'Classes as an Organizational Tool', text: `# Classes as an Organizational Tool
 As someone who is currently in the react section of my coding bootcamp, I have been trying to get a better understanding of Javascript classes recently.
 
 Hopefully, by the end of this article you and I both have a better understanding of what Javascript classes are and how they work.
@@ -309,7 +312,8 @@ This also means that as we increase the complexity of our program and add more s
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 - https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function`
-const five = `# Why You Should Use Arrow Functions in React
+}
+const five = {title: 'Why You Should Use Arrow Functions in React', text: `# Why You Should Use Arrow Functions in React
 The more time I have to work with Javascript, the more I am enjoying the language itself. When I was first learning Javascript a few weeks ago, we touched on arrow functions a bit. I understood how to write them and had some idea of what they did. However, it wasn't until we started getting into react that I really learned what arrow functions can do and why they are so advantageous.
 
 ## What are Arrow Functions
@@ -406,7 +410,8 @@ As long as you keep an eye on the definition of the 'this' keyword you will be f
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind
 * https://reactjs.org/docs/components-and-props.html`
-const six = `# Spreadin' Out
+}
+const six = {title: "Spreadin' Out", text: `# Spreadin' Out
 What is the spread operator and why does it matter? This is a question that I thought about quite a bit as I started to get into React.
 
 As I continue my JavaScript journey I want to take advantage of these blogs to not only learn more about different features of the language but hopefully to be helpful to others who are trying to make sense of this wacky and powerful language.
@@ -418,8 +423,8 @@ MDN's definition can seem a bit confusing at first. Spread syntax allows an iter
 Here is a brief example of one use of the spread operator.
 \`\`\`js
 let account = {
-   username: '',
-   password: ''
+username: '',
+password: ''
 }
 
 account = {...account, username: 'Foo'}
@@ -448,11 +453,11 @@ This means that we can spread out our current state and modify only 1 portion. I
 
 \`\`\`js
 state = {
-   user: {
-      username: '',
-      password: ''
-   },
-   isLoading: false
+user: {
+    username: '',
+    password: ''
+},
+isLoading: false
 }
 
 this.setState({user: {...this.state.user, username: 'Foo'}})
@@ -464,7 +469,7 @@ We can also use the spread operator for arrays to allow us to achieve a similar 
 
 \`\`\`js
 state = {
-   numbers: [1,2,3]
+numbers: [1,2,3]
 }
 
 this.setState({numbers: [...this.state.numbers, 4]})
@@ -480,13 +485,91 @@ There are plenty of non - destructive actions that we can use to update our stat
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat`
+}
 
-export const blogs = {
+const seven = {title: 'Learning a New Language', text:` # Learning a New Language
+As a recent graduate of the Flatiron School's Web Development program, I have spent the past 4 months working with Ruby and JavaScript. I have been exposed to other languages in some capacity before but I had not tried to learn a new language and framework on my own.
+
+## Why Python?
+
+![](https://images.freeimages.com/images/large-previews/5eb/green-tree-python-1312700.jpg)
+
+I was on the fence about a new language and decided (for better or worse) to go with a dynamically typed language rather than something like Java which is statically typed. My main interest was to learn a new language that was strongly typed as a change from JavaScript which I have been focusing on heavily for the past couple months.
+
+### Brief aside on typed languages
+
+For the purposes of understanding the differences between static and dynamically typed languages all you need to understand is that static languages are more strict and do not allow types to be mutated. Furthermore, strongly typed in this scenario is referring to type errors being prevented at runtime. This basically means that instead of returning undefined like in JavaScript, I would receive an error if I was using incorrect types in Python.
+
+## Python Initial Response
+
+![](https://images.freeimages.com/images/large-previews/c1c/dog-1361477.jpg)
+
+Once I got started with Python, I noticed a few things that I liked immediately. List, Dictionary, Set, and Generator comprehensions are things that I very much enjoy using. Although in a general sense it is basically just a way to iterate over these structures, their syntax is very enticing to me. Let's just use a brief example here.
+
+\`\`\`python
+new_list = [1, 2, 3, 4, 5]
+new_list = [num for num in new_list if num % 2 == 0]
+print(new_list)
+#=> [2, 4]
+\`\`\`
+All I did here was iterate over new_list and return only the even numbers.  This is similar to a filter function in JavaScript which we can call on an array.
+
+\`\`\`javascript
+newArray = [1, 2, 3, 4, 5]
+newArray = newArray.filter(num => num % 2 === 0)
+console.log(newArray)
+    //=> [2, 4]
+\`\`\`
+However, the list comprehension in python is more powerful than just a filter, it can also perform the same action as a map function in JavaScript.
+
+\`\`\`python
+new_list = [1, 2, 3, 4, 5]
+new_list = [num * 2 for num in new_list]
+print(new_list
+    #=> [2, 4, 6, 8, 10]
+\`\`\`
+
+This is just the surface of what comprehensions in Python can do but I am very much a fan of their syntax.
+
+## Continuing to learn
+
+For me, one of the best ways for me to learn is to simply use something. In Python, that means writing code and making applications. I have tried to make a few different simple CLI applications to further my understanding of Python. One similarity that made it easier for me to grasp is function definition syntax in both Python and JavaScript
+\`\`\`python
+    # Python
+
+def foo():
+    print('Hello World!')
+foo()
+\`\`\`
+\`\`\`javascript
+// JavaScript
+
+function foo() {
+        console.log('Hello World!')
+    }
+foo()
+\`\`\`
+Even though these two functions are a bit different, the way that they are invoked is the same which makes it easier for me to grasp how to actually print out 'Hello World!'.
+
+## Next Steps
+
+![](https://images.freeimages.com/images/large-previews/bab/sasha-1378238.jpg)
+
+I am planning to be able to continue to practice Python using the Django web framework. I have started with Django but will need more time to be able to implement it the same way I could with a Rails application right now. I will also likely be writing about Python more as I continue to try to learn it so look out for a few more Python related posts here.
+
+## References
+* https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7
+* https://en.wikipedia.org/wiki/Strong_and_weak_typing
+* https://en.wikipedia.org/wiki/Type_system`
+}
+
+export const blogs = [
     one,
     two,
     three,
     four,
     five,
-    six
-}
+    six,
+    seven
+]
 

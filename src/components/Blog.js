@@ -2,6 +2,7 @@ import React from 'react';
 import { Segment, Icon, Header, Grid, Dropdown, Button } from 'semantic-ui-react';
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import BlogPost from './BlogPost';
+import { blogs } from './blogs/BlogHolder';
 
 const Blog = props => {
     
@@ -27,12 +28,9 @@ const Blog = props => {
                             <Button icon='pencil alternate' style={{ color: 'black' }} content='All Posts' target='_blank' rel='noopener noreferrer' href='https://dev.to/austinbh'/>
                             <Dropdown className='button icon' floating>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/1`} activeClassName='active' text='How I learned to stop worrying and love the MVP' />
-                                    <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/2`} activeClassName='active' text='Rails Layouts' />
-                                    <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/3`} activeClassName='active' text='For loops, for...of and forEach oh my!' />
-                                    <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/4`} activeClassName='active' text='Classes as an Organizational Tool' />
-                                    <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/5`} activeClassName='active' text='Why You Should Use Arrow Functions in React' />
-                                    <Dropdown.Item icon='file alternate' as={NavLink} exact to={`${props.match.url}/6`} activeClassName='active' text="Spreadin' Out" />
+                                    {blogs.map((blog, idx) => {
+                                        return <Dropdown.Item key={idx} icon='file alternate' as={NavLink} exact to={`${props.match.url}/${idx+1}`} activeClassName='active' text={blog.title} />
+                                    })}
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Button.Group>
