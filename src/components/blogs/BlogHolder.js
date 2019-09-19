@@ -64,7 +64,6 @@ As someone who has spent the better part of the past month and a half learning a
 Arrays in particular are a type of data that I have had the opportunity to play around with quite a bit over the past month and a half. As a result of using primarily Ruby, I am quite familiar with the each enumerable.
 
 \`\`\`ruby
-
 array1 = [1, 2, 3, 4]
 
 def return_all(array)
@@ -79,7 +78,6 @@ return_all(array)
 # => "2"
 # => "3"
 # => "4"
-
 \`\`\`
 
 ## For loops
@@ -87,7 +85,6 @@ return_all(array)
 Naturally, I was a bit apprehensive when considering how to iterate through an array in Javascript. I had some idea of what a for loop was but I was under the impression that I would have to write a much longer function than I would in Ruby.
 
 \`\`\`js
-
 const array1 = [1, 2, 3, 4]
 
 function returnAll(array) {
@@ -114,7 +111,6 @@ In reading more about arrays in Javascript I stumbled across two other ways of i
 A for ... of statement allows you to use a variable that represents a piece of the data type that you are iterating over. In this way it is very similar to the .each enumerable from Ruby although the syntax looks a bit different.
 
 \`\`\`js
-
 const array1 = [1, 2, 3, 4]
 
 function returnAll(array) {
@@ -130,7 +126,6 @@ returnAll(array);
 // => 3
 // => 4
 // => undefined
-
 \`\`\`
 
 In the above code, our returnAll function has been slimmed down quite a bit from the larger for loop that we saw initially. Our for ... of statement closely resembles the Ruby function that we wrote out at the start. A for ... of statement is also very easy to read. When I look at the above function I get a better idea of what it will do than our earlier for loop.
@@ -140,7 +135,6 @@ In the above code, our returnAll function has been slimmed down quite a bit from
 Another way to iterate over an array in Javascript is using the forEach method. When we reference the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) on the forEach method, we can see that this method is specific to arrays and is therefore not as versatile as the for ... of statement that we saw above. In my opinion however, it is still a simpler way to iterate over an array than our for loop.
 
 \`\`\`js
-
 const array1 = [1, 2, 3, 4]
 
 function returnAll(array) {
@@ -156,7 +150,6 @@ returnAll(array);
 // => 3
 // => 4
 // => undefined
-
 \`\`\`
 The forEach method is a bit different from both our for loop and the for ... of statement that we saw above. Rather than writing out a for statement, we are calling a method on our array. However, I still prefer the forEach method to a for loop when iterating over arrays in terms of readability.
 
@@ -179,7 +172,7 @@ let foo = (a, b) => console.log(a + b)
 
 foo(2, 3)
 
-    // => 5
+// => 5
 \`\`\`
 ### Function Declaration
 \`\`\`js
@@ -215,8 +208,8 @@ const baz = new foo("Hello", "World")
 console.log(baz.hello)
 console.log(baz.world)
 
-    //=> "Hello"
-    //=> "World"
+//=> "Hello"
+//=> "World"
 \`\`\`
 ### Class Declaration
 \`\`\`js
@@ -231,8 +224,8 @@ const baz = new fooBar("Hello", "World")
 console.log(baz.hello)
 console.log(baz.world)
 
-    //=> "Hello"
-    //=> "World"
+//=> "Hello"
+//=> "World"
 \`\`\`
 In this case, both our expression and declaration have to be made before we try to create new instances of these classes. However, we are able to use the class expression to reference the bar class using foo.
 
@@ -260,7 +253,7 @@ class triangle {
 const foo = new triangle(3, 4)
 console.log(foo.c)
 
-    //=> 5
+//=> 5
 \`\`\`
 Using the findHypotenuse function that we wrote, we are able to get the hypotenuse for a right triangle and save that value as c. By describing the getter c function we are able to call .c on our triangle to return the length of the hypotenuse.
 
@@ -299,8 +292,8 @@ console.log(foo.hypotenuse)
 const bar = new rectangle(4, 5)
 console.log(bar.area)
 
-    //=> 5
-    //=> 20
+//=> 5
+//=> 20
 \`\`\`
 In this example I was able to write our two functions for our rectangle and triangle classes that inherited the constructor from the parent shape class. As the parent class has attributes that both of the children are using, we are saved from having to create an additional constructor for each of these child classes.
 
@@ -358,7 +351,7 @@ console.log(unboundGetBar())
 
 let boundGetBar = unboundGetBar.bind(foo)
 console.log(boundGetBar())
-    //=> 50
+//=> 50
 \`\`\`
 We have to use the bind method to tell getBar what 'this' should refer to. When getBar is not bound in the first example, it is inheriting the definition of 'this' from the global scope and as a result the console log returns undefined. With an arrow function, we do not have to worry about binding 'this' because an arrow function does not have its own 'this'. Because of this, an arrow function will inherit 'this' from its enclosing scope.
 
@@ -518,7 +511,7 @@ All I did here was iterate over new_list and return only the even numbers.  This
 newArray = [1, 2, 3, 4, 5]
 newArray = newArray.filter(num => num % 2 === 0)
 console.log(newArray)
-    //=> [2, 4]
+//=> [2, 4]
 \`\`\`
 However, the list comprehension in python is more powerful than just a filter, it can also perform the same action as a map function in JavaScript.
 
@@ -526,7 +519,7 @@ However, the list comprehension in python is more powerful than just a filter, i
 new_list = [1, 2, 3, 4, 5]
 new_list = [num * 2 for num in new_list]
 print(new_list
-    #=> [2, 4, 6, 8, 10]
+#=> [2, 4, 6, 8, 10]
 \`\`\`
 
 This is just the surface of what comprehensions in Python can do but I am very much a fan of their syntax.
@@ -535,7 +528,7 @@ This is just the surface of what comprehensions in Python can do but I am very m
 
 For me, one of the best ways for me to learn is to simply use something. In Python, that means writing code and making applications. I have tried to make a few different simple CLI applications to further my understanding of Python. One similarity that made it easier for me to grasp is function definition syntax in both Python and JavaScript
 \`\`\`python
-    # Python
+# Python
 
 def foo():
     print('Hello World!')
@@ -545,8 +538,8 @@ foo()
 // JavaScript
 
 function foo() {
-        console.log('Hello World!')
-    }
+    console.log('Hello World!')
+}
 foo()
 \`\`\`
 Even though these two functions are a bit different, the way that they are invoked is the same which makes it easier for me to grasp how to actually print out 'Hello World!'.
