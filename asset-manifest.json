@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4820c6a8.chunk.css",
-    "main.js": "/static/js/main.67106e18.chunk.js",
-    "main.js.map": "/static/js/main.67106e18.chunk.js.map",
+    "main.css": "/static/css/main.bd7ed88c.chunk.css",
+    "main.js": "/static/js/main.bc10dae2.chunk.js",
+    "main.js.map": "/static/js/main.bc10dae2.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.f6dce284.js",
     "runtime~main.js.map": "/static/js/runtime~main.f6dce284.js.map",
-    "static/js/2.30ad10bc.chunk.js": "/static/js/2.30ad10bc.chunk.js",
-    "static/js/2.30ad10bc.chunk.js.map": "/static/js/2.30ad10bc.chunk.js.map",
+    "static/js/2.df4d1df6.chunk.js": "/static/js/2.df4d1df6.chunk.js",
+    "static/js/2.df4d1df6.chunk.js.map": "/static/js/2.df4d1df6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5301d0584b99dc07ddda424f2ab37e76.js": "/precache-manifest.5301d0584b99dc07ddda424f2ab37e76.js",
+    "precache-manifest.6e1d813246326e768c9ca9b17e47468f.js": "/precache-manifest.6e1d813246326e768c9ca9b17e47468f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4820c6a8.chunk.css.map": "/static/css/main.4820c6a8.chunk.css.map",
+    "static/css/main.bd7ed88c.chunk.css.map": "/static/css/main.bd7ed88c.chunk.css.map",
     "static/media/Bootstrap_logo.svg": "/static/media/Bootstrap_logo.06596577.svg",
     "static/media/CSS3_logo_and_wordmark.svg": "/static/media/CSS3_logo_and_wordmark.7415a70a.svg",
     "static/media/HTML5_logo_and_wordmark.svg": "/static/media/HTML5_logo_and_wordmark.525f317f.svg",
@@ -20,10 +20,7 @@
     "static/media/Ruby_logo.svg": "/static/media/Ruby_logo.03af0f58.svg",
     "static/media/Ruby_on_Rails_logo.svg": "/static/media/Ruby_on_Rails_logo.8d9a2866.svg",
     "static/media/Unofficial_JavaScript_logo_2.svg": "/static/media/Unofficial_JavaScript_logo_2.dd60b11e.svg",
-    "static/media/finalFMSample.svg": "/static/media/finalFMSample.74773e7f.svg",
     "static/media/headshot.svg": "/static/media/headshot.9e1e7bee.svg",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-    "static/media/myTrailsSample.svg": "/static/media/myTrailsSample.13a6ffbd.svg",
-    "static/media/pokemonTeamsSample.svg": "/static/media/pokemonTeamsSample.2ff7c8ae.svg"
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
   }
 }
