@@ -1,8 +1,5 @@
 import React from 'react';
-import { Image, Header, Grid, Icon, Segment, Button, List } from 'semantic-ui-react';
-import finalFMSample from '../images/finalFMSample.svg'
-import myTrailsSample from '../images/myTrailsSample.svg'
-import pokemonTeamsSample from '../images/pokemonTeamsSample.svg'
+import {Header, Grid, Icon, Segment, Button, List } from 'semantic-ui-react';
 
 const Projects = props => {
 
@@ -20,25 +17,22 @@ const Projects = props => {
             <Icon name='code' circular size='mini'/>
             <Header.Content>Projects</Header.Content>
         </Header>
-        <Grid columns={3} textAlign='center' stackable container>
+        <Grid columns={3} textAlign='center' stackable >
             <Grid.Row>
                 <Grid.Column>
                     <Header as='h3' content='My Trails' />
-                    <Image className='project-image' src={myTrailsSample} alt='My Trails' href='https://my-trails.info' target='_blank' rel='noopener noreferrer'/>
-                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer' />
-                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer' />
+                    <iframe title='My Trails Demo' className='project-image' src="https://www.youtube.com/embed/LO-hzgt9Gaw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Button className='site-link' compact color='olive' icon='map' content='Live Site' href='https://my-trails.info' target='_blank' rel='noopener noreferrer' />
                 </Grid.Column>
                 <Grid.Column>
                     <Header as='h3' content='The Final FM' />
-                    <Image className='project-image' src={finalFMSample} alt='Final FM' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer'/>
-                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer' />
-                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer' />
+                    <iframe title='The Final FM Demo' className='project-image' src="https://www.youtube.com/embed/8FJRmSAH4UI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Button compact color='olive' icon='music' content='Live Site' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer'/>
                 </Grid.Column>
                 <Grid.Column>
                     <Header as='h3' content='Pokemon Teams' />
-                    <Image className='project-image' src={pokemonTeamsSample} alt='Pokemon Teams' href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer'/>
-                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer' />
-                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer' />
+                    <iframe title='Pokemon Teams Demo' className='project-image' src="https://www.youtube.com/embed/5fmVvPZxef4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Button compact color='olive' icon='gamepad' content='Live Site' href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer'/>
                 </Grid.Column>
             </Grid.Row>
             <Grid.Row>
@@ -57,6 +51,8 @@ const Projects = props => {
                         <List.Item icon='html5' content='HTML5' />
                         <List.Item icon='css3' content='CSS3' />
                     </List>
+                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer' />
+                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer' />
                 </Grid.Column>
                 <Grid.Column className='project-info'>
                     <Header as='h3' content='The Final FM' className='project-info-header' />
@@ -70,6 +66,8 @@ const Projects = props => {
                         <List.Item icon='html5' content='HTML5' />
                         <List.Item icon='css3' content='CSS3' />
                     </List>
+                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer' />
+                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer' />
                 </Grid.Column>
                 <Grid.Column className='project-info'>
                     <Header as='h3' content='Pokemon Teams' className='project-info-header' />
@@ -81,6 +79,8 @@ const Projects = props => {
                         <List.Item icon='html5' content='HTML5' />
                         <List.Item icon='css3' content='CSS3' />
                     </List>
+                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer' />
+                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer' />
                 </Grid.Column>
             </Grid.Row>
         </Grid>

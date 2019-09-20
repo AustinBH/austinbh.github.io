@@ -44,7 +44,9 @@ pre {
 
 .project-image {
   width: 90% !important;
+  height: 75%;
   margin: auto;
+  display: block;
 }
 
 .project-info {
@@ -84,6 +86,6 @@ pre {
     height: 26px;
   }
   .project-info-header {
-    display: inline;
+    display: block;
   }
 }
