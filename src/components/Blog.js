@@ -28,9 +28,13 @@ const Blog = props => {
                             <Button icon='pencil alternate' style={{ color: 'black' }} content='All Posts' target='_blank' rel='noopener noreferrer' href='https://dev.to/austinbh'/>
                             <Dropdown className='button icon' floating>
                                 <Dropdown.Menu>
-                                    {blogs.map((blog, idx) => {
-                                        return <Dropdown.Item key={idx} icon='file alternate' as={NavLink} exact to={`${props.match.url}/${idx+1}`} activeClassName='active' text={blog.title} />
-                                    })}
+                                    {props.match && props.match.path ?
+                                        blogs.map((blog, idx) => {
+                                            return <Dropdown.Item key={idx} icon='file alternate' as={NavLink} exact to={`${props.match.url}/${idx+1}`} activeClassName='active' text={blog.title} />
+                                        })
+                                        :
+                                        null
+                                    }
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Button.Group>
@@ -38,7 +42,11 @@ const Blog = props => {
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column>
-                        <Route path={`${props.match.path}/:id`} render={props => <BlogPost {...props} />} />
+                        {props.match && props.match.path ?
+                            <Route path={`${props.match.path}/:id`} render={props => <BlogPost {...props} />} />
+                            :
+                            null
+                        }
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
