@@ -556,6 +556,133 @@ I am planning to be able to continue to practice Python using the Django web fra
 * https://en.wikipedia.org/wiki/Type_system`
 }
 
+const eight = {title: 'How to comprehend Comprehensions', text: `# How to comprehend Comprehensions
+Python has been a very fun language for me to learn. I have greatly enjoyed using comprehensions. When I first took a look at them, they did not make much sense to me and looked very odd. I would not say that I'm an expert now but I certainly have a much better idea of what they do now than I did a few weeks ago.
+
+Hopefully we all have a better understanding of what comprehensions are and what they can do by the end of this.
+
+## What is a comprehension?
+
+This is not a question about what does the syntax look like (we will get to that) but rather a question about what a comprehension is. The geeks for geeks definition makes it the clearest to me: \`Comprehensions in Python provide us with a short and concise way to construct new sequences(such as lists, set, dictionary etc.) using sequences which have been already defined.\`
+
+Now let's break that down a little, what we are saying is that we can quickly construct new sequences with sequences that already exist. That is still a bit too convoluted, let's just say that Comprehensions let us quickly create new sequences with old sequences.
+
+## What do they look like?
+
+Now that we have something a bit simpler to work with, let's take a look at what a simple comprehension might look like.
+
+\`\`\`python
+foo =[1, 2]
+bar =[x for x in foo]
+    print(bar)
+#[1, 2]
+\`\`\`
+
+That isn't too bad, it looks kind of similar to a for loop inside of a list. Syntactically, it pretty much stays within this realm even as we add more complicated comprehensions later.
+
+For example, if we want to actually change the original data in our comprehension, we can perform whatever operation we wish to.
+
+\`\`\`python
+foo = { 'one': 1, 'two': 2 }
+bar = { k: v * 2 for(k, v) in foo.items() }
+print(bar)
+# { 'one': 2, 'two': 4 }
+\`\`\`
+
+Here we had to do something a bit different. Since we need access to both the keys and values, we need to call the items method on our \`foo\` dictionary so that we have an iterable with which to create our new dictionary.
+
+## Why do comprehensions matter?
+
+To begin with, comprehensions allow us to operate on our data without mutating it. We are able to both get a new dictionary, list, set, or generator and preserve our original data. This can be great when we need to both change our original data and return new data based on said original data.
+
+For example lets say that we have a list with the first 5 prime numbers. We want to multiply these 5 prime numbers but we still need our original list for comparison.
+
+\`\`\`python
+foo = [2, 3, 5, 7, 11]
+bar = [x ** 2 for x in foo]
+print(bar)
+
+#[4, 9, 25, 49, 121]
+\`\`\`
+
+Another great part about comprehensions is that they are allowing us to iterate with much less syntax than using a standard for loop. Let's take a look at the previous example but with a for loop.
+
+\`\`\`python
+foo = [2, 3, 5, 7, 11]
+bar = []
+for num in foo:
+    bar.append(num ** 2)
+print(bar)
+
+#[4, 9, 25, 49, 121]
+\`\`\`
+
+We have to write two extra lines where we are declaring our list and then actually appending each of the numbers onto it. In this sense, our comprehension is not only shorter but also easy to understand once you have seen a few comprehensions.
+
+## A few more examples
+
+I just wanted to throw in a few examples of set and generator comprehensions as we didn't really touch on them before. Set and generator comprehensions use a very similar syntax to the dictionary and list comprehensions.
+
+\`\`\`python
+# Dictionary
+foo = { 'one': 1, 'two': 2 }
+bar = { k: v + 5 for(k, v) in foo.items() }
+print(bar)
+
+# { 'one': 6, 'two': 7 }
+
+# Set
+foo = { 1, 2, 3}
+bar = { num ** 3 for num in foo}
+print(bar)
+
+# { 8, 1, 27 }
+
+# List
+foo = [1, 2, 3, 4, 5, 6]
+bar = [num + 3 for num in foo if num % 2 != 0]
+print(bar)
+
+#[4, 6, 8]
+
+# Generator
+foo = [1, 2, 3]
+bar = (num for num in foo if num % 2 == 0)
+    for num in bar:
+        print(num)
+
+# 2
+\`\`\`
+
+There are a few things going on here first we see the syntactic similarity between Set, List, and Generator comprehensions. The dictionary comprehension looks a bit different (because of the key value pairs) but the \`for\`, \`in\`, and, \`if\` keywords are all in the same order.
+
+Let's also take a quick moment to discuss the syntax on the List and Generator comprehensions. I added an if statement that was not included in the previous examples. The effect of this is that our new set, dictionary, list, or generator will only include elements that pass the if statement.
+
+To see what this would look like in a standard for loop, it is just a regular old if statement.
+
+\`\`\`python
+foo = [1, 2, 3]
+bar = []
+for num in foo:
+    if num % 2 == 0:
+        bar.append(num + 2)
+print(bar)
+
+#[4]
+\`\`\`
+
+All we are doing here is just adding 2 to all even numbers. Again, with our comprehension we are able to simplify the syntax (and we also don't have to worry about indentation errors!). 
+
+Comprehensions were the first thing to grab my eye when I was just starting to learn Python and they are still very interesting to me a few weeks later. I certainly enjoy finding these small syntactically sugary treats and understanding more about them. Hopefully this makes it a bit easier to wrap your head around comprehensions, I know it took me a while for it to all sink in a bit.
+
+## References
+
+* https://wiki.python.org/moin/Generators
+* https://docs.python.org/3/tutorial/datastructures.html
+* https://www.geeksforgeeks.org/comprehensions-in-python/
+* https://www.w3schools.com/python/ref_dictionary_items.asp`
+}
+
 export const blogs = [
     one,
     two,
@@ -563,6 +690,7 @@ export const blogs = [
     four,
     five,
     six,
-    seven
+    seven,
+    eight
 ]
 
