@@ -557,19 +557,19 @@ I am planning to be able to continue to practice Python using the Django web fra
 }
 
 const eight = {title: 'How to comprehend Comprehensions', text: `# How to comprehend Comprehensions
-Python has been a very fun language for me to learn. I have greatly enjoyed using comprehensions. When I first took a look at them, they did not make much sense to me and looked very odd. I would not say that I'm an expert now but I certainly have a much better idea of what they do now than I did a few weeks ago.
+Python has been a very fun language for me to learn. So far, the thing I have most enjoyed learning and using are comprehensions. When I first took a look at them, they did not make much sense to me and looked very odd. I would not say that I'm an expert now but I certainly have a much better idea of what they do now than I did a few weeks ago.
 
 Hopefully we all have a better understanding of what comprehensions are and what they can do by the end of this.
 
 ## What is a comprehension?
 
-This is not a question about what does the syntax look like (we will get to that) but rather a question about what a comprehension is. The geeks for geeks definition makes it the clearest to me: \`Comprehensions in Python provide us with a short and concise way to construct new sequences(such as lists, set, dictionary etc.) using sequences which have been already defined.\`
+This is not a question about what does the syntax look like (we will get to that) but rather a question about what a comprehension is. The geeks for geeks definition I found is a very good one: \`Comprehensions in Python provide us with a short and concise way to construct new sequences(such as lists, set, dictionary etc.) using sequences which have been already defined.\`
 
-Now let's break that down a little, what we are saying is that we can quickly construct new sequences with sequences that already exist. That is still a bit too convoluted, let's just say that Comprehensions let us quickly create new sequences with old sequences.
+Now let's break that down a little, what this is saying is that we can quickly construct new sequences with sequences that already exist. That still sounds a bit convoluted to me, let's just say that Comprehensions let us quickly create new sequences with old sequences.
 
 ## What do they look like?
 
-Now that we have something a bit simpler to work with, let's take a look at what a simple comprehension might look like.
+Now that we have a bit of any idea of what a comprehension is, let's take a look at what a simple comprehension might look like.
 
 \`\`\`python
 foo =[1, 2]
@@ -578,7 +578,7 @@ bar =[x for x in foo]
 #[1, 2]
 \`\`\`
 
-That isn't too bad, it looks kind of similar to a for loop inside of a list. Syntactically, it pretty much stays within this realm even as we add more complicated comprehensions later.
+That isn't too bad, it looks kind of similar to a single line \`for loop\` inside of a list. Syntactically, it pretty much stays within this realm even as we add more complicated comprehensions later.
 
 For example, if we want to actually change the original data in our comprehension, we can perform whatever operation we wish to.
 
@@ -589,7 +589,19 @@ print(bar)
 # { 'one': 2, 'two': 4 }
 \`\`\`
 
-Here we had to do something a bit different. Since we need access to both the keys and values, we need to call the items method on our \`foo\` dictionary so that we have an iterable with which to create our new dictionary.
+Here we had to do something a bit different. Since we need access to both the keys and values, we need to call the \`items\` method on our \`foo\` dictionary so that we have access to both the keys and values. We can access the keys of our dictionary like we did with our list comprehension above but to have both values we need the \`items\` method.
+
+\`\`\`python
+foo = { 'one': 1, 'two': 2 }
+bar = { item for item in foo }
+print(bar)
+print(type(bar))
+
+# { 'one', 'two' }
+# <class 'set' >
+\`\`\`
+
+Wait a second here, this isn't a dictionary, this is a set. We will get into set comprehensions in a bit but for now just remember that if we only access the keys of our dictionary we will be given a set and not a dictionary in return.
 
 ## Why do comprehensions matter?
 
@@ -656,7 +668,7 @@ bar = (num for num in foo if num % 2 == 0)
 
 There are a few things going on here first we see the syntactic similarity between Set, List, and Generator comprehensions. The dictionary comprehension looks a bit different (because of the key value pairs) but the \`for\`, \`in\`, and, \`if\` keywords are all in the same order.
 
-Let's also take a quick moment to discuss the syntax on the List and Generator comprehensions. I added an if statement that was not included in the previous examples. The effect of this is that our new set, dictionary, list, or generator will only include elements that pass the if statement.
+Let's also take a quick moment to discuss the syntax on the List and Generator comprehensions. I added an if statement that was not included in the previous examples. The effect of this is that our new set, dictionary, list, or generator will only include elements that the if statement evaluates as true.
 
 To see what this would look like in a standard for loop, it is just a regular old if statement.
 
@@ -671,7 +683,7 @@ print(bar)
 #[4]
 \`\`\`
 
-All we are doing here is just adding 2 to all even numbers. Again, with our comprehension we are able to simplify the syntax (and we also don't have to worry about indentation errors!). 
+All we are doing here is adding 2 to all even numbers. Again, with our comprehension we are able to simplify the syntax (and we also don't have to worry about indentation errors!). 
 
 Comprehensions were the first thing to grab my eye when I was just starting to learn Python and they are still very interesting to me a few weeks later. I certainly enjoy finding these small syntactically sugary treats and understanding more about them. Hopefully this makes it a bit easier to wrap your head around comprehensions, I know it took me a while for it to all sink in a bit.
 
