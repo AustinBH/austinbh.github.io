@@ -20,18 +20,18 @@ const Projects = props => {
             <Icon name='code' circular size='mini'/>
             <Header.Content>Projects</Header.Content>
         </Header>
-        <Grid columns={3} textAlign='center' stackable >
-            <Header as='h3' dividing icon textAlign='center'>
+        <Grid columns={3} textAlign='center' stackable celled='internally'>
+            <Header as='h3' icon textAlign='center'>
                 <Icon name='map' circular size='mini' />
                 <Header.Content>My Trails</Header.Content>
             </Header>
             <MyTrails/>
-            <Header as='h3' dividing icon textAlign='center'>
+            <Header as='h3' icon textAlign='center'>
                 <Icon name='music' circular size='mini' />
                 <Header.Content>The Final FM</Header.Content>
             </Header>
             <FinalFM/>
-            <Header as='h3' dividing icon textAlign='center'>
+            <Header as='h3' icon textAlign='center'>
                 <Icon name='game' circular size='mini' />
                 <Header.Content>Pokemon Teams</Header.Content>
             </Header>

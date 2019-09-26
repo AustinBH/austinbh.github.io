@@ -6,7 +6,7 @@ const PokemonTeams = props => {
         <Grid.Row className='project-info-row'>
             <Grid.Column>
                 <iframe title='Pokemon Teams Demo' className='project-image' src="https://www.youtube.com/embed/5fmVvPZxef4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                <Button compact color='olive' icon='gamepad' content='Live Site' href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer' />
+                <Button className='site-link' compact color='olive' icon='gamepad' content='Live Site' href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer' />
             </Grid.Column>
             <Grid.Column className='project-info'>
                 <p><em>A Pokedex app for fans of Pokemon to create teams using their favorite Pokemon.</em></p>

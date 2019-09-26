@@ -6,7 +6,7 @@ const FinalFM = props => {
         <Grid.Row className='project-info-row'>
             <Grid.Column>
                 <iframe title='The Final FM Demo' className='project-image' src="https://www.youtube.com/embed/8FJRmSAH4UI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                <Button compact color='olive' icon='music' content='Live Site' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer' />
+                <Button className='site-link' compact color='olive' icon='music' content='Live Site' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer' />
             </Grid.Column>
             <Grid.Column className='project-info'>
                 <p><em>A song and concert search app that allows users to save their favorite songs.</em></p>
@@ -24,7 +24,7 @@ const FinalFM = props => {
             </Grid.Column>
             <Grid.Column>
                 <p>Most difficult ask:</p>
-                <p>The Final FM</p>
+                <p>For this project, my partner and I wanted to incorporate an api call from our backend to return event data. Having previously used APIs to seed my databases, I knew how to interact with them through rails but I had not incorporated an API call into a controller action before. I was able to create a request using the restclient gem and then parse that request using the json gem and used the resulting data to return filtered event data to the rails API.</p>
             </Grid.Column>
         </Grid.Row>
     </>
