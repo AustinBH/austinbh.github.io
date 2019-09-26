@@ -62,10 +62,6 @@ pre {
   height: 80px;
 }
 
-.project-info-header {
-  display: none;
-}
-
 .section-holder {
   background-color: #97B0AA !important;
   width: 80%;
@@ -80,12 +76,16 @@ pre {
   font-size: 12px;
 }
 
+.project-info-row {
+  height: 340px;
+}
+
 @media only screen and (max-width: 800px) {
   .skills-image {
     width: 26px;
     height: 26px;
   }
-  .project-info-header {
-    display: block;
+  .project-info-row {
+    height: inherit;
   }
 }

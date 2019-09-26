@@ -1,5 +1,8 @@
 import React from 'react';
-import {Header, Grid, Icon, Segment, Button, List } from 'semantic-ui-react';
+import {Header, Grid, Icon, Segment } from 'semantic-ui-react';
+import MyTrails from './projects/MyTrails';
+import FinalFM from './projects/FinalFM';
+import PokemonTeams from './projects/PokemonTeams';
 
 const Projects = props => {
 
@@ -18,71 +21,21 @@ const Projects = props => {
             <Header.Content>Projects</Header.Content>
         </Header>
         <Grid columns={3} textAlign='center' stackable >
-            <Grid.Row>
-                <Grid.Column>
-                    <Header as='h3' content='My Trails' />
-                    <iframe title='My Trails Demo' className='project-image' src="https://www.youtube.com/embed/LO-hzgt9Gaw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <Button className='site-link' compact color='olive' icon='map' content='Live Site' href='https://my-trails.info' target='_blank' rel='noopener noreferrer' />
-                </Grid.Column>
-                <Grid.Column>
-                    <Header as='h3' content='The Final FM' />
-                    <iframe title='The Final FM Demo' className='project-image' src="https://www.youtube.com/embed/8FJRmSAH4UI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <Button compact color='olive' icon='music' content='Live Site' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer'/>
-                </Grid.Column>
-                <Grid.Column>
-                    <Header as='h3' content='Pokemon Teams' />
-                    <iframe title='Pokemon Teams Demo' className='project-image' src="https://www.youtube.com/embed/5fmVvPZxef4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <Button compact color='olive' icon='gamepad' content='Live Site' href='https://austinbh.github.io/Pokedex-Teams/' target='_blank' rel='noopener noreferrer'/>
-                </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-                <Grid.Column className='project-info'>
-                    <Header as='h3' content='My Trails' className='project-info-header' />
-                    <p><em>A trail finding app that uses the Google Maps API to display maps with trail info.</em></p>
-                    <p>Technologies Used:</p>
-                    <List>
-                        <List.Item icon='google' content='Google Maps API' />
-                        <List.Item icon='aws' content='AWS S3' />
-                        <List.Item icon='map marker alternate' content='Geolocation API' />
-                        <List.Item icon='registered' content='Redux' />
-                        <List.Item icon='react' content='React' />
-                        <List.Item icon='gem' content='Ruby on Rails' />
-                        <List.Item icon='speakap' content='Semantic UI React' />
-                        <List.Item icon='html5' content='HTML5' />
-                        <List.Item icon='css3' content='CSS3' />
-                    </List>
-                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/my-trails-frontend' target='_blank' rel='noopener noreferrer' />
-                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/my-trails-backend' target='_blank' rel='noopener noreferrer' />
-                </Grid.Column>
-                <Grid.Column className='project-info'>
-                    <Header as='h3' content='The Final FM' className='project-info-header' />
-                    <p><em>A song and concert search app that allows users to save their favorite songs.</em></p>
-                    <p>Technologies Used:</p>
-                    <List>
-                        <List.Item icon='ticket' content='Ticketmaster API' />
-                        <List.Item icon='react' content='React' />
-                        <List.Item icon='gem' content='Ruby on Rails' />
-                        <List.Item icon='bold' content='React Bootstrap' />
-                        <List.Item icon='html5' content='HTML5' />
-                        <List.Item icon='css3' content='CSS3' />
-                    </List>
-                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/the-final-fm-frontend' target='_blank' rel='noopener noreferrer' />
-                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/the-final-fm-backend' target='_blank' rel='noopener noreferrer' />
-                </Grid.Column>
-                <Grid.Column className='project-info'>
-                    <Header as='h3' content='Pokemon Teams' className='project-info-header' />
-                    <p><em>A Pokedex app for fans of Pokemon to create teams using their favorite Pokemon.</em></p>
-                    <p>Technologies Used:</p>
-                    <List>
-                        <List.Item icon='js' content='Vanilla JavaScript' />
-                        <List.Item icon='gem' content='Ruby on Rails' />
-                        <List.Item icon='html5' content='HTML5' />
-                        <List.Item icon='css3' content='CSS3' />
-                    </List>
-                    <Button compact className='project-button' color='black' icon='github' content='Frontend' href='https://github.com/AustinBH/pokedex-teams' target='_blank' rel='noopener noreferrer' />
-                    <Button compact className='project-button' color='black' icon='github' content='Backend' href='https://github.com/AustinBH/pokedex-backend' target='_blank' rel='noopener noreferrer' />
-                </Grid.Column>
-            </Grid.Row>
+            <Header as='h3' dividing icon textAlign='center'>
+                <Icon name='map' circular size='mini' />
+                <Header.Content>My Trails</Header.Content>
+            </Header>
+            <MyTrails/>
+            <Header as='h3' dividing icon textAlign='center'>
+                <Icon name='music' circular size='mini' />
+                <Header.Content>The Final FM</Header.Content>
+            </Header>
+            <FinalFM/>
+            <Header as='h3' dividing icon textAlign='center'>
+                <Icon name='game' circular size='mini' />
+                <Header.Content>Pokemon Teams</Header.Content>
+            </Header>
+            <PokemonTeams/>
         </Grid>
     </Segment>
 }
