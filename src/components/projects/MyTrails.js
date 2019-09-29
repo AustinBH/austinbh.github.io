@@ -5,7 +5,7 @@ const MyTrails = props => {
     return <>
         <Grid.Row className='project-info-row'>
             <Grid.Column>
-                <iframe title='My Trails Demo' className='project-image' src="https://www.youtube.com/embed/LO-hzgt9Gaw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe title='My Trails Demo' className='project-image' src="https://www.youtube.com/embed/P2BzlqXCFZU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <Button className='site-link' compact color='olive' icon='map' content='Live Site' href='https://my-trails.info' target='_blank' rel='noopener noreferrer' />
             </Grid.Column>
             <Grid.Column className='project-info'>
