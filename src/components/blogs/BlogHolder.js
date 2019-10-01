@@ -1,5 +1,4 @@
 // Adding blog posts
-
 const one = {
     title: 'How I learned to stop worrying and love the MVP', text: `# How I learned to Stop Worrying and Love the MVP
 When I first started looking into coding bootcamps, I had no idea if this was something that I wanted to do. After a few months I found a few different ones I was interested in but I still felt unsure. Even after enrolling in the Software Engineering course at the Flatiron school I was unsure about my decision.
@@ -67,12 +66,12 @@ Arrays in particular are a type of data that I have had the opportunity to play 
 array1 = [1, 2, 3, 4]
 
 def return_all(array)
-array.each do | number |
-    puts number
-end
+    array.each do | number |
+        puts number
+    end
 end
 
-return_all(array)
+return_all(array1)
 
 # => "1"
 # => "2"
@@ -93,7 +92,7 @@ function returnAll(array) {
     }
 }
 
-returnAll(array);
+returnAll(array1);
 
 // => 1
 // => 2
@@ -119,7 +118,7 @@ function returnAll(array) {
     }
 };
 
-returnAll(array);
+returnAll(array1);
 
 // => 1
 // => 2
@@ -143,7 +142,7 @@ function returnAll(array) {
     })
 };
 
-returnAll(array);
+returnAll(array1);
 
 // => 1
 // => 2
@@ -200,7 +199,7 @@ For the purposes of this blog all we need to understand about hoisting is that i
 let foo = class bar {
     constructor(hello, world) {
         this.hello = hello,
-            this.world = world
+        this.world = world
     }
 }
 
@@ -216,7 +215,7 @@ console.log(baz.world)
 class fooBar {
     constructor(hello, world) {
         this.hello = hello,
-            this.world = world
+        this.world = world
     }
 }
 
@@ -229,7 +228,6 @@ console.log(baz.world)
 \`\`\`
 In this case, both our expression and declaration have to be made before we try to create new instances of these classes. However, we are able to use the class expression to reference the bar class using foo.
 
-
 ## Why do Javascript classes matter?
 
 Javascript classes are great for containing code. They allow us to define a class, create a constructor for that class and then write methods that modify the class. For example, if you wanted to write a function that takes two sides of a right triangle and displays the hypotenuse, you can easily incorporate that with a class.
@@ -240,7 +238,7 @@ Javascript classes are great for containing code. They allow us to define a clas
 class triangle {
     constructor(a, b) {
         this.a = a,
-            this.b = b
+        this.b = b
     }
     findHypotenuse() {
         return Math.sqrt((this.a ** 2) + (this.b ** 2))
@@ -267,7 +265,7 @@ The extends keyword can be used to allow child classes to inherit the structure 
 class shape {
     constructor(length, width) {
         this.length = length,
-            this.width = width
+        this.width = width
     }
 }
 class triangle extends shape {
@@ -314,11 +312,11 @@ The more time I have to work with Javascript, the more I am enjoying the languag
 An arrow function is a type of function syntax in Javascript that on first glance appears to be a shorthand function expression.
 
 \`\`\`js
-"Function Expression"
+//Function Expression
 
 let foo = function foo(bar) { return bar + 1 }
---------------------------------
-"Arrow Function Expression"
+
+//Arrow Function Expression
 
 let foo = bar => bar + 1
 \`\`\`
@@ -416,8 +414,8 @@ MDN's definition can seem a bit confusing at first. Spread syntax allows an iter
 Here is a brief example of one use of the spread operator.
 \`\`\`js
 let account = {
-username: '',
-password: ''
+    username: '',
+    password: ''
 }
 
 account = {...account, username: 'Foo'}
@@ -446,11 +444,11 @@ This means that we can spread out our current state and modify only 1 portion. I
 
 \`\`\`js
 state = {
-user: {
-    username: '',
-    password: ''
-},
-isLoading: false
+    user: {
+        username: '',
+        password: ''
+    },
+    isLoading: false
 }
 
 this.setState({user: {...this.state.user, username: 'Foo'}})
