@@ -518,7 +518,7 @@ However, the list comprehension in python is more powerful than just a filter, i
 \`\`\`python
 new_list = [1, 2, 3, 4, 5]
 new_list = [num * 2 for num in new_list]
-print(new_list
+print(new_list)
 #=> [2, 4, 6, 8, 10]
 \`\`\`
 
