@@ -570,8 +570,8 @@ Now let's break that down a little, what this is saying is that we can quickly c
 Now that we have a bit of any idea of what a comprehension is, let's take a look at what a simple comprehension might look like.
 
 \`\`\`python
-foo =[1, 2]
-bar =[x for x in foo]
+foo = [1, 2]
+bar = [x for x in foo]
     print(bar)
 #[1, 2]
 \`\`\`
