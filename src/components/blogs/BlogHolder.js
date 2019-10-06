@@ -737,6 +737,10 @@ print(foo(2))
 \`\`\`
 Both of these examples are anonymous function declarations. You can see several of the syntactic similarities, the lack of a \`return\` statement, and the argument, expression syntax for example are very similar. The arrow function in the JavaScript example allows both of these functions to look the same which helps us to understand what they are doing.
 
+#### Syntax warning!
+
+One important thing to remember though is that in JavaScript, our anonymous functions can include a return statement. That is not possible in Python since lambdas do not accept any statements. This is why there is no \`return\` in all of my examples.
+
 Since both of these functions are doing the same thing we can take our JavaScript or Python knowledge and apply it to the opposite language. This is one of the great benefits to understanding anonymous functions, is that they are used in many languages so if you are able to understand them in one, you can take that understanding and use it to more easily understanding them in another.
 
 ## References
