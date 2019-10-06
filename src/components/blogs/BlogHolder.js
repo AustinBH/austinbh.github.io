@@ -694,7 +694,7 @@ Comprehensions were the first thing to grab my eye when I was just starting to l
 }
 
 const nine = {
-    title: 'Python Lambdas and You', text: `#Python Lambdas and You
+    title: 'Python Lambdas and You', text: `# Python Lambdas and You
 I have greatly enjoyed working with anonymous functions in JavaScript and as I have been learning Python, I came across anonymous functions in a different way. After digging around a bit, I have learned that many languages use lambdas as part of their anonymous functions.
 
 #### Brief aside on anonymous functions
