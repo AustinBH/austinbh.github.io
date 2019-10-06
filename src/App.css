@@ -18,6 +18,10 @@ h2 {
   font-family: 'Comfortaa', cursive !important;
 }
 
+h4 {
+  font-family: 'Comfortaa', cursive !important;
+}
+
 .ui.grid>.row {
   padding-top: .5rem !important;
   padding-bottom: .5rem !important;
