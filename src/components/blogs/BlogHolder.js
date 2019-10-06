@@ -693,6 +693,58 @@ Comprehensions were the first thing to grab my eye when I was just starting to l
 * https://www.w3schools.com/python/ref_dictionary_items.asp`
 }
 
+const nine = {
+    title: 'Python Lambdas and You', text: `#Python Lambdas and You
+I have greatly enjoyed working with anonymous functions in JavaScript and as I have been learning Python, I came across anonymous functions in a different way. After digging around a bit, I have learned that many languages use lambdas as part of their anonymous functions.
+
+#### Brief aside on anonymous functions
+
+To put it simply, let's just use Wikipedia's definition for now. "An anonymous function is a function definition that is not bound to an identifier." This just means that our anonymous functions will be functions without names.
+
+Let's get back to what we are here for, let's take a look at what lambdas are in Python and how we can use them.
+
+## What is a lambda?
+
+In Python, a lambda is used to create anonymous functions. While it allows you to declare a function without a name (an Anonymous Function) it is also a specific keyword that has to be used in a special manner. For me, the Python documentation does a wonderful job of explaining what a lambda is: Lambda expressions (sometimes called lambda forms) are used to create anonymous functions. The expression \`lambda parameters: expression\` yields a function object.
+
+## What do they look like?
+
+We just saw what the syntax should look like, let's take a look at an example.
+\`\`\`python
+foo = lambda a: a * 2
+print(foo(2))
+# 4
+\`\`\`
+Wait a second, that function is all written on one line. Shouldn't we need to indent and specify what should be returned? This is one of the great parts about lambdas, they allow us to write a simple function in one line. We also don't need to use \`return\` since a lambda cannot contain statements such as \`return\`.
+
+## Why are they useful?
+
+I hinted a bit at some of the benefits of lambdas in the last section, the most important being the lack of a \`return\` statement. This is good for several reasons, first, it simplifies our lambda expression even further. If our main goal with a lambda is to write a short one line function not needing to include a return statement will make it six characters easier.
+
+Anonymous functions are not specific to Python but lambdas are also not used in every language. For example, in JavaScript, an anonymous function is declared by not naming the function rather than using the keyword \`lambda\`.
+
+\`\`\`javascript
+// JavaScript
+let foo = a => a + 2
+console.log(foo(2))
+// 4
+\`\`\`
+\`\`\`python
+# Python
+foo = lambda a: a + 2
+print(foo(2))
+# 4
+\`\`\`
+Both of these examples are anonymous function declarations. You can see several of the syntactic similarities, the lack of a \`return\` statement, and the argument, expression syntax for example are very similar. The arrow function in the JavaScript example allows both of these functions to look the same which helps us to understand what they are doing.
+
+Since both of these functions are doing the same thing we can take our JavaScript or Python knowledge and apply it to the opposite language. This is one of the great benefits to understanding anonymous functions, is that they are used in many languages so if you are able to understand them in one, you can take that understanding and use it to more easily understanding them in another.
+
+## References
+
+* https://en.wikipedia.org/wiki/Anonymous_function
+* https://docs.python.org/3/reference/expressions.html
+* https://www.w3schools.com/python/python_lambda.asp`}
+
 export const blogs = [
     one,
     two,
@@ -701,6 +753,7 @@ export const blogs = [
     five,
     six,
     seven,
-    eight
+    eight,
+    nine
 ]
 
