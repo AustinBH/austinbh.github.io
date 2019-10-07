@@ -97,6 +97,16 @@ pre code {
   margin-top: 25px !important;
 }
 
+.ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu {
+  width: 85px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu:hover {
+  width: 170px;
+}
+
 @media only screen and (max-width: 800px) {
   .skills-image {
     width: 26px;
