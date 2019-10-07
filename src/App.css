@@ -115,4 +115,15 @@ pre code {
   .project-info-row {
     height: inherit;
   }
+  .section-holder {
+    width: 50%;
+  }
+  .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu {
+    width: 90px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu:hover {
+    width: 90px;
+  }
 }
