@@ -97,6 +97,14 @@ pre code {
   margin-top: 25px !important;
 }
 
+.ui.button:hover {
+  box-shadow: 0px 0px 8px 7px #ccc;
+}
+
+.ui.teal.buttons:hover {
+  box-shadow: 0px 0px 8px 7px #ccc;
+}
+
 .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu {
   width: 85px;
   -webkit-transition: width 1s;

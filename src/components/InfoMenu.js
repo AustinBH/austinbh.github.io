@@ -18,7 +18,7 @@ const InfoMenu = props => {
                     visible
                 >
                     <Menu.Item icon='home' as={NavLink} exact to='/' activeClassName='active' name='Home'/>
-                    <Menu.Item icon='map' as={NavLink} exact to='/about' activeClassName='active' name='About' />
+                    <Menu.Item icon='user circle' as={NavLink} exact to='/about' activeClassName='active' name='About' />
                     <Menu.Item icon='file code' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file alternate' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />
                     <Menu.Item icon='book' as={NavLink} exact to={`/blog/${blogs.length}`} activeClassName='active' name='Blog' />
