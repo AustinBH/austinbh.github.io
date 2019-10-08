@@ -10,6 +10,7 @@ import ReactLogo from '../../logo.svg'
 import Redux from '../../images/skills/Redux_logo.svg'
 import Postgres from '../../images/skills/Postgresql_elephant.svg'
 import Python from '../../images/skills/Python_logo.svg'
+import Node from '../../images/skills/Node_js.svg'
 
 const TechnicalSkills = props => {
 
@@ -171,6 +172,17 @@ const TechnicalSkills = props => {
                         on='click'
                         pinned
                         trigger={<Image src={Python} alt='Python logo' className='skills-image' centered />}
+                    />
+                </Grid.Column>
+                <Grid.Column>
+                    <Popup
+                        inverted
+                        size='tiny'
+                        position='top center'
+                        content='Node.js'
+                        on='click'
+                        pinned
+                        trigger={<Image src={Node} alt='Node.js logo' className='skills-image' centered />}
                     />
                 </Grid.Column>
             </Grid.Row>

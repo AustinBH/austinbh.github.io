@@ -16,8 +16,8 @@ const Blog = props => {
     }
 
     const handleClick = input => {
-        console.log(input)
-        props.history.push(`/blog/${input+1}`)
+        props.history.push(`/blog/${input}`)
+        window.scrollTo(0,0)
     }
 
     return <Segment className='section-holder' style={{ textAlign: 'left' }}>

@@ -1,6 +1,6 @@
 // Adding blog posts
 const one = {
-    title: 'How I learned to stop worrying and love the MVP', preview: 'Recap of my first project at Flatiron School. I cover what an MVP is and why it helped me when working on my first project.', text: `# How I learned to Stop Worrying and Love the MVP
+    title: 'How I learned to stop worrying and love the MVP', id: 1, preview: 'Recap of my first project at Flatiron School. I cover what an MVP is and why it helped me when working on my first project.', text: `# How I learned to Stop Worrying and Love the MVP
 When I first started looking into coding bootcamps, I had no idea if this was something that I wanted to do. After a few months I found a few different ones I was interested in but I still felt unsure. Even after enrolling in the Software Engineering course at the Flatiron school I was unsure about my decision.
 
 As I learned more about Ruby and object orientation I felt more confident in the material and my ability to understand it but something was still missing. I didn't have that 'Aha' moment where I knew that I had made the correct decision. It was not until we began working on our CLI application projects last week that I felt certain that this was something that I wanted to do.
@@ -21,7 +21,7 @@ You can find RJ and I's project on [Github](https://github.com/vizushu/module-on
 }
 
 const two = {
-    title: 'Rails Layouts', preview: 'An explanation of what Rails layouts are and how they can be used in a Rails application.', text: `# Rails Layouts
+    title: 'Rails Layouts', id: 2, preview: 'An explanation of what Rails layouts are and how they can be used in a Rails application.', text: `# Rails Layouts
 In my coding bootcamp we have started the Rails section of the curriculum. Last week it seemed very overwhelming, as if there was so much Rails content that I would not be able to understand enough to build an app.
 
 At the start of this week, I still feel that I have barely scraped the surface of what Rails can really do.However, I did find one thing in particular that I really enjoy about the Rails apps we have made so far.
@@ -59,7 +59,7 @@ Layouts are an excellent way of keeping your code dry as something such as a 'Ho
 }
 
 const three = {
-    title: 'For Loops, for...of, and forEach Oh My!', preview: 'An article on looping in JavaScript. Although it is mainly focused on iterating over an array, I do cover general looping syntax.', text: `# For Loops, for...of, and forEach Oh My!
+    title: 'For Loops, for...of, and forEach Oh My!', id: 3, preview: 'An article on looping in JavaScript. Although it is mainly focused on iterating over an array, I do cover general looping syntax.', text: `# For Loops, for...of, and forEach Oh My!
 As someone who has spent the better part of the past month and a half learning and writing in Ruby, transitioning to Javascript has been a bit disorienting.
 
 Arrays in particular are a type of data that I have had the opportunity to play around with quite a bit over the past month and a half. As a result of using primarily Ruby, I am quite familiar with the each enumerable.
@@ -159,7 +159,7 @@ One particular proverb that I have heard quite a few times is "There is more tha
 When looking at the 3 different iterators above, I can say that the for ... of statement is particularly clear to me. I will undoubtedly have to use for loops much more often as I continue my Javascript journey but for now, I have found a particular way of iterating that makes the most sense to me.`
 }
 const four = {
-    title: 'Classes as an Organizational Tool', preview: 'An explanation of what JavaScript classes are and how they can be used to organize and simplify your code.', text: `# Classes as an Organizational Tool
+    title: 'Classes as an Organizational Tool', id: 4, preview: 'An explanation of what JavaScript classes are and how they can be used to organize and simplify your code.', text: `# Classes as an Organizational Tool
 As someone who is currently in the react section of my coding bootcamp, I have been trying to get a better understanding of Javascript classes recently.
 
 Hopefully, by the end of this article you and I both have a better understanding of what Javascript classes are and how they work.
@@ -308,7 +308,7 @@ This also means that as we increase the complexity of our program and add more s
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function`
 }
 const five = {
-    title: 'Why You Should Use Arrow Functions in React', preview: 'An explanation of what arrow functions are in JavaScript and how they can be used in React. I also take and explain the stance that arrow functions should be used rather than .bind.', text: `# Why You Should Use Arrow Functions in React
+    title: 'Why You Should Use Arrow Functions in React', id: 5, preview: 'An explanation of what arrow functions are in JavaScript and how they can be used in React. I also take and explain the stance that arrow functions should be used rather than .bind.', text: `# Why You Should Use Arrow Functions in React
 The more time I have to work with Javascript, the more I am enjoying the language itself. When I was first learning Javascript a few weeks ago, we touched on arrow functions a bit. I understood how to write them and had some idea of what they did. However, it wasn't until we started getting into react that I really learned what arrow functions can do and why they are so advantageous.
 
 ## What are Arrow Functions
@@ -407,7 +407,7 @@ As long as you keep an eye on the definition of the 'this' keyword you will be f
 * https://reactjs.org/docs/components-and-props.html`
 }
 const six = {
-    title: "Spreadin' Out", preview: 'An explanation of the spread operator in JavaScript and how it works. This is a great tool that can be used in React applications.', text: `# Spreadin' Out
+    title: "Spreadin' Out", id: 6, preview: 'An explanation of the spread operator in JavaScript and how it works. This is a great tool that can be used in React applications.', text: `# Spreadin' Out
 What is the spread operator and why does it matter? This is a question that I thought about quite a bit as I started to get into React.
 
 As I continue my JavaScript journey I want to take advantage of these blogs to not only learn more about different features of the language but hopefully to be helpful to others who are trying to make sense of this wacky and powerful language.
@@ -484,7 +484,7 @@ There are plenty of non - destructive actions that we can use to update our stat
 }
 
 const seven = {
-    title: 'Learning a New Language', preview: 'An article explaining why I decided to learn Python after completing my time at the Flatiron Software Engineering bootcamp. It touches on the similarites between Python and JavaScript as well as why I am interested in Python.', text:` # Learning a New Language
+    title: 'Learning a New Language', id: 7, preview: 'An article explaining why I decided to learn Python after completing my time at the Flatiron Software Engineering bootcamp. It touches on the similarites between Python and JavaScript as well as why I am interested in Python.', text:` # Learning a New Language
 As a recent graduate of the Flatiron School's Web Development program, I have spent the past 4 months working with Ruby and JavaScript. I have been exposed to other languages in some capacity before but I had not tried to learn a new language and framework on my own.
 
 ## Why Python?
@@ -561,7 +561,7 @@ I am planning to be able to continue to practice Python using the Django web fra
 }
 
 const eight = {
-    title: 'How to Comprehend Comprehensions', preview: 'An explanation of comprehensions in Python. I explain what they are, how they work, and where they can be used.', text: `# How to comprehend Comprehensions
+    title: 'How to Comprehend Comprehensions', id: 8, preview: 'An explanation of comprehensions in Python. I explain what they are, how they work, and where they can be used.', text: `# How to comprehend Comprehensions
 Python has been a very fun language for me to learn. So far, the thing I have most enjoyed learning and using are comprehensions. When I first took a look at them, they did not make much sense to me and looked very odd. I would not say that I'm an expert now but I certainly have a much better idea of what they do now than I did a few weeks ago.
 
 Hopefully we all have a better understanding of what comprehensions are and what they can do by the end of this.
@@ -701,7 +701,7 @@ Comprehensions were the first thing to grab my eye when I was just starting to l
 }
 
 const nine = {
-    title: 'Python Lambdas and You', preview: 'An explanation of Lambdas in Python with a focus on anonymous functions in general. I use JavaScript anonymous functions to draw similarities but highlight the specific syntax of Python lambdas.', text: `# Python Lambdas and You
+    title: 'Python Lambdas and You', id: 9, preview: 'An explanation of Lambdas in Python with a focus on anonymous functions in general. I use JavaScript anonymous functions to draw similarities but highlight the specific syntax of Python lambdas.', text: `# Python Lambdas and You
 I have greatly enjoyed working with anonymous functions in JavaScript and as I have been learning Python, I came across anonymous functions in a different way. After digging around a bit, I have learned that many languages use lambdas as part of their anonymous functions.
 
 #### Brief aside on anonymous functions

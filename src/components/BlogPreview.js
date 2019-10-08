@@ -4,8 +4,8 @@ import { Card, Header, Button } from 'semantic-ui-react';
 
 const BlogPreview = props => {
     return <>
-        {blogs.reverse().map((blog, index) => {
-            return <Card key={index} className='blog-preview'>
+        {blogs.reverse().map(blog => {
+            return <Card key={blog.id} className='blog-preview'>
                 <Card.Header>
                     <Header as='h4'>
                         {blog.title}
@@ -15,7 +15,7 @@ const BlogPreview = props => {
                     {blog.preview}
                 </Card.Description>
                 <Card.Content extra>
-                    <Button onClick={() => props.handleOnClick(index)} color='vk' content='See More'/>
+                    <Button onClick={() => props.handleOnClick(blog.id)} color='vk' content='See More'/>
                 </Card.Content>
             </Card>
         })}
