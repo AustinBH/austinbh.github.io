@@ -756,6 +756,233 @@ Since both of these functions are doing the same thing we can take our JavaScrip
 * https://docs.python.org/3/reference/expressions.html
 * https://www.w3schools.com/python/python_lambda.asp`}
 
+const ten = {
+    title: 'The Four Pillars of Object Oriented Programming', id: 10, preview: 'An explanation of OOP and more specifically the Four Pillars of OOP.', text: `# The Four Pillars of Object Oriented Programming
+While not every programming language supports Object Oriented Programming, if you have dabbled with any programming language or browsed reddit, you have undoubtedly come across OOP in some fashion.
+
+Although I just completed a coding bootcamp, we never talked about the four pillars of OOP. Object Oriented Programming was certainly a part of the curriculum and I have used it on all of my projects but I never learned the textbook definitions.
+
+I recently had an interview where I was asked about the four pillars of Object Oriented Programming and wanted to write this article to better understand them myself but hopefully also as a resource for others. We will cover the four pillars of Object Oriented Programming but let's first at least get some understanding of what OOP means.
+
+## OOP Definition
+
+There are plenty of definitions which are a mouthful like Wikipedia's:
+
+\`Object- oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields(often known as attributes or properties), and code, in the form of procedures(often known as methods). A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OOP, computer programs are designed by making them out of objects that interact with one another.\`
+
+We'll break it down by each sentence and hopefully have a succinct and cohesive definition when we are done. Starting with the first sentence lets say that:
+
+\`OOP is a programming paradigm based on the concept of objects which contain data in the form of attributes and code in the form of methods.\`
+
+The first sentence is pretty straightforward here but we can take out some of the explanatory language. Moving on to the second sentence:
+
+\`One feature of objects is the object's methods which can access and change the attributes of the object.Objects also have a notion of 'this' or 'self' which allows them to modify themselves.\`
+
+We actually broke that sentence out into two but hopefully it makes more sense this way. Finally for the third sentence:
+
+\`In OOP, programs are designed by making them with objects that interact with each other.\`
+
+Ok so we have broken up all of these sentences let's put them together and see if we have a coherent definition:
+
+\`OOP is a programming paradigm based on the concept of objects which contain data in the form of attributes and code in the form of methods.One feature of these objects is the object's methods which can access and change the attributes of the object. Objects also have a notion of 'this' or 'self' which allows them to modify themselves. In OOP, programs are designed by making them with objects that interact with each other.\`
+
+Ok it does look very similar to the Wikipedia definition but we did change a few things.Hopefully this definition makes a bit more sense and we can use it as a starting point.
+
+## OOP Examples
+
+To keep this simple, we will just look at 3 languages, JavaScript, Python, and Ruby.For each we will create a rectangle class and create a getter method to return the area of a rectangle.
+
+\`\`\`javascript
+// JavaScript
+class Rectangle {
+   constructor(width, height){
+       this.width = width;
+       this.height = height;
+   }
+   get area() {
+       return this.width * this.height
+   }
+}
+
+const foo = new Rectangle(2,3)
+console.log(foo.area)
+// 6
+\`\`\`
+
+\`\`\`python
+# Python
+class Rectangle():
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def get_area(self):
+        return self.width * self.height
+
+foo = Rectangle(2,3)
+print(foo.get_area())
+# 6
+\`\`\`
+
+\`\`\`ruby
+# Ruby
+class Rectangle
+    attr_reader :height, :width
+    def initialize(height, width)
+        @height = height
+        @width = width
+    end
+    def area
+        return @height * @width
+    end
+end
+
+foo = Rectangle.new(2,3)
+puts foo.area
+# 6
+\`\`\`
+Ok so now we have an idea of what a simple class looks like in a few languages.All of the above examples let us access the height and width of our Rectangle as well its area.Let's use these examples to break down our four pillars.
+
+## Abstraction
+
+Abstraction is essentially hiding the inner workings of a class and just allowing the necessary portions be visible.Of our 3 above examples, we can use the \`private\` keyword in Ruby but Python and JavaScript do not support private declarations and expressions in the same manner.
+
+\`\`\`ruby
+class Rectangle
+    attr_reader :height, :width
+    def initialize(height, width)
+        @height = height
+        @width = width
+    end
+    private
+    def area
+        return @height * @width
+    end
+end
+
+foo = Rectangle.new(2,3)
+puts foo.area
+# NoMethodError
+\`\`\`
+So in the above example, I have made the area method a private method which means that we do not have access to it from outside the class.Since OOP is based on using the real world to model our code, let's take the example of a car. One example of Abstraction with a car would be the engine. As a driver, we do not need to understand how the engine works or how to build one ourselves to be able to drive the car. The engine is abstracted away from the driver but is still used to drive the car.
+
+## Encapsulation
+
+Encapsulation encompasses the main elements of abstraction because it refers to the usage of a class to encapsulate your program.In that sense  a class is like a wrapper and it \`encapsulates\` the attributes and methods contained within.In taking a look at all 3 of our original examples, we see the class declaration which is the wrapper in our analogy.
+
+To understand encapsulation in a real world sense, let's look back on our car example. The frame is encapsulation, it wraps the entire car and supports it but it also allows for the abstraction by surrounding the entire vehicle. The interior then does the job of abstracting out the functional parts of the car such as the engine that we don't need to understand in order to use the car.
+
+## Inheritance
+
+Inheritance is all about how classes can interact with each other.Inheritance allows classes to inherit from each other, allowing you to keep your code dry and have access to methods or attributes you have already declared.
+
+Here is an example of what inheritance looks like in Python.
+
+\`\`\`python
+class Rectangle():
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def get_area(self):
+        return self.width * self.height
+
+
+class Square(Rectangle):
+    def __init__(self, width, height):
+        if width == height:
+            super().__init__(width, height)
+        else:
+            raise Exception('Squares have an equal width and height')
+
+foo = Square(2,3)
+# Exception: Squares have an equal width and height
+\`\`\`
+One little thing to note here is that calling super with no arguments like this will only work in Python 3 + for Python 2 we need to use the arguments of the base class and self for super to work as expected.
+
+\`\`\`python
+def __init__(self, width, height):
+    if width == height:
+            super(Rectangle, self).__init__(width, height)
+        else:
+            raise Exception('Squares have an equal width and height')
+\`\`\`
+
+Ok back to inheritance, our Square class in inheriting the width and __init__ and get_area methods from our Rectangle class but we are raising an exception if the width and height are not equal.So we have access to all of the code that we wrote specifically for our Rectangle class but we also get the added checking for if it is actually a square before we initialize an instance of the Square class.
+
+In a real world example, a truck and suv that are manufactured by the same company may use the same engine for both their truck and suv.If their truck and suv are built to do similar things, there is no reason for the company to make an entirely new engine just to do the same thing for their suv and truck.This might be a bit of a stretch but I hope it gets the point across that Inheritance allows you to use less energy(DRYer code).
+
+## Polymorphism
+
+The concept of Polymorphism refers to different objects being able to have many forms.What I mean by that is that we can create a class which inherits from another class which has the same method that the parent class does but it returns a different value.Let's take a look at that with our Rectangle class and a new Triangle class.
+
+\`\`\`javascript
+class Rectangle {
+   constructor(width, height){
+       this.width = width;
+       this.height = height;
+   }
+   get area() {
+       return this.width * this.height
+   }
+}
+
+class RightTriangle extends Rectangle {
+    constructor(width, height){
+        super(width, height)
+    }
+    get area() {
+        return this.width * this.height / 2
+    }
+}
+
+const foo = new Rectangle(2,3)
+const bar = new RightTriangle(2,3)
+console.log(bar.area)
+console.log(foo.area)
+// 3
+// 6
+\`\`\`
+
+So here we have our RightTriangle class which has a width and height just like a rectangle but our area method returns a different amount even though we created our Rectangle and RightTriangle instances with the same width and height.Our parent Rectangle class does not have access to the area method from our RightTriangle class.Also, because we have overwritten that method in our RightTriangle class, it does not have access to the Rectangle class' area method. Ultimately, polymorphism is the ability for these two classes to do the same thing in a different way.
+
+If we go back to the truck and suv example from the inheritance section, even if a truck and suv have the exact same length and engine, they are not the same.The truck and suv look differently and the same situation would be handled differently by both.
+
+## Recap
+
+### Abstraction
+
+Only making certain aspects of the program accessible from outside of the class (private methods).
+
+### Encapsulation
+
+Wrapping up the methods and attributes of the class within the class itself.
+
+### Inheritance
+
+A class' ability to inherit attributes and methods from other classes (keeps your code DRY).
+
+### Polymorphism
+
+Classes that inherit from each other being able to invoke the same method and receive a different result.
+
+Hopefully this gives you a better understanding of the four pillars of Object Oriented Programming.I certainly have a better understanding now.
+
+Please take a look at the following resources for more information on the four pillars of Object Oriented Programming.
+
+## Four Pillars Resources
+
+* http://www.corejavaguru.com/java/oop/4pillars
+* https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/
+* https://www.quora.com/What-are-the-4-pillars-of-OOPs
+
+## Additional References
+
+* https://en.wikipedia.org/wiki/Object-oriented_programming
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+* https://www.w3schools.com/python/python_classes.asp
+* https://www.geeksforgeeks.org/getter-and-setter-in-python/
+* https://ruby-doc.org/core-2.6.5/Class.html`
+}
+
 export const blogs = [
     one,
     two,
@@ -765,6 +992,7 @@ export const blogs = [
     six,
     seven,
     eight,
-    nine
+    nine,
+    ten
 ]
 

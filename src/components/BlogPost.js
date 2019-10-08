@@ -6,7 +6,7 @@ import CodeBlock from './blogs/CodeBlock';
 const BlogPost = props => {
 
     const findPost = () => {
-        let postNum = props.match.url.slice(-1)
+        let postNum = props.match.url.split('/').slice(-1)[0]
         return <ReactMarkdown source={blogs[postNum-1].text} renderers={{code: CodeBlock}}/>
     }
 

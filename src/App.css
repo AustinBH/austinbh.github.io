@@ -55,6 +55,11 @@ pre code {
   border-radius: 10px;
 }
 
+p code {
+  background-color: aliceblue;
+  color: #557ADB;
+}
+
 .project-image {
   width: 90% !important;
   height: 75%;
