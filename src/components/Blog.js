@@ -3,6 +3,7 @@ import { Segment, Icon, Header, Grid, Dropdown, Button } from 'semantic-ui-react
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import BlogPost from './BlogPost';
 import { blogs } from './blogs/BlogHolder';
+import BlogPreview from './BlogPreview';
 
 const Blog = props => {
     
@@ -12,6 +13,11 @@ const Blog = props => {
         } else if (ev.which === 13) {
             props.history.push('/')
         }
+    }
+
+    const handleClick = input => {
+        console.log(input)
+        props.history.push(`/blog/${input+1}`)
     }
 
     return <Segment className='section-holder' style={{ textAlign: 'left' }}>
@@ -41,9 +47,12 @@ const Blog = props => {
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                    <Grid.Column>
+                    <Grid.Column width={16}>
                         {props.match && props.match.path ?
-                            <Route path={`${props.match.path}/:id`} render={props => <BlogPost {...props} />} />
+                            <>
+                                <Route path={`${props.match.path}`} exact render={props => <BlogPreview {...props} handleOnClick={handleClick} />} />
+                                <Route path={`${props.match.path}/:id`} exact render={props => <BlogPost {...props} />} />
+                            </>
                             :
                             null
                         }

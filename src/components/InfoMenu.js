@@ -5,7 +5,6 @@ import About from './About';
 import Projects from './Projects';
 import Resume from './Resume';
 import Blog from './Blog';
-import { blogs } from './blogs/BlogHolder';
 
 const InfoMenu = props => {
 
@@ -21,7 +20,7 @@ const InfoMenu = props => {
                     <Menu.Item icon='user circle' as={NavLink} exact to='/about' activeClassName='active' name='About' />
                     <Menu.Item icon='file code' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file alternate' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />
-                    <Menu.Item icon='book' as={NavLink} exact to={`/blog/${blogs.length}`} activeClassName='active' name='Blog' />
+                    <Menu.Item icon='book' as={NavLink} exact to={`/blog`} activeClassName='active' name='Blog' />
                 </Sidebar>
                 <Switch>
                     <Route path='/' exact render={null} />
