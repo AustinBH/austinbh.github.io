@@ -776,7 +776,7 @@ We'll break it down by each sentence and hopefully have a succinct and cohesive 
 
 The first sentence is pretty straightforward here but we can take out some of the explanatory language. Moving on to the second sentence:
 
-\`One feature of objects is the object's methods which can access and change the attributes of the object.Objects also have a notion of 'this' or 'self' which allows them to modify themselves.\`
+\`One feature of objects is the object's methods which can access and change the attributes of the object. Objects also have a notion of 'this' or 'self' which allows them to modify themselves.\`
 
 We actually broke that sentence out into two but hopefully it makes more sense this way. Finally for the third sentence:
 
@@ -784,13 +784,13 @@ We actually broke that sentence out into two but hopefully it makes more sense t
 
 Ok so we have broken up all of these sentences let's put them together and see if we have a coherent definition:
 
-\`OOP is a programming paradigm based on the concept of objects which contain data in the form of attributes and code in the form of methods.One feature of these objects is the object's methods which can access and change the attributes of the object. Objects also have a notion of 'this' or 'self' which allows them to modify themselves. In OOP, programs are designed by making them with objects that interact with each other.\`
+\`OOP is a programming paradigm based on the concept of objects which contain data in the form of attributes and code in the form of methods. One feature of these objects is the object's methods which can access and change the attributes of the object. Objects also have a notion of 'this' or 'self' which allows them to modify themselves. In OOP, programs are designed by making them with objects that interact with each other.\`
 
-Ok it does look very similar to the Wikipedia definition but we did change a few things.Hopefully this definition makes a bit more sense and we can use it as a starting point.
+Ok it does look very similar to the Wikipedia definition but we did change a few things. Hopefully this definition makes a bit more sense and we can use it as a starting point.
 
 ## OOP Examples
 
-To keep this simple, we will just look at 3 languages, JavaScript, Python, and Ruby.For each we will create a rectangle class and create a getter method to return the area of a rectangle.
+To keep this simple, we will just look at 3 languages, JavaScript, Python, and Ruby. For each we will create a rectangle class and create a getter method to return the area of a rectangle.
 
 \`\`\`javascript
 // JavaScript
@@ -840,11 +840,11 @@ foo = Rectangle.new(2,3)
 puts foo.area
 # 6
 \`\`\`
-Ok so now we have an idea of what a simple class looks like in a few languages.All of the above examples let us access the height and width of our Rectangle as well its area.Let's use these examples to break down our four pillars.
+Ok so now we have an idea of what a simple class looks like in a few languages. All of the above examples let us access the height and width of our Rectangle as well its area. Let's use these examples to break down our four pillars.
 
 ## Abstraction
 
-Abstraction is essentially hiding the inner workings of a class and just allowing the necessary portions be visible.Of our 3 above examples, we can use the \`private\` keyword in Ruby but Python and JavaScript do not support private declarations and expressions in the same manner.
+Abstraction is essentially hiding the inner workings of a class and just allowing the necessary portions be visible. Of our 3 above examples, we can use the \`private\` keyword in Ruby but Python and JavaScript do not support private declarations and expressions in the same manner.
 
 \`\`\`ruby
 class Rectangle
@@ -863,17 +863,17 @@ foo = Rectangle.new(2,3)
 puts foo.area
 # NoMethodError
 \`\`\`
-So in the above example, I have made the area method a private method which means that we do not have access to it from outside the class.Since OOP is based on using the real world to model our code, let's take the example of a car. One example of Abstraction with a car would be the engine. As a driver, we do not need to understand how the engine works or how to build one ourselves to be able to drive the car. The engine is abstracted away from the driver but is still used to drive the car.
+So in the above example, I have made the area method a private method which means that we do not have access to it from outside the class. Since OOP is based on using the real world to model our code, let's take the example of a car. One example of Abstraction with a car would be the engine. As a driver, we do not need to understand how the engine works or how to build one ourselves to be able to drive the car. The engine is abstracted away from the driver but is still used to drive the car.
 
 ## Encapsulation
 
-Encapsulation encompasses the main elements of abstraction because it refers to the usage of a class to encapsulate your program.In that sense  a class is like a wrapper and it \`encapsulates\` the attributes and methods contained within.In taking a look at all 3 of our original examples, we see the class declaration which is the wrapper in our analogy.
+Encapsulation encompasses the main elements of abstraction because it refers to the usage of a class to encapsulate your program. In that sense  a class is like a wrapper and it \`encapsulates\` the attributes and methods contained within. In taking a look at all 3 of our original examples, we see the class declaration which is the wrapper in our analogy.
 
 To understand encapsulation in a real world sense, let's look back on our car example. The frame is encapsulation, it wraps the entire car and supports it but it also allows for the abstraction by surrounding the entire vehicle. The interior then does the job of abstracting out the functional parts of the car such as the engine that we don't need to understand in order to use the car.
 
 ## Inheritance
 
-Inheritance is all about how classes can interact with each other.Inheritance allows classes to inherit from each other, allowing you to keep your code dry and have access to methods or attributes you have already declared.
+Inheritance is all about how classes can interact with each other. Inheritance allows classes to inherit from each other, allowing you to keep your code dry and have access to methods or attributes you have already declared.
 
 Here is an example of what inheritance looks like in Python.
 
@@ -906,13 +906,13 @@ def __init__(self, width, height):
             raise Exception('Squares have an equal width and height')
 \`\`\`
 
-Ok back to inheritance, our Square class in inheriting the width and __init__ and get_area methods from our Rectangle class but we are raising an exception if the width and height are not equal.So we have access to all of the code that we wrote specifically for our Rectangle class but we also get the added checking for if it is actually a square before we initialize an instance of the Square class.
+Ok back to inheritance, our Square class in inheriting the width and __init__ and get_area methods from our Rectangle class but we are raising an exception if the width and height are not equal. So we have access to all of the code that we wrote specifically for our Rectangle class but we also get the added checking for if it is actually a square before we initialize an instance of the Square class.
 
-In a real world example, a truck and suv that are manufactured by the same company may use the same engine for both their truck and suv.If their truck and suv are built to do similar things, there is no reason for the company to make an entirely new engine just to do the same thing for their suv and truck.This might be a bit of a stretch but I hope it gets the point across that Inheritance allows you to use less energy(DRYer code).
+In a real world example, a truck and suv that are manufactured by the same company may use the same engine for both their truck and suv. If their truck and suv are built to do similar things, there is no reason for the company to make an entirely new engine just to do the same thing for their suv and truck. This might be a bit of a stretch but I hope it gets the point across that Inheritance allows you to use less energy(DRYer code).
 
 ## Polymorphism
 
-The concept of Polymorphism refers to different objects being able to have many forms.What I mean by that is that we can create a class which inherits from another class which has the same method that the parent class does but it returns a different value.Let's take a look at that with our Rectangle class and a new Triangle class.
+The concept of Polymorphism refers to different objects being able to have many forms. What I mean by that is that we can create a class which inherits from another class which has the same method that the parent class does but it returns a different value. Let's take a look at that with our Rectangle class and a new Triangle class.
 
 \`\`\`javascript
 class Rectangle {
@@ -942,9 +942,9 @@ console.log(foo.area)
 // 6
 \`\`\`
 
-So here we have our RightTriangle class which has a width and height just like a rectangle but our area method returns a different amount even though we created our Rectangle and RightTriangle instances with the same width and height.Our parent Rectangle class does not have access to the area method from our RightTriangle class.Also, because we have overwritten that method in our RightTriangle class, it does not have access to the Rectangle class' area method. Ultimately, polymorphism is the ability for these two classes to do the same thing in a different way.
+So here we have our RightTriangle class which has a width and height just like a rectangle but our area method returns a different amount even though we created our Rectangle and RightTriangle instances with the same width and height. Our parent Rectangle class does not have access to the area method from our RightTriangle class. Also, because we have overwritten that method in our RightTriangle class, it does not have access to the Rectangle class' area method. Ultimately, polymorphism is the ability for these two classes to do the same thing in a different way.
 
-If we go back to the truck and suv example from the inheritance section, even if a truck and suv have the exact same length and engine, they are not the same.The truck and suv look differently and the same situation would be handled differently by both.
+If we go back to the truck and suv example from the inheritance section, even if a truck and suv have the exact same length and engine, they are not the same. The truck and suv look differently and the same situation would be handled differently by both.
 
 ## Recap
 
@@ -964,7 +964,7 @@ A class' ability to inherit attributes and methods from other classes (keeps you
 
 Classes that inherit from each other being able to invoke the same method and receive a different result.
 
-Hopefully this gives you a better understanding of the four pillars of Object Oriented Programming.I certainly have a better understanding now.
+Hopefully this gives you a better understanding of the four pillars of Object Oriented Programming. I certainly have a better understanding now.
 
 Please take a look at the following resources for more information on the four pillars of Object Oriented Programming.
 
