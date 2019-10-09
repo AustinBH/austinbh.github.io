@@ -5,9 +5,15 @@ const Signature = props => {
     return <footer>
         <Grid columns={1} className='copyright' celled='internally'>
             <Grid.Row>
-                <Grid.Column>
-                    <p><Icon name='copyright outline' /> Austin Harlow</p>
-                </Grid.Column>
+                {props.dark !== false ?
+                    <Grid.Column style={{ color: 'white' }}>
+                        <p><Icon name='copyright outline' /> Austin Harlow</p>
+                    </Grid.Column>
+                :
+                    <Grid.Column>
+                        <p><Icon name='copyright outline' /> Austin Harlow</p>
+                    </Grid.Column>
+                }
             </Grid.Row>
         </Grid>
     </footer>
