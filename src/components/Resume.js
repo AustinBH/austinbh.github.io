@@ -3,7 +3,7 @@ import { Segment, Header, Icon, Button } from 'semantic-ui-react';
 import Experience from './ResumeAdditions/Experience';
 import Education from './ResumeAdditions/Education';
 import TechnicalSkills from './ResumeAdditions/TechnicalSkills';
-import Certifications from './ResumeAdditions/Certifications';
+import Certificates from './ResumeAdditions/Certificates';
 
 const Resume = props => {
 
@@ -26,7 +26,7 @@ const Resume = props => {
         With experience in Ruby on Rails, JavaScript, and React and a background in customer service, I discovered web development through my friends and coworkers at Amazon.
         I grew up hiking all over the American West, and I bring the same tenacity and creativity to every project and assignment that I developed when learning how to live on nothing but what fish I could catch and what I had in my pack.</p>
         <TechnicalSkills/>
-        <Certifications />
+        <Certificates />
         <Experience/>
         <Education/>
     </Segment>

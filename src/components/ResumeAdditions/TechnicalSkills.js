@@ -39,7 +39,7 @@ const TechnicalSkills = props => {
         :
             null
         }
-        <Grid columns={5} celled='internally' textAlign='center'>
+        <Grid columns={5} celled='internally' textAlign='center' stackable>
             <Grid.Row>
                 <Grid.Column>
                     <Popup
@@ -161,7 +161,7 @@ const TechnicalSkills = props => {
                 Learning...
             </Header>
         </Divider>
-        <Grid columns={4} celled='internally' textAlign='center'>
+        <Grid columns={4} celled='internally' textAlign='center' stackable>
             <Grid.Row>
                 <Grid.Column>
                     <Popup

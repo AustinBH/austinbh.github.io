@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button, Divider, Header, Icon, Grid } from 'semantic-ui-react';
 
-const Certifications = props => {
+const Certificates = props => {
     return <>
         <Divider horizontal>
             <Header as='h3'>
                 <Icon name='certificate' />
-                Certifications
+                Certificates
             </Header>
         </Divider>
         <Grid columns='1'>
@@ -19,4 +19,4 @@ const Certifications = props => {
     </>
 }
 
-export default Certifications;
+export default Certificates;
