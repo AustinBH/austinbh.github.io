@@ -21,7 +21,7 @@ const InfoMenu = props => {
                     <Menu.Item icon='file code' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file alternate' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />
                     <Menu.Item icon='book' as={NavLink} exact to={`/blog`} activeClassName='active' name='Blog' />
-                    <Menu.Item icon='moon' name='Dark Mode' onClick={() => props.setDark(!props.dark)}/>
+                    {props.dark ? <Menu.Item icon='sun' name='Light Mode' onClick={() => props.setDark(!props.dark)} /> : <Menu.Item icon='moon' name='Dark Mode' onClick={() => props.setDark(!props.dark)} />}
                 </Sidebar>
                 <Switch>
                     <Route path='/' exact render={null} />
