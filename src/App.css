@@ -10,6 +10,18 @@
   color: black;
 }
 
+.two {
+  background-color: #2F4858;
+}
+
+.light {
+  color: black;
+}
+
+.dark {
+  color: white;
+}
+
 h1 {
   font-family: 'Comfortaa', cursive !important;
 }
