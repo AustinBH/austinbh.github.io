@@ -6,7 +6,7 @@ import Signature from './components/Signature';
 
 const App = props => {
 
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(true)
 
   return (
     dark ?
