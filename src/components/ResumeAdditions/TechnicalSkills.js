@@ -12,6 +12,23 @@ import Postgres from '../../images/skills/Postgresql_elephant.svg'
 import Python from '../../images/skills/Python_logo.svg'
 import Node from '../../images/skills/Node_js.svg'
 
+const skills = [
+    { lang: 'Ruby', image: Ruby, alt: 'Ruby logo' },
+    { lang: 'Ruby on Rails', image: Rails, alt: 'Ruby on Rails logo' },
+    { lang: 'HTML5', image: HTML, alt: 'HTML5 logo' },
+    { lang: 'CSS3', image: CSS, alt: 'CSS3 logo' },
+    { lang: 'JavaScript', image: JS, alt: 'JavaScript logo' },
+    { lang: 'React', image: ReactLogo, alt: 'React logo' },
+    { lang: 'Redux', image: Redux, alt: 'Redux logo' },
+    { lang: 'Semantic UI', image: 'https://react.semantic-ui.com/logo.png', alt: 'Semantic UI logo' },
+    { lang: 'Bootstrap', image: Bootstrap, alt: 'Bootstrap logo' },
+    { lang: 'PostgreSQL', image: Postgres, alt: 'PostreSQL logo' }
+]
+const learning = [
+    {lang: 'Python', image: Python, alt: 'Python logo'},
+    {lang: 'Node.js', image: Node, alt: 'Node.js logo'}
+]
+
 const TechnicalSkills = props => {
 
     const [show, setShow] = useState(true)
@@ -39,121 +56,20 @@ const TechnicalSkills = props => {
         :
             null
         }
-        <Grid columns={5} celled='internally' textAlign='center' stackable>
-            <Grid.Row>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='Ruby'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Ruby} alt='Ruby logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='Ruby on Rails'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Rails} alt='Ruby on Rails logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='HTML5'
-                        on='click'
-                        pinned
-                        trigger={<Image src={HTML} alt='HTML5 logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='CSS3'
-                        on='click'
-                        pinned
-                        trigger={<Image src={CSS} alt='CSS3 logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='JavaScript'
-                        on='click'
-                        pinned
-                        trigger={<Image src={JS} alt='JavaScript logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='bottom center'
-                        content='React'
-                        on='click'
-                        pinned
-                        trigger={<Image src={ReactLogo} alt='React logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='bottom center'
-                        content='Redux'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Redux} alt='Redux logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='bottom center'
-                        content='Semantic UI'
-                        on='click'
-                        pinned
-                        trigger={<Image src='https://react.semantic-ui.com/logo.png' alt='Semantic UI logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='bottom center'
-                        content='Bootstrap'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Bootstrap} alt='Bootstrap logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='bottom center'
-                        content='PostgreSQL'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Postgres} alt='Postgresql logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-            </Grid.Row>
+        <Grid columns={10} celled='internally' textAlign='center' stackable>
+                {skills.map((skill, index) => {
+                    return <Grid.Column key={index}>
+                        <Popup
+                            inverted
+                            size='tiny'
+                            position='bottom center'
+                            content={skill.lang}
+                            on='click'
+                            pinned
+                            trigger={<Image src={skill.image} alt={skill.alt} className='skills-image' centered />}
+                        />
+                    </Grid.Column>
+                })}
         </Grid>
         <Divider horizontal>
             <Header as='h3'>
@@ -161,30 +77,21 @@ const TechnicalSkills = props => {
                 Learning...
             </Header>
         </Divider>
-        <Grid columns={4} celled='internally' textAlign='center' stackable>
+        <Grid columns={10} celled='internally' textAlign='center' stackable>
             <Grid.Row>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='Python'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Python} alt='Python logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
-                <Grid.Column>
-                    <Popup
-                        inverted
-                        size='tiny'
-                        position='top center'
-                        content='Node.js'
-                        on='click'
-                        pinned
-                        trigger={<Image src={Node} alt='Node.js logo' className='skills-image' centered />}
-                    />
-                </Grid.Column>
+                {learning.map((skill, index) => {
+                    return <Grid.Column key={index+10}>
+                        <Popup
+                            inverted
+                            size='tiny'
+                            position='top center'
+                            content={skill.lang}
+                            on='click'
+                            pinned
+                            trigger={<Image src={skill.image} alt={skill.alt} className='skills-image' centered />}
+                        />
+                    </Grid.Column>
+                })}
             </Grid.Row>
         </Grid>
     </div>

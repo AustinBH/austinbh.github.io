@@ -10,13 +10,10 @@ const BlogPost = props => {
         return <ReactMarkdown source={blogs[postNum-1].text} renderers={{code: CodeBlock}}/>
     }
 
-    return <>
-        {props.match && props.match.url ?
-            findPost()
-            :
-            null
-        }
-    </>
+    return props.match && props.match.url ?
+        findPost()
+    :
+        null
 }
 
 export default BlogPost;

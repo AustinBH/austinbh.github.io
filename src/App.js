@@ -26,6 +26,7 @@ const App = props => {
 
   return (
       <div className={className}>
+        <div/>
         <Bio/>
         <InfoMenu setDark={swapMode} dark={dark}/>
         <Signature class={signatureClass} />

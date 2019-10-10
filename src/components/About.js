@@ -3,16 +3,7 @@ import { Segment, Header, Icon } from 'semantic-ui-react';
 
 const About = props => {
 
-    const handleEvent = (ev) => {
-        if (ev.type === 'click') {
-            props.history.push('/')
-        } else if (ev.which === 13) {
-            props.history.push('/')
-        }
-    }
-
     return <Segment className='section-holder'>
-        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleEvent} onKeyPress={handleEvent} tabIndex='0' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='info' circular />
             <Header.Content>About</Header.Content>

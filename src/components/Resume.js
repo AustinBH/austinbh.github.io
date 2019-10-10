@@ -7,17 +7,8 @@ import Certificates from './ResumeAdditions/Certificates';
 
 const Resume = props => {
 
-    const handleEvent = (ev) => {
-        if (ev.type === 'click') {
-            props.history.push('/')
-        } else if (ev.which === 13) {
-            props.history.push('/')
-        }
-    }
-
     return <Segment className='section-holder' style={{textAlign: 'left'}}>
         <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} href='https://learn.co/austin/resume' target='_blank' rel='noopener noreferrer'/>
-        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleEvent} onKeyPress={handleEvent} tabIndex='0' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular size='mini' />
             <Header.Content>Resume</Header.Content>

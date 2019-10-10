@@ -22,20 +22,10 @@
   color: white;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Comfortaa', cursive !important;
-}
-
-h2 {
-  font-family: 'Comfortaa', cursive !important;
-}
-
-h3 {
-  font-family: 'Comfortaa', cursive !important;
-}
-
-h4 {
-  font-family: 'Comfortaa', cursive !important;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .ui.grid>.row {
@@ -107,7 +97,9 @@ p code {
 }
 
 .copyright {
+  text-align: center;
   font-size: 12px;
+  padding-bottom: 10px;
 }
 
 .project-info-row {

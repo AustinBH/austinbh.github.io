@@ -6,16 +6,7 @@ import PokemonTeams from './projects/PokemonTeams';
 
 const Projects = props => {
 
-    const handleEvent = (ev) => {
-        if (ev.type === 'click') {
-            props.history.push('/')
-        } else if (ev.which === 13) {
-            props.history.push('/')
-        }
-    }
-
     return <Segment className='section-holder'>
-        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleEvent} onKeyPress={handleEvent} tabIndex='0' />
         <Header as='h3' icon textAlign='center'>
             <Icon name='lab' circular size='mini' />
             <Header.Content>Projects</Header.Content>

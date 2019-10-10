@@ -6,14 +6,6 @@ import { blogs } from './blogs/BlogHolder';
 import BlogPreview from './BlogPreview';
 
 const Blog = props => {
-    
-    const handleEvent = (ev) => {
-        if (ev.type === 'click') {
-            props.history.push('/')
-        } else if (ev.which === 13) {
-            props.history.push('/')
-        }
-    }
 
     const handleClick = input => {
         props.history.push(`/blog/${input}`)
@@ -21,7 +13,6 @@ const Blog = props => {
     }
 
     return <Segment className='section-holder' style={{ textAlign: 'left' }}>
-        <Icon name='close' style={{ float: 'right', cursor: 'pointer' }} onClick={handleEvent} onKeyPress={handleEvent} tabIndex='0' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='book' circular size='mini' />
             <Header.Content>Blog</Header.Content>

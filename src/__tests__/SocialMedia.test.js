@@ -9,6 +9,6 @@ it('renders without crashing', () => {
 
 it('contains my email contact', () => {
     const wrapper = shallow(<SocialMedia />)
-    const email = <Button className='contact-button' icon='telegram plane' color='vk' content='Email' href='mailto:harlowaustin2@gmail.com' />
+    const email = <Button className='project-button' icon='telegram plane' color='vk' content='Email' href='mailto:harlowaustin2@gmail.com' />
     expect(wrapper.contains(email)).toEqual(true);
 })

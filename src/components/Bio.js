@@ -4,9 +4,7 @@ import headshot from '../images/headshot.svg';
 import SocialMedia from './SocialMedia';
 
 const Bio = props => {
-    return <>
-        <div/>
-        <Segment className='section-holder'>
+    return <Segment className='section-holder bio'>
             <Header as='h1' dividing icon textAlign='center'>
                 <Image src={headshot} circular alt='headshot'/>
                 <Header.Content>Austin Harlow</Header.Content>
@@ -14,7 +12,6 @@ const Bio = props => {
             <p>Software Engineer</p>
             <SocialMedia />
         </Segment>
-    </>
 }
 
 export default Bio;
