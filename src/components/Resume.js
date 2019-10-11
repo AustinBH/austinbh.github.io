@@ -7,6 +7,7 @@ import Certificates from './ResumeAdditions/Certificates';
 
 const Resume = props => {
 
+    // This only handles the desktop version. For mobile pdf view I am using the ternary in the below return statement to render based on the width of the window.
     const handleEvent = ev => {
         let resume =  document.getElementById('resume')
         if (ev.type === 'click' || ev.keyCode === 13) {
@@ -19,8 +20,8 @@ const Resume = props => {
     }
 
     return <Segment className='section-holder' style={{textAlign: 'left'}}>
-        <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} onClick={handleEvent} onKeyPress={ev => handleEvent(ev)} tabIndex='0'/>
-        <iframe className='hidden' id='resume' title='Resume PDF' src='/Austin-Harlow-Resume.pdf' />
+        {window.screen.width > 800 ? <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} onClick={handleEvent} onKeyPress={ev => handleEvent(ev)} tabIndex='0' /> : <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} href='/Austin-Harlow-Resume.pdf' target='_blank' rel='noopener noreferrer' />}
+        <iframe className='hidden' id='resume' title='Resume PDF' src='/Austin-Harlow-Resume.pdf' frameBorder='0' allow='' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular size='mini' />
             <Header.Content>Resume</Header.Content>
