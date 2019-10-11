@@ -7,7 +7,9 @@ import BlogPreview from './BlogPreview';
 
 const Blog = props => {
 
+    // Need to scroll the window back since we don't want to have people seeing a blog from the bottom of the page
     const handleClick = input => {
+        console.log(input)
         props.history.push(`/blog/${input}`)
         window.scrollTo(0,0)
     }
@@ -41,7 +43,7 @@ const Blog = props => {
                     <Grid.Column width={16}>
                         {props.match && props.match.path ?
                             <>
-                                <Route path={`${props.match.path}`} exact render={props => <BlogPreview {...props} handleOnClick={handleClick} />} />
+                                <Route path={props.match.path} exact render={props => <BlogPreview {...props} handleOnClick={handleClick} />} />
                                 <Route path={`${props.match.path}/:id`} exact render={props => <BlogPost {...props} />} />
                             </>
                             :
