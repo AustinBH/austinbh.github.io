@@ -56,13 +56,13 @@ const TechnicalSkills = props => {
         :
             null
         }
-        <Grid columns={10} celled='internally' textAlign='center' stackable>
+        <Grid columns={5} textAlign='center' stackable>
                 {skills.map((skill, index) => {
                     return <Grid.Column key={index}>
                         <Popup
                             inverted
                             size='tiny'
-                            position='bottom center'
+                            position='top center'
                             content={skill.lang}
                             on='click'
                             pinned
@@ -77,7 +77,7 @@ const TechnicalSkills = props => {
                 Learning...
             </Header>
         </Divider>
-        <Grid columns={10} celled='internally' textAlign='center' stackable>
+        <Grid columns={5} textAlign='center' stackable>
             <Grid.Row>
                 {learning.map((skill, index) => {
                     return <Grid.Column key={index+10}>

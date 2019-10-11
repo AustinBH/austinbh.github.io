@@ -8,6 +8,13 @@ import Blog from './Blog';
 
 const InfoMenu = props => {
 
+    // Adding keyboard navigation to light/dark mode feature
+    const handleEvent = ev => {
+        if (ev.type === 'click' || ev.which === 13) {
+            props.setDark(!props.dark)
+        }
+    }
+
     return <Router>
                 <Sidebar
                     as={Menu}
@@ -21,7 +28,7 @@ const InfoMenu = props => {
                     <Menu.Item icon='file code' as={NavLink} exact to='/projects' activeClassName='active' name='Projects' />
                     <Menu.Item icon='file alternate' as={NavLink} exact to='/resume' activeClassName='active' name='Resume' />
                     <Menu.Item icon='book' as={NavLink} exact to={`/blog`} activeClassName='active' name='Blog' />
-                    {props.dark ? <Menu.Item icon='sun' name='Light Mode' onClick={() => props.setDark(!props.dark)} /> : <Menu.Item icon='moon' name='Dark Mode' onClick={() => props.setDark(!props.dark)} />}
+                    {props.dark ? <Menu.Item icon='sun' name='Light Mode' tabIndex='0' onClick={handleEvent} onKeyPress={handleEvent} /> : <Menu.Item icon='moon' name='Dark Mode' tabIndex='0' onClick={handleEvent} onKeyPress={handleEvent} />}
                 </Sidebar>
                 <Switch>
                     <Route path='/' exact render={null} />
@@ -30,7 +37,6 @@ const InfoMenu = props => {
                     <Route path='/resume' exact render={props => <Resume {...props} />} />
                     <Route path='/blog' render={props => <Blog {...props} />} />
                 </Switch>
-                <div/>
             </Router>
 }
 

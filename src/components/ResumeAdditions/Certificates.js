@@ -9,7 +9,7 @@ const Certificates = props => {
                 Certificates
             </Header>
         </Divider>
-        <Button className='project-button' icon='python' color='blue' content='Python 3 Udemy' href='https://udemy-certificate.s3.amazonaws.com/pdf/UC-XPRIZEOM.pdf' target='_blank' rel='noopener noreferrer' />
+        <Button style={{color: 'black'}} className='project-button' icon='python' color='blue' content='Python 3 Udemy' href='https://udemy-certificate.s3.amazonaws.com/pdf/UC-XPRIZEOM.pdf' target='_blank' rel='noopener noreferrer' />
     </div>
 }
 

@@ -2,7 +2,8 @@ import React from 'react';
 import { blogs } from './blogs/BlogHolder';
 import { Card, Header, Button } from 'semantic-ui-react';
 
-// Here we want to have the reversed order of blogs displayed so that we can see the most recent posts. The spread operator is used so that we do not mutate our blogs info
+// Here we want to have the reversed order of blogs displayed so that we can see the most recent posts.
+// The spread operator is used so that we do not mutate our blogs info.
 const orderedBlogs = [...blogs].reverse()
 
 const BlogPreview = props => {
