@@ -2,8 +2,10 @@ import React from 'react';
 import { blogs } from './blogs/BlogHolder';
 import { Card, Header, Button } from 'semantic-ui-react';
 
+const orderedBlogs = blogs.reverse()
+
 const BlogPreview = props => {
-    return blogs.reverse().map(blog => {
+    return orderedBlogs.map(blog => {
         return <Card key={blog.id} className='blog-preview'>
             <Card.Header>
                 <Header as='h4'>
