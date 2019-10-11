@@ -8,7 +8,7 @@ import Certificates from './ResumeAdditions/Certificates';
 const Resume = props => {
 
     return <Segment className='section-holder' style={{textAlign: 'left'}}>
-        <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} href='https://learn.co/austin/resume' target='_blank' rel='noopener noreferrer'/>
+        <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} href='/austin-harlow-resume.pdf'/>
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular size='mini' />
             <Header.Content>Resume</Header.Content>
