@@ -7,8 +7,20 @@ import Certificates from './ResumeAdditions/Certificates';
 
 const Resume = props => {
 
+    const handleEvent = ev => {
+        let resume =  document.getElementById('resume')
+        if (ev.type === 'click' || ev.keyCode === 13) {
+            if (resume.className === 'resume-pdf') {
+                resume.className = 'hidden'
+            } else if (resume.className === 'hidden') {
+                resume.className = 'resume-pdf'
+            }
+        }
+    }
+
     return <Segment className='section-holder' style={{textAlign: 'left'}}>
-        <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} href='/Austin-Harlow-Resume.pdf'/>
+        <Button icon='file' content='Downloadable version' color='blue' style={{ color: 'black' }} onClick={handleEvent} onKeyPress={ev => handleEvent(ev)} tabIndex='0'/>
+        <iframe className='hidden' id='resume' title='Resume PDF' src='/Austin-Harlow-Resume.pdf' />
         <Header as='h3' dividing icon textAlign='center'>
             <Icon name='file pdf' circular size='mini' />
             <Header.Content>Resume</Header.Content>
