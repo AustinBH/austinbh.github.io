@@ -18,6 +18,13 @@ const About = props => {
             In college I chanelled my passion into a History degree and continued to expand on my writing abilities.
             It was through my interests in both creating and writing, as well as through my friends and co-workers at Amazon, that I found out about programming.
             My journey in programming so far has been wonderful, I have learned many new things in such a short time and cannot wait for the next step in my new journey.
+        </p>
+        <p>
+            I love football, basketball, snowboarding, hiking, and surfing. (Not necessarily in that order.)
+            I enjoy and have been playing fantasy football for about 6 years.
+            Although I have been surfing and snowboarding since I was 9, I have not gotten out to the coast or up to the mountains nearly as much as I would like to recently.
+            As someone who has been hiking all over the Western U.S. since I was 3 years old, I have been fortunate enough to hike in places like Lake Powell, the Grand Canyon, and Glacier National Park.
+            I really love fishing, whether with a spinning or fly rod, although fly fishing is definitely my favorite. There is something wonderful about hiking up to a mountain lake and catching your limit in 30 minutes.
         </p>    
         <p>
             I live in Seattle, WA with my dog, Lucy.
