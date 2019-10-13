@@ -145,10 +145,6 @@ p code {
 }
 
 @media only screen and (max-width: 800px) {
-  .skills-image {
-    width: 80%;
-    height: initial;
-  }
   .project-info-row {
     height: inherit;
   }

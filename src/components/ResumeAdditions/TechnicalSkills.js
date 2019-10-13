@@ -32,6 +32,7 @@ const learning = [
 const TechnicalSkills = props => {
 
     const [show, setShow] = useState(true)
+    const [columns, setColumns] = useState(5)
 
     const handleClick = () => {
         setShow(!show)
@@ -39,8 +40,10 @@ const TechnicalSkills = props => {
 
     useEffect(() => {
         let timer = setTimeout(() => setShow(false), 4000);
+        // Adding a way to check for mobile and dynamically set column numbers
+        window.screen.width > 800 ? setColumns(5) : setColumns(2)
         return () => clearTimeout(timer)
-    })
+    }, [columns])
 
     return <div style={{textAlign: 'center'}}>
         <Divider horizontal onClick={handleClick}>
@@ -56,7 +59,7 @@ const TechnicalSkills = props => {
         :
             null
         }
-        <Grid columns={5} textAlign='center' stackable>
+        <Grid columns={columns} textAlign='center'>
                 {skills.map((skill, index) => {
                     return <Grid.Column key={index}>
                         <Popup
@@ -77,7 +80,7 @@ const TechnicalSkills = props => {
                 Learning...
             </Header>
         </Divider>
-        <Grid columns={5} textAlign='center' stackable>
+        <Grid columns={columns} textAlign='center'>
             <Grid.Row>
                 {learning.map((skill, index) => {
                     return <Grid.Column key={index+10}>
