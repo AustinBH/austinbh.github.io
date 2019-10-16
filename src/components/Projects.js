@@ -28,35 +28,26 @@ const Projects = props => {
             <Icon name='lab' circular size='mini' />
             <Header.Content>Projects</Header.Content>
         </Header>
-        <Grid columns={3} textAlign='center' stackable>
+        <p>All of these applications can be accessed with the username: 'Test' and if necessary, the password: '123'.</p>
+        <Grid columns={3} textAlign='center' celled='internally' stackable>
             <Header as='h5' icon textAlign='center'>
                 <Icon name='map' circular size='tiny' />
                 <Header.Content>My Trails</Header.Content>
             </Header>
             <MyTrails handleEvent={handleEvent}/>
-            <Grid.Row>
-                <iframe title='My Trails App' id='trails' className='hidden' src="https://my-trails.info" frameBorder="0" allowFullScreen></iframe>
-            </Grid.Row>
-            <Grid.Row>
-                <Header as='h5' icon textAlign='center'>
-                    <Icon name='music' circular size='tiny' />
-                    <Header.Content>The Final FM</Header.Content>
-                </Header>
-            </Grid.Row>
+            <iframe title='My Trails App' id='trails' className='hidden' src="https://my-trails.info" frameBorder="0" allowFullScreen></iframe>
+            <Header as='h5' icon textAlign='center'>
+                <Icon name='music' circular size='tiny' />
+                <Header.Content>The Final FM</Header.Content>
+            </Header>
             <FinalFM handleEvent={handleEvent}/>
-            <Grid.Row>
-                <iframe title='The Final FM App' id='fm' className='hidden' src="https://the-final-fm.herokuapp.com" frameBorder="0" allowFullScreen></iframe>
-            </Grid.Row>
-            <Grid.Row>
-                <Header as='h5' icon textAlign='center'>
-                    <Icon name='game' circular size='tiny' />
-                    <Header.Content>Pokemon Teams</Header.Content>
-                </Header>
-            </Grid.Row>
+            <iframe title='The Final FM App' id='fm' className='hidden' src="https://the-final-fm.herokuapp.com" frameBorder="0" allowFullScreen></iframe>
+            <Header as='h5' icon textAlign='center'>
+                <Icon name='game' circular size='tiny' />
+                <Header.Content>Pokemon Teams</Header.Content>
+            </Header>
             <PokemonTeams handleEvent={handleEvent}/>
-            <Grid.Row>
-                <iframe title='Pokemon Teams App' id='pokemon' className='hidden' src="https://austinbh.github.io/Pokedex-Teams/" frameBorder="0" allowFullScreen></iframe>
-            </Grid.Row>
+            <iframe title='Pokemon Teams App' id='pokemon' className='hidden' src="https://austinbh.github.io/Pokedex-Teams/" frameBorder="0" allowFullScreen></iframe>
         </Grid>
     </Segment>
 }
