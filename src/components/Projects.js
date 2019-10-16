@@ -35,7 +35,7 @@ const Projects = props => {
                 <Header.Content>My Trails</Header.Content>
             </Header>
             <MyTrails handleEvent={handleEvent}/>
-            <iframe title='My Trails App' id='trails' className='hidden' src="https://my-trails.info" frameBorder="0" allowFullScreen></iframe>
+            <iframe title='My Trails App' id='trails' className='hidden' src="https://my-trails.info" frameBorder="0" allow='geolocation' allowFullScreen></iframe>
             <Header as='h5' icon textAlign='center'>
                 <Icon name='music' circular size='tiny' />
                 <Header.Content>The Final FM</Header.Content>
