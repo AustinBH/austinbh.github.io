@@ -8,7 +8,7 @@ const orderedBlogs = [...blogs].reverse()
 
 const BlogPreview = props => {
     return orderedBlogs.map(blog => {
-        return <Card key={blog.id} className='blog-preview'>
+        return <Card key={blog.id} className='blog-info'>
             <Card.Header>
                 <Header as='h4'>
                     {blog.title}

@@ -79,6 +79,10 @@ p code {
   padding-top: 25px;
 }
 
+.blog-info {
+  background-color: #E0E1E2 !important;
+}
+
 .project-info {
   text-align: left !important;
 }
