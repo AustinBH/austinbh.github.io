@@ -73,6 +73,12 @@ p code {
   display: block;
 }
 
+.project-preview {
+  width: 100% !important;
+  height: 100vh;
+  padding-top: 25px;
+}
+
 .project-info {
   text-align: left !important;
 }
@@ -156,5 +162,8 @@ p code {
   }
   .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu:hover {
     width: 90px;
+  }
+  .preview-button {
+    display: none !important;
   }
 }

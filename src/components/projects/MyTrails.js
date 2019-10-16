@@ -5,7 +5,8 @@ const MyTrails = props => {
     return <Grid.Row className='project-info-row'>
         <Grid.Column>
             <iframe title='My Trails Demo' className='project-image' src="https://www.youtube.com/embed/P2BzlqXCFZU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <Button className='site-link' compact color='olive' icon='map' content='Live Site' href='https://my-trails.info' target='_blank' rel='noopener noreferrer' />
+            <Button className='site-link' compact color='olive' style={{ color: 'black' }} icon='map' content='Live Site' href='https://my-trails.info' target='_blank' rel='noopener noreferrer' />
+            <Button icon='map' content='Preview' className='preview-button' name='trails' compact color='olive' style={{ color: 'black', paddingTop: '100' }} onClick={props.handleEvent} onKeyPress={ev => props.handleEvent(ev)} tabIndex='0' />
         </Grid.Column>
         <Grid.Column className='project-info'>
             <p><em>A trail finding app that uses the Google Maps API to display maps with trail info.</em></p>

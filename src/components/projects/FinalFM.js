@@ -5,7 +5,8 @@ const FinalFM = props => {
     return <Grid.Row className='project-info-row'>
         <Grid.Column>
             <iframe title='The Final FM Demo' className='project-image' src="https://www.youtube.com/embed/IX76ualotMY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <Button className='site-link' compact color='olive' icon='music' content='Live Site' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer' />
+            <Button className='site-link' compact color='olive' style={{ color: 'black' }} icon='music' content='Live Site' href='https://the-final-fm.herokuapp.com' target='_blank' rel='noopener noreferrer' />
+            <Button icon='music' content='Preview' className='preview-button' name='fm' compact color='olive' style={{ color: 'black' }} onClick={props.handleEvent} onKeyPress={ev => props.handleEvent(ev)} tabIndex='0' />
         </Grid.Column>
         <Grid.Column className='project-info'>
             <p><em>A song and concert search app that allows users to save their favorite songs.</em></p>
