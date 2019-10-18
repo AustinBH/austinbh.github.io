@@ -8,7 +8,6 @@ const Blog = props => {
 
     // Need to scroll the window back since we don't want to have people seeing a blog from the bottom of the page
     const handleClick = input => {
-        console.log(input)
         props.history.push(`/blog/${input}`)
         window.scrollTo(0,0)
     }
