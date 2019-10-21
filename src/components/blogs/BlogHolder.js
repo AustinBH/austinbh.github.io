@@ -983,6 +983,96 @@ Please take a look at the following resources for more information on the four p
 * https://ruby-doc.org/core-2.6.5/Class.html`
 }
 
+const eleven = {
+    title: 'Set it and Forget it', id: '11', preview: 'An explanation of sets in programming with a brief explanation of what a mathematical set is.', text: `# Set it and Forget it
+As someone who greatly enjoys fantasy football, the concept of a set it and forget it player is one that I am quite familiar with. It essentially refers to someone who is worth starting regardless of their matchup.
+
+This week I was listening to a fantasy football and hearing set it and forget it made me think about sets in programming. When I had first heard the word set used in a programming context, I immediately thought of two things. The first was the [card game](https://en.wikipedia.org/wiki/Set_(card_game)), and the second was my high school math teacher.
+
+It turns out, I wasn't actually too far off with either answer. To understand what a set is in programming, it would help to understand what a mathematical set is.
+
+## What is a Set in Mathematics?
+
+For a start let's take a look at the Wikipedia definition.
+
+\`A set is a well- defined collection of distinct objects.The objects that make up a set(also known as as the set's elements or members) can be anything: numbers, people, letters of the alphabet, other sets, and so on.\`
+
+That seems pretty straightforward, the keywords there are distinct, and anything.Meaning that a set contains these unique objects and that it doesn't matter what they are.
+
+Now that we have a rudimentary understand of Sets let's take a look at Sets in programming.
+
+## What is a Set in Programming ?
+
+Let's refer to Wikipedia for a definition once more.
+
+\`A set is an abstract data type that can store unique values, without any particular order. It is a computer implementation of the mathematical concept of a finite set.\`
+
+So we can see that a Set is a mathematical set simply implemented by a computer.If we take a look at the keywords again, they would be unique and without order.That means that we are again dealing with a collection of unique / distinct values.We are also working with a data type that does not have a specific order, similar to something like a dictionary, hash, or object.
+
+## What do they look like ?
+
+Let's take a look at sets in two particular languages, JavaScript, which has had sets since the release of EMCAScript 2015, and Python, which has supported sets since the release of 2.4.
+
+Let's start with JavaScript, sets are created with the \`Set\` keyword. Just like with any other object that we are creating in JavaScript we use the \`new objectname\` syntax as we can see below.
+
+\`\`\`javascript
+const foo = new Set([1,2,3])
+console.log(foo)
+// Set { 1, 2, 3 }
+\`\`\`
+
+In Python we use something similar, since set is a built in data type we have access to the\`set()\` method. 
+
+\`\`\`python
+foo = set([1, 2, 3])
+print(foo)
+# {1, 2, 3}
+\`\`\`
+
+Both Python and JavaScript are using a very similar syntax where we are creating a new set using a list/array respectively.Our set constructors only allow one argument so we have to use this intermediary data type to create a set with multiple values.
+
+JavaScript
+\`\`\`javascript
+const foo = new Set(1,2,3)
+// TypeError
+\`\`\`
+Python
+\`\`\`python
+foo = set(1,2,3)
+# TypeError
+\`\`\`
+Trying to pass in multiple arguments would throw this type error since only 1 argument is accepted.
+
+## What purpose do they serve ?
+
+Now that we have an idea of what sets are and how they can be instantiated let's take a look at what we can do with them.
+
+Remember when we were covering the definition of a set ? One of the important features of a set is it's uniqueness. Therefore, one great purpose of sets is to check if a set contains a specific value.
+
+\`\`\`javascript
+const foo = new Set([1,2,3])
+console.log(foo.has(1))
+// true
+\`\`\`
+
+\`\`\`python
+foo = set([1, 2, 3])
+print(1 in foo)
+# True
+\`\`\`
+
+As sets are not ordered we are able to do things like this, checking if a set contains a value, faster than we would be able to in a list / array.One thing to keep in mind though is that iterating over a set is slightly slower than it is with a list / array.
+
+Sets can be very useful for things like removing duplicates and comparing for uniqueness due to them containing only unique values.Although sets are a mathematical concept, they don't need to feel or seem scary, they can make certain things quicker and easier.
+
+## References
+
+* https://en.wikipedia.org/wiki/Set_(mathematics)
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+* https://snakify.org/en/lessons/sets/
+* https://en.wikipedia.org/wiki/Set_(abstract_data_type)`
+}
+
 export const blogs = [
     one,
     two,
@@ -993,6 +1083,7 @@ export const blogs = [
     seven,
     eight,
     nine,
-    ten
+    ten,
+    eleven
 ]
 
