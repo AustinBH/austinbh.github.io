@@ -1061,7 +1061,34 @@ print(1 in foo)
 # True
 \`\`\`
 
-As sets are not ordered we are able to do things like this, checking if a set contains a value, faster than we would be able to in a list / array.One thing to keep in mind though is that iterating over a set is slightly slower than it is with a list / array.
+As sets are not ordered we are able to do things like this, checking if a set contains a value, faster than we would be able to in a list/array. To expand on that further, let's see how we access values in a list/array.
+
+\`\`\`javascript
+const foo = [1, 2, 3]
+for(let i = 0; i<foo.length; i++) {
+    if (foo[i] == 2) {
+        console.log(true)
+    }
+}
+// true
+
+const bar = [1, 2, 3]
+bar.includes(2)
+// true
+\`\`\`
+\`\`\`python
+foo = [1, 2, 3]
+for num in foo:
+    if num == 2:
+        print(True)
+# True
+
+bar = [1, 2, 3]
+print(2 in bar)
+# True
+\`\`\`
+
+So, I first used a simple for loop for our list and array. That is to indicate what our includes method or in statement are doing. Since a list/array is ordered, we can access an element via it's index with a runtime of O(1). However, when we need to check if a value is contained within said list/array, we need to iterate over the entire collection. This means that we are going to have a runtime of O(n) since we have to iterate over the collection to check for a value.
 
 Sets can be very useful for things like removing duplicates and comparing for uniqueness due to them containing only unique values.Although sets are a mathematical concept, they don't need to feel or seem scary, they can make certain things quicker and easier.
 
