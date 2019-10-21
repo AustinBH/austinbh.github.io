@@ -1096,6 +1096,7 @@ Sets can be very useful for things like removing duplicates and comparing for un
 
 * https://en.wikipedia.org/wiki/Set_(mathematics)
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+* https://wiki.python.org/moin/TimeComplexity
 * https://snakify.org/en/lessons/sets/
 * https://en.wikipedia.org/wiki/Set_(abstract_data_type)`
 }
