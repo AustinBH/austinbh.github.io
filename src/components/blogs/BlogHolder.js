@@ -1101,6 +1101,73 @@ Sets can be very useful for things like removing duplicates and comparing for un
 * https://en.wikipedia.org/wiki/Set_(abstract_data_type)`
 }
 
+const twelve = {title: 'Binary Conversion in JavaScript', id: '12', preview: 'A look into binary numbers and how to convert numbers into binary in JavaScript.', text: `# Binary Conversion in JavaScript
+This week I had an interview where I was asked to perform an operation using a binary number. It intrigued me to dig into binary numbers a bit more and try to get a bit more comfortable with them.
+
+## What is a Binary Number?
+
+To get an idea of what exactly you need to do to convert a number into binary let's take a look at what exactly a binary number is. Wikipedia's is not a particularly complicated definition, \`In mathematics and digital electronics, a binary number is a number expressed in the base- 2 numeral system or binary numeral system, which uses only two symbols: typically "0"(zero) and "1"(one).\`
+
+## Converting an Integer to Binary
+
+Alright, so now that we know a binary number is a number expressed in base-2 we can take a look at converting our numbers. In the case that our input is an integer, we can use JavaScript's \`toString\` method to convert our number.
+
+The \`toString\` method accepts an argument of the base used to convert a number into a string.
+
+\`\`\`javascript
+const myNum = 13
+console.log(myNum.toString(2))
+//1101
+\`\`\`
+That is very simple. But what if our input is not a number but in fact a string? We cannot just call \`toString\` on it since it is already a string. Using the \`parseInt\` function, we can convert our string into a number and then convert that number into a base-2 string. Let's see what that looks like...
+
+\`\`\`javascript
+const myInput = '13'
+console.log(parseInt(myInput).toString(2))
+// 1101
+\`\`\`
+
+Well that certainly works. But wait, there is an optional argument for the \`parseInt\` function that allows us to specify the base to be used when converting a string to an integer. While this does allow us to specify that we are parsing the string into binary, we do not preserve the entire binary sequence but just the first bit.
+
+\`\`\`javascript
+const myInput = '13'
+console.log(parseInt(myInput, 2))
+// 1
+\`\`\`
+
+Another issue with the second argument of our \`parseInt\` function is that it returns NaN when presented with the number 2 and the base of 2.
+
+\`\`\`javascript
+const myInput = '2'
+console.log(parseInt(myInput, 2))
+// NaN
+\`\`\`
+
+This is a bit of an issue since 2 can be converted into a binary number. If we take a look at our solution, we can see that we are able to work with the number 2 and return a binary number.
+
+\`\`\`javascript
+const myInput = '2'
+console.log(parseInt(myNum).toString(2))
+// 10
+\`\`\`
+
+Well I guess we will have to settle for converting a string into a number and back into a string. It might seem like a bit of a long way to go but it does ensure that we have the entire binary number to work with.
+
+That's it, we have converted our input whether a number or a string into a binary number represented as a string. You can convert it back into an integer if you needed to but if your binary number began with a 0, your integer would not match the binary string since the 0 would just be left off.
+
+\`\`\`javascript
+console.log(parseInt('0101'))
+// 101
+\`\`\`
+Nevertheless, we have accomplished our goal, the input number was converted to a binary number. From here we can do whatever it is that we need to do with our binary number. The \`toString\` method does most of the heavy lifting here as it is the one that manages the conversion to binary. 
+
+## References
+
+* https://en.wikipedia.org/wiki/Binary_number
+* https://en.wikipedia.org/wiki/Radix
+* https://www.geeksforgeeks.org/javascript-tostring-function/
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt`}
+
 export const blogs = [
     one,
     two,
