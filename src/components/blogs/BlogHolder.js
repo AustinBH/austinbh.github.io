@@ -1179,6 +1179,7 @@ export const blogs = [
     eight,
     nine,
     ten,
-    eleven
+    eleven,
+    twelve
 ]
 
