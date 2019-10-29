@@ -96,8 +96,8 @@ p code {
   height: 80px;
 }
 
-.section-holder {
-  background-color: #97B0AA !important;
+.ui.segment.section-holder {
+  background-image: radial-gradient(#7cb0a3, #97B0AA);
   width: 75%;
   text-align: center;
 }
@@ -158,7 +158,7 @@ p code {
   .project-info-row {
     height: inherit;
   }
-  .section-holder {
+  .ui.segment.section-holder {
     width: 50%;
   }
   .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu {
