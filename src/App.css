@@ -91,15 +91,33 @@ p code {
   margin-top: .25rem !important;
 }
 
+.media-button {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .skills-image {
   width: 80px;
   height: 80px;
 }
 
 .ui.segment.section-holder {
-  background-image: radial-gradient(#7cb0a3, #97B0AA);
+  background-color: #7cb0a3;
   width: 75%;
   text-align: center;
+}
+
+.bio {
+  -webkit-animation-name: segment-swap;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: segment-swap;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .skills-image {
@@ -152,6 +170,24 @@ p code {
 
 .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu:hover {
   width: 170px;
+}
+
+@-webkit-keyframes segment-swap {
+  0% {background-color: #7cb0a3;}
+  50% {background-color: #7cb0c3;}
+}
+
+@keyframes segment-swap {
+  0% {background-color: #7cb0a3;}
+  50% {background-color: #7cb0c3;}
+}
+
+@-webkit-keyframes bounce {
+  50% {-webkit-transform: translateY(-5px);}
+}
+
+@keyframes bounce {
+  50% {transform: translateY(-5px);}
 }
 
 @media only screen and (max-width: 800px) {
