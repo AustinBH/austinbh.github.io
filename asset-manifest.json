@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.8b8d76cc.chunk.css",
-    "main.js": "/static/js/main.1ec12edd.chunk.js",
-    "main.js.map": "/static/js/main.1ec12edd.chunk.js.map",
+    "main.js": "/static/js/main.8418edb8.chunk.js",
+    "main.js.map": "/static/js/main.8418edb8.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.f6dce284.js",
     "runtime~main.js.map": "/static/js/runtime~main.f6dce284.js.map",
     "static/js/2.7a4ddf17.chunk.js": "/static/js/2.7a4ddf17.chunk.js",
     "static/js/2.7a4ddf17.chunk.js.map": "/static/js/2.7a4ddf17.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e2010670458fb9727c7d4db7ecdd8f55.js": "/precache-manifest.e2010670458fb9727c7d4db7ecdd8f55.js",
+    "precache-manifest.53acac45cd53c4edfe1a207645948af4.js": "/precache-manifest.53acac45cd53c4edfe1a207645948af4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8b8d76cc.chunk.css.map": "/static/css/main.8b8d76cc.chunk.css.map",
     "static/media/Bootstrap_logo.svg": "/static/media/Bootstrap_logo.06596577.svg",
