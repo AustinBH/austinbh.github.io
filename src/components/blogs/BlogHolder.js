@@ -1168,6 +1168,67 @@ Nevertheless, we have accomplished our goal, the input number was converted to a
 * https://www.geeksforgeeks.org/javascript-tostring-function/
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt`}
 
+const thirteen = {title: 'by: ASYNC Bye Bye Bye', id: '13', preview: 'A review of asynchrony and the fetch API.', text: `# by: ASYNC Bye Bye Bye
+Asynchrony is a great concept but it is also one that was a bit difficult for me to understand at first. Hopefully the title will make a bit more sense once we get through this one.
+
+## What is it?
+
+Let's first examine what asynchrony is so that we are all on the same page. Wikipedia's definition states:
+
+\`Asynchrony, in computer programming, refers to the occurrence of events independent of the main program flow and ways to deal with such events.\`
+
+My introduction to asynchrony was using the \`fetch\` API. The way that I was able to break the concept of asynchronous code down was to model it like asking a question. Asking the question is like the fetch request that we send. Even if the other person responds quickly, there will still be some delay from when we ask the question to when the other person responds.
+
+## What does it look like?
+
+In keeping with the fetch example, let's see what this would look like.
+
+\`\`\`javascript
+fetch("https://pokedex-yeet.herokuapp.com/v2/pokemon")
+\`\`\`
+This fetch function will return a \`Promise\` object. That is what we will be using to interact with our response.
+
+This \`Promise\` object is what we use to represent our asynchronous code. It allows us essentially wait for our promise to return data before we try to operate on it. That way we are not trying to interact with \`undefined\`. For example, in the following code you can see what happens when we try to operate on our data before we receive a response.
+
+\`\`\`javascript
+fetch("https://pokedex-yeet.herokuapp.com/v2/pokemon")
+          .then(res => res.json())
+          .then(json => console.log(json.length));
+
+let data = fetch("https://pokedex-yeet.herokuapp.com/v2/pokemon");
+console.log(data.length);
+
+// undefined
+// 807
+\`\`\`
+This is just a request that we are sending to a Pokemon API that I worked on for a group project. As you can see, our attempt to assign the fetch to a variable and then call the length method on our fetch just returns undefined. However, the full fetch request that we wrote out first logs 807 which is the number of Pokemon featured in the API.
+
+We are using the \`then()\` method which is available since \`fetch\` is returning a \`Promise\`. The \`then()\` method allows us to perform actions based on the response which is returned.
+
+This is also what we used in the original example. One other important thing to notice is that even though our console.log that returns undefined is called after the one that returns 807, they are printed out in the opposite order. That is because our \`Promise\` is asynchronous, meaning that the console.log is not executed until after the Promise is resolved.
+
+## What does that title mean again?
+
+Hopefully you have at least gotten the reference by now but if you haven't, here's the [Wikipedia page](https://en.wikipedia.org/wiki/Bye_Bye_Bye).
+
+Ok, so now that we have a better understanding of asynchrony, imagine that we wrote a snippet that printed out the strings "bye bye bye" and "by: Async".
+
+\`\`\`javascript
+setTimeout(() => console.log('Bye Bye Bye'), 1000)
+console.log('by: ASYNC')
+\`\`\`
+
+Now this is a bit contrived since we are specifically telling JavaScript to wait one second using the \`setTimeout\` function. However, conceptually we should be able to understand how and why this code is executing in this manner.
+
+## Resources
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+* https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+* https://eloquentjavascript.net/11_async.html
+* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
+* https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)`}
+
 export const blogs = [
     one,
     two,
@@ -1180,6 +1241,7 @@ export const blogs = [
     nine,
     ten,
     eleven,
-    twelve
+    twelve,
+    thirteen
 ]
 
