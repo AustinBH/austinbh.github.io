@@ -1229,6 +1229,144 @@ Now this is a bit contrived since we are specifically telling JavaScript to wait
 * https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 * https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)`}
 
+const fourteen = {
+    title: "Inheritance in Python", id: 14, preview: "An overview of inheritance and how we use it in Python.", text: `# Inheritance in Python
+    Inheritance is an important part of object oriented programming. It is one of the four pillars I outlined in a [previous post](https://dev.to/austinbh/the-four-pillars-of-object-oriented-programming-5bda). Today I wanted to take a look at inheritance in Python, the syntax, setup, and even differences between Python 2 and 3. With Python 2's pending retirement it might not seem as important but there are a few differences to be aware of just the same.
+
+## What is Inheritance?
+
+Let's first touch on what inheritance is, if you would like a more in-depth explanation feel free to check out the blog post I referenced. To put it simply, inheritance is the ability for classes or objects to be based on other classes or objects.  
+
+## What Does Inheritance Look Like in Python?
+
+\`\`\`python
+class Animal():
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+
+
+class Dog(Animal):
+    def __init__(self, name, weight, breed):
+        super().__init__(name, weight)
+        self.breed = breed
+\`\`\`
+
+First of all, the above example is written using Python 3 syntax. We will take a look at the Python 2 syntax in a bit, for now lets just walk through this example.
+
+We start by defining a parent class (Animal) with just a simple dunder init method. We then create a child class (Dog) which inherits from it's parent class (Animal). That is accomplished through passing in the Animal class as an argument to the Dog class. 
+
+As a result of this inheritance we can use the \`super()\` function to call the parent class' dunder init method. This allows us to add to the dunder init method without having to write out the entire method again. In this example it may not look like we are saving that much but the more we use inheritance, the cleaner our code is and the DRYer it is.
+
+Now let's have a look at the Python 2 syntax just so that we are familiar with it.
+
+\`\`\`python
+class Animal():
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+
+
+class Dog(Animal):
+    def __init__(self, name, weight, breed):
+        super(Animal, self).__init__(name, weight)
+        self.breed = breed
+\`\`\`
+
+All we have to do is pass in the parent class and self as arguments. In Python 2, the super function requires these arguments otherwise it will throw an error.
+
+## Overriding methods
+
+One other aspect of inheritance is understanding how we can override methods and still have access to the parent method.
+
+\`\`\`python
+class Animal():
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+
+    def eat():
+        print(f"{self.name} is eating")
+
+class Dog(Animal):
+
+    def __init__(self, name, weight, breed):
+        super().__init__(name, weight)
+        self.breed = breed
+
+    def eat():
+        print(f"{self.name} the {self.breed} is eating")
+
+
+a1 = Animal("Ted", 50)
+a1.eat()
+
+d1 = Dog("Blue", 15, "Pomeranian")
+d1.eat()
+
+# Ted is eating
+# Blue the Pomeranian is eating
+\`\`\`
+
+Here we have a simple example, the eat method of our Animal class will just print out the name of the animal that is eating where our Dog class titles the dog with it's breed. It is just a simple example but this eat method has been overridden for our Dog class.
+
+I have used an f-string in this example, this is another difference between Python 2 and 3, f-strings are available in Python 3 but not in Python 2. We would need to format the string in a different way such as using the \`format\` method.
+
+
+\`\`\`python
+class Animal():
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+
+    def eat():
+        print("{} is eating".format(self.name))
+\`\`\`
+
+We do still have access to the parent class' method through the \`super()\` function. We can invoke this the same way that we do with our dunder init method.
+
+\`\`\`python
+class Animal():
+
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+
+    def talk(self):
+        print(f"I am {self.name}")
+
+class Dog(Animal):
+
+    def __init__(self, name, weight, breed):
+        super().__init__(name, weight)
+        self.breed = breed
+
+    def talk(self):
+        super().talk()
+        print(f"I am a {self.breed}")
+
+
+d1 = Dog("Lucy", 85, "Rottweiler")
+d1.talk
+
+# I am Lucy
+# I am a Rottweiler
+\`\`\`
+
+Just like with our previous example, to call super in Python 2 we need to pass in the parent class and self as arguments. Here we see just like with our dunder init method, our talk method now invokes the parent class' talk method as part of the Dog's talk method. In this way we are still overriding the original method but because of the \`super()\` function we still have access to the original method.
+
+Inheritance goes much deeper than this and as I mentioned before is a very important and useful part of Object Oriented Programming. Hopefully you now have a bit of a taste for what it is and how you can use it in Python.
+
+## References
+
+* https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+* https://en.wikipedia.org/wiki/Method_overriding
+* https://docs.python.org/3/tutorial/classes.html
+* https://www.w3schools.com/python/python_classes.asp`
+}
+
 export const blogs = [
     one,
     two,
@@ -1242,6 +1380,7 @@ export const blogs = [
     ten,
     eleven,
     twelve,
-    thirteen
+    thirteen,
+    fourteen
 ]
 
