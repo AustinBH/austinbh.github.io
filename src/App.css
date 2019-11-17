@@ -111,15 +111,6 @@ p code {
   text-align: center;
 }
 
-.bio {
-  -webkit-animation-name: segment-swap;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: segment-swap;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
 .skills-image {
   cursor: pointer;
 }
@@ -170,16 +161,6 @@ p code {
 
 .ui.inverted.vertical.labeled.icon.ui.left.visible.sidebar.menu:hover {
   width: 170px;
-}
-
-@-webkit-keyframes segment-swap {
-  0% {background-color: #7cb0a3;}
-  50% {background-color: #7cb0c3;}
-}
-
-@keyframes segment-swap {
-  0% {background-color: #7cb0a3;}
-  50% {background-color: #7cb0c3;}
 }
 
 @-webkit-keyframes bounce {
