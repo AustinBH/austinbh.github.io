@@ -53,8 +53,8 @@ const TechnicalSkills = props => {
             </Header>
         </Divider>
         {show ? 
-            <Message compact>
-                <Message.Header>Click the images for more info</Message.Header>
+            <Message>
+                <Message.Content>Click the images for more info</Message.Content>
             </Message>
         :
             null
