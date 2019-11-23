@@ -19,11 +19,6 @@ const About = props => {
             It was through my interests in both creating and writing, as well as through my friends and co-workers at Amazon, that I found out about programming.
             My journey in programming so far has been wonderful, I have learned many new things in such a short time and cannot wait for the next step in my new journey.
         </p>
-        <p>
-            I live in Seattle, WA with my dog, Lucy.
-            I have had a lot of fun working with React/Redux, and Rails.
-            I am always trying to learn new things and am currently getting into Node.js and Python.
-        </p>
     </Segment>
 }
 
