@@ -1368,7 +1368,7 @@ Inheritance goes much deeper than this and as I mentioned before is a very impor
 }
 
 const fifteen = {
-    title: "Testing Forms in React using Enzyme and Jest", id: 15, preview: "A look at testing forms in a React application using Enzyme and Jest.", text: ` #Testing forms in React using Enzyme and Jest 
+    title: "Testing Forms in React using Enzyme and Jest", id: 15, preview: "A look at testing forms in a React application using Enzyme and Jest.", text: ` # Testing forms in React using Enzyme and Jest 
 Recently I have been working on a simple blog application mainly to practice my frontend testing. Today I wanted to write about testing forms. Let's start with just my NewPost component here.
 
 \`\`\`javascript
