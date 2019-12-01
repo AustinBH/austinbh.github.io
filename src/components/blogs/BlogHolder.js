@@ -1367,6 +1367,144 @@ Inheritance goes much deeper than this and as I mentioned before is a very impor
 * https://www.w3schools.com/python/python_classes.asp`
 }
 
+const fifteen = {
+    title: "Testing Forms in React using Enzyme and Jest", id: 15, preview: "A look at testing forms in a React application using Enzyme and Jest.", text: ` #Testing forms in React using Enzyme and Jest 
+Recently I have been working on a simple blog application mainly to practice my frontend testing. Today I wanted to write about testing forms. Let's start with just my NewPost component here.
+
+\`\`\`javascript
+import React from 'react';
+import { api } from '../services/api';
+
+const NewPost = props => {
+
+    const [title, setTitle] = React.useState('');
+    const [content, setContent] = React.useState('');
+    const [message, setMessage] = React.useState('');
+
+    const displayMessage = jsonMessage => {
+        if (jsonMessage.error) {
+            let message = '';
+            // Need to catch multiple errors if they exist
+            for (let error in jsonMessage.error) {
+                message += error + ' ' + jsonMessage.error[error] + ' '
+            }
+            setMessage(message)
+        } else {
+            setMessage('Post created successfully!')
+        }
+    }
+
+    const handleChange = ev => {
+        if (ev.target.name === 'title') {
+            setTitle(ev.target.value)
+        } else if (ev.target.name === 'content') {
+            setContent(ev.target.value)
+        }
+    }
+
+    const handleSubmit = ev => {
+        ev.preventDefault()
+        // Just using a placeholder user id since there is no login currently
+        const post = {title: title, content: content, user_id: 1}
+        api.posts.createPost({ post: post}).then(json => displayMessage(json))
+    }
+
+    // We want to clear out the message after 4 seconds when a post is submitted
+    React.useEffect(() => {
+        let timer = setTimeout(() => setMessage(''), 4000);
+        return () => clearTimeout(timer);
+    }, [message]);
+
+    return (
+      <div className="new-post">
+        <h1>New Post</h1>
+        <form className="new-post-form" onSubmit={handleSubmit}>
+          <label>Title:</label>
+          <input
+            onChange={handleChange}
+            value={title}
+            type="text"
+            name="title"
+          />
+          <label>Content:</label>
+          <input
+            onChange={handleChange}
+            value={content}
+            type="text-area"
+            name="content"
+          />
+          <input type="submit" value="Create post" />
+        </form>
+        <p>{message}</p>
+      </div>
+    );
+}
+
+export default NewPost;
+\`\`\`
+
+This form is fairly simple all we have is a title and the content for our post. In order to be able to test React's useState function we are not naming the import but just calling the useState method on our React import.
+
+\`\`\`javascript
+const [title, setTitle] = React.useState('');
+\`\`\`
+
+This will allow us to test the state calls when we update the title or content fields on our form. To get started with our tests let's add all of our imports and configure our adapter.
+
+\`\`\`javascript
+import React from "react";
+import Enzyme from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+import NewPost from "../components/NewPost";
+
+Enzyme.configure({adapter: new Adapter() });
+\`\`\`
+
+In a similar manner we are also going to write a describe block for our component to contain all of our form tests.
+
+\`\`\`javascript
+describe("<NewPost />", () => {
+    let wrapper;
+    const setState = jest.fn();
+    const useStateSpy = jest.spyOn(React, "useState")
+    useStateSpy.mockImplementation((init) => [init, setState]);
+
+    beforeEach(() => {
+        wrapper = Enzyme.mount(Enzyme.shallow(<NewPost />).get(0))
+    });
+
+    afterEach(() => {
+        jest.clearAllMocks();
+    });
+\`\`\`
+
+First things first we are initializing a wrapper variable that we will use the \`mount\` function available through Enzyme to have a copy of our component. Then we create a state spy so that we can check that React's useState function is called. Finally, we write our beforeEach and afterEach functions to mount our component and then clear all jest mocks.
+
+Now let's get into the meat of testing our useState calls.
+
+\`\`\`javascript
+    describe("Title input", () => {
+        it("Should capture title correctly onChange", () => {
+            const title = wrapper.find("input").at(0);
+            title.instance().value = "Test";
+            title.simulate("change");
+            expect(setState).toHaveBeenCalledWith("Test");
+        });
+    });
+
+    describe("Content input", () => {
+        it("Should capture content correctly onChange", () => {
+            const content = wrapper.find("input").at(1);
+            content.instance().value = "Testing";
+            content.simulate("change");
+            expect(setState).toHaveBeenCalledWith("Testing");
+        });
+    });
+\`\`\`
+
+This first describe block is testing our title input which we can see by finding the first input. From here we set it's value to "Test" and then initiate a change action. We want to check that our setState function is called with this title. The same pattern follows for our content input test. We are checking that our setState function is being called with the updated input of "Testing".`
+}
+
 export const blogs = [
     one,
     two,
