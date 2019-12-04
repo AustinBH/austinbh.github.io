@@ -1505,6 +1505,99 @@ Now let's get into the meat of testing our useState calls.
 This first describe block is testing our title input which we can see by finding the first input. From here we set it's value to "Test" and then initiate a change action. We want to check that our setState function is called with this title. The same pattern follows for our content input test. We are checking that our setState function is being called with the updated input of "Testing".`
 }
 
+const sixteen = {
+    title: "Objects in JavaScript", id: 16, preview: "A look into objects in JavaScript with a brief explanation of objects as a Computer Science concept.", text: `# Objects in JavaScript I have been interesting in learning more about objects for a while and wanted to take this opportunity to attempt to expand my knowledge on JavaScript objects.
+
+## What is an Object in CS?
+
+Before we look at what an object is specifically in JavaScript, let's take a look at Objects in Computer Science more generally. According to Wikipedia, an object \`can be a variable, a data structure, a function, or a method, and as such, is a value in memory referenced by an identifier.\`
+
+Wikipedia further clarifies that \`In the class-based object-oriented programming paradigm, object refers to a particular instance of a class, where the object can be a combination of variables, functions, and data structures.\`
+
+Let's go ahead and break these definitions down a bit. The more general object definition begins by listing several different examples of what an object can be but it is the last bit that we want to focus on. Simply that an object \`is a value in memory referenced by an identifier\`.
+
+The second definition, referring to class-based object-oriented programming objects is similarly weighted towards the second half of the definition. The key phrase is \`a particular instance of a class, where the object can be a combination of variables, functions, and data structures\`.
+
+If we look at both of these definitions, the through-line is that the object can be many different things and is a value referenced by an identifier.
+
+## What is an Object in JavaScript?
+
+When looking into JavaScript objects, Geeks for Geeks' definition of a JavaScript object particularly stood out to me. \`Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript.\`
+
+Let's take a look at one of the other main properties of a JavaScript object, again from Geeks for Geeks' JavaScript Objects section. \`An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.\`
+
+The key phrase here is \`reference data type\`. This is important because it links back to our previous object definitions. If we remember our first object definition, we saw that an object \`is a value in memory referenced by an identifier\`.
+
+## What does a JavaScript Object look like?
+
+Objects in JavaScript can be created several different ways. First we are going to look at one of the most common, using curly braces.
+
+\`\`\`javascript
+let foo = {}
+\`\`\`
+
+All we have done here is created an object that is referenced by the variable foo. Our foo object is currently empty and does not have any key value pairs.
+
+A key value pair can be used to add properties to our objects. Much like the second definition that we looked at, our key value pairs can be a combination of variables, functions, and data structures. Let's take a look at examples of each of these.
+
+\`\`\`javascript
+// Variable
+let helloVariable = "Hello World";
+
+// Object
+let foo = {
+    variable: helloVariable,
+    func: () => console.log("Hello World"),
+    structure: [0,1]
+};
+\`\`\`
+
+Now our foo object contains a variable, function, and data structure. We can access all three of these different properties in the same manner that we would access an index in an array. Since these properties can also be accessed by calling the method names of the object (dot notation), I will show both methods of accessing these properties.
+
+\`\`\`javascript
+let helloVariable = "Hello World";
+
+let foo = {
+    variable: helloVariable,
+    func: () => console.log("Hello World"),
+    structure: [0,1]
+};
+// Variable
+
+console.log(foo["variable"]);
+// => "Hello World"
+
+console.log(foo.variable);
+// => "Hello World"
+
+// Function
+
+foo["func"]();
+// => "Hello World"
+
+foo.func();
+// => "Hello World"
+
+// Structure
+
+console.log(foo["structure"])
+// => [0, 1]
+
+console.log(foo.structure)
+// => [0, 1]
+\`\`\`
+
+As we can see, our properties can be accessed using either bracket or dot notation. I am not going to get into the differences or benefits of either right now but just know that these are two different ways we can access our object's properties.
+
+I hope that we now have a better understanding of JavaScript Objects. If we look back to our definitions, we need to remember that an object can be many different things, and is a value referenced by an identifier. That is what allows our JavaScript objects to be a reference data type, which is another important part of JavaScript objects. We also looked at some examples of how to create objects, what sort of information can be stored within them, and how to access that information. Hopefully this article has been as insightful for you to read as it was for me to research and write.
+
+## References
+
+* https://en.wikipedia.org/wiki/Object_(computer_science)
+* https://www.geeksforgeeks.org/objects-in-javascript/
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object`
+}
+
 export const blogs = [
     one,
     two,
@@ -1520,6 +1613,7 @@ export const blogs = [
     twelve,
     thirteen,
     fourteen,
-    fifteen
+    fifteen,
+    sixteen
 ]
 
