@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d2b6318a.chunk.css",
-    "main.js": "/static/js/main.38559037.chunk.js",
-    "main.js.map": "/static/js/main.38559037.chunk.js.map",
+    "main.js": "/static/js/main.354bd368.chunk.js",
+    "main.js.map": "/static/js/main.354bd368.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.f6dce284.js",
     "runtime~main.js.map": "/static/js/runtime~main.f6dce284.js.map",
     "static/js/2.7a4ddf17.chunk.js": "/static/js/2.7a4ddf17.chunk.js",
     "static/js/2.7a4ddf17.chunk.js.map": "/static/js/2.7a4ddf17.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.81492c704f5f7adac453296bfe9f4709.js": "/precache-manifest.81492c704f5f7adac453296bfe9f4709.js",
+    "precache-manifest.12c295b3a73c36bd3b98236df4c82bb7.js": "/precache-manifest.12c295b3a73c36bd3b98236df4c82bb7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.d2b6318a.chunk.css.map": "/static/css/main.d2b6318a.chunk.css.map",
     "static/media/Bootstrap_logo.svg": "/static/media/Bootstrap_logo.06596577.svg",
@@ -21,7 +21,7 @@
     "static/media/Ruby_logo.svg": "/static/media/Ruby_logo.03af0f58.svg",
     "static/media/Ruby_on_Rails_logo.svg": "/static/media/Ruby_on_Rails_logo.8d9a2866.svg",
     "static/media/Unofficial_JavaScript_logo_2.svg": "/static/media/Unofficial_JavaScript_logo_2.dd60b11e.svg",
-    "static/media/headshot.svg": "/static/media/headshot.9e1e7bee.svg",
+    "static/media/headshot.svg": "/static/media/headshot.e99be2db.svg",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
   }
 }
