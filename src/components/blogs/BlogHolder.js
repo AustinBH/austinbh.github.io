@@ -18,7 +18,7 @@ Luckily, as a result of this coordinated planning and preparation we were able t
 Even though it was just a simple CLI application, this project proved to me that taking some time to plan it out before you get started can completely change the way you approach a project. I had no idea if I was going to like working on a CLI app or if I was going to like this coding bootcamp. However, after making something that works and turning it into something that looks and functions much better, I can say that I made the right choice and can't wait for what comes next!\n
 
 You can find RJ and I's project on [Github](https://github.com/vizushu/module-one-final-project-guidelines-seattle-web-051319)`
-}
+};
 
 const two = {
     title: 'Rails Layouts', id: 2, preview: 'An explanation of what Rails layouts are and how they can be used in a Rails application.', text: `# Rails Layouts
@@ -56,7 +56,7 @@ By default your controller will look for a layout file that matches the controll
 ### Moving Forward ###
 
 Layouts are an excellent way of keeping your code dry as something such as a 'Home' link might be found on nearly every page of your app.They also have the benefit of allowing you to include links that help you to navigate and test your app quickly.While it may not seem like much, I very much appreciate the ability to navigate my apps directly without having to manually enter URLs.`
-}
+};
 
 const three = {
     title: 'For Loops, for...of, and forEach Oh My!', id: 3, preview: 'An article on looping in JavaScript. Although it is mainly focused on iterating over an array, I do cover general looping syntax.', text: `# For Loops, for...of, and forEach Oh My!
@@ -157,7 +157,8 @@ The forEach method is a bit different from both our for loop and the for ... of 
 One particular proverb that I have heard quite a few times is "There is more than one way to skin a cat". Although I have never really liked this particular proverb because of it's imagery, I have always been able to appreciate it's message. In my programming journey so far, I have found that this particular proverb is particularly apt.
 
 When looking at the 3 different iterators above, I can say that the for ... of statement is particularly clear to me. I will undoubtedly have to use for loops much more often as I continue my Javascript journey but for now, I have found a particular way of iterating that makes the most sense to me.`
-}
+};
+
 const four = {
     title: 'Classes as an Organizational Tool', id: 4, preview: 'An explanation of what JavaScript classes are and how they can be used to organize and simplify your code.', text: `# Classes as an Organizational Tool
 As someone who is currently in the react section of my coding bootcamp, I have been trying to get a better understanding of Javascript classes recently.
@@ -306,7 +307,8 @@ This also means that as we increase the complexity of our program and add more s
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 - https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function`
-}
+};
+
 const five = {
     title: 'Why You Should Use Arrow Functions in React', id: 5, preview: 'An explanation of what arrow functions are in JavaScript and how they can be used in React. I also take and explain the stance that arrow functions should be used rather than .bind.', text: `# Why You Should Use Arrow Functions in React
 The more time I have to work with Javascript, the more I am enjoying the language itself. When I was first learning Javascript a few weeks ago, we touched on arrow functions a bit. I understood how to write them and had some idea of what they did. However, it wasn't until we started getting into react that I really learned what arrow functions can do and why they are so advantageous.
@@ -405,7 +407,8 @@ As long as you keep an eye on the definition of the 'this' keyword you will be f
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind
 * https://reactjs.org/docs/components-and-props.html`
-}
+};
+
 const six = {
     title: "Spreadin' Out", id: 6, preview: 'An explanation of the spread operator in JavaScript and how it works. This is a great tool that can be used in React applications.', text: `# Spreadin' Out
 What is the spread operator and why does it matter? This is a question that I thought about quite a bit as I started to get into React.
@@ -481,7 +484,7 @@ There are plenty of non - destructive actions that we can use to update our stat
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat`
-}
+};
 
 const seven = {
     title: 'Learning a New Language', id: 7, preview: 'An article explaining why I decided to learn Python after completing my time at the Flatiron Software Engineering bootcamp. It touches on the similarites between Python and JavaScript as well as why I am interested in Python.', text:` # Learning a New Language
@@ -558,7 +561,7 @@ I am planning to be able to continue to practice Python using the Django web fra
 * https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7
 * https://en.wikipedia.org/wiki/Strong_and_weak_typing
 * https://en.wikipedia.org/wiki/Type_system`
-}
+};
 
 const eight = {
     title: 'How to Comprehend Comprehensions', id: 8, preview: 'An explanation of comprehensions in Python. I explain what they are, how they work, and where they can be used.', text: `# How to comprehend Comprehensions
@@ -698,7 +701,7 @@ Comprehensions were the first thing to grab my eye when I was just starting to l
 * https://docs.python.org/3/tutorial/datastructures.html
 * https://www.geeksforgeeks.org/comprehensions-in-python/
 * https://www.w3schools.com/python/ref_dictionary_items.asp`
-}
+};
 
 const nine = {
     title: 'Python Lambdas and You', id: 9, preview: 'An explanation of Lambdas in Python with a focus on anonymous functions in general. I use JavaScript anonymous functions to draw similarities but highlight the specific syntax of Python lambdas.', text: `# Python Lambdas and You
@@ -754,7 +757,8 @@ Since both of these functions are doing the same thing we can take our JavaScrip
 
 * https://en.wikipedia.org/wiki/Anonymous_function
 * https://docs.python.org/3/reference/expressions.html
-* https://www.w3schools.com/python/python_lambda.asp`}
+* https://www.w3schools.com/python/python_lambda.asp`
+};
 
 const ten = {
     title: 'The Four Pillars of Object Oriented Programming', id: 10, preview: 'An explanation of OOP and more specifically the Four Pillars of OOP.', text: `# The Four Pillars of Object Oriented Programming
@@ -981,7 +985,7 @@ Please take a look at the following resources for more information on the four p
 * https://www.w3schools.com/python/python_classes.asp
 * https://www.geeksforgeeks.org/getter-and-setter-in-python/
 * https://ruby-doc.org/core-2.6.5/Class.html`
-}
+};
 
 const eleven = {
     title: 'Set it and Forget it', id: '11', preview: 'An explanation of sets in programming with a brief explanation of what a mathematical set is.', text: `# Set it and Forget it
@@ -1099,7 +1103,7 @@ Sets can be very useful for things like removing duplicates and comparing for un
 * https://wiki.python.org/moin/TimeComplexity
 * https://snakify.org/en/lessons/sets/
 * https://en.wikipedia.org/wiki/Set_(abstract_data_type)`
-}
+};
 
 const twelve = {title: 'Binary Conversion in JavaScript', id: '12', preview: 'A look into binary numbers and how to convert numbers into binary in JavaScript.', text: `# Binary Conversion in JavaScript
 This week I had an interview where I was asked to perform an operation using a binary number. It intrigued me to dig into binary numbers a bit more and try to get a bit more comfortable with them.
@@ -1166,7 +1170,8 @@ Nevertheless, we have accomplished our goal, the input number was converted to a
 * https://en.wikipedia.org/wiki/Binary_number
 * https://en.wikipedia.org/wiki/Radix
 * https://www.geeksforgeeks.org/javascript-tostring-function/
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt`}
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt`
+};
 
 const thirteen = {title: 'by: ASYNC Bye Bye Bye', id: '13', preview: 'A review of asynchrony and the fetch API.', text: `# by: ASYNC Bye Bye Bye
 Asynchrony is a great concept but it is also one that was a bit difficult for me to understand at first. Hopefully the title will make a bit more sense once we get through this one.
@@ -1227,7 +1232,8 @@ Now this is a bit contrived since we are specifically telling JavaScript to wait
 * https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 * https://eloquentjavascript.net/11_async.html
 * https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
-* https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)`}
+* https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)`
+};
 
 const fourteen = {
     title: "Inheritance in Python", id: 14, preview: "An overview of inheritance and how we use it in Python.", text: `# Inheritance in Python
@@ -1365,7 +1371,7 @@ Inheritance goes much deeper than this and as I mentioned before is a very impor
 * https://en.wikipedia.org/wiki/Method_overriding
 * https://docs.python.org/3/tutorial/classes.html
 * https://www.w3schools.com/python/python_classes.asp`
-}
+};
 
 const fifteen = {
     title: "Testing Forms in React using Enzyme and Jest", id: 15, preview: "A look at testing forms in a React application using Enzyme and Jest.", text: ` # Testing forms in React using Enzyme and Jest 
@@ -1503,7 +1509,7 @@ Now let's get into the meat of testing our useState calls.
 \`\`\`
 
 This first describe block is testing our title input which we can see by finding the first input. From here we set it's value to "Test" and then initiate a change action. We want to check that our setState function is called with this title. The same pattern follows for our content input test. We are checking that our setState function is being called with the updated input of "Testing".`
-}
+};
 
 const sixteen = {
     title: "Objects in JavaScript", id: 16, preview: "A look into objects in JavaScript with a brief explanation of objects as a Computer Science concept.", text: `# Objects in JavaScript I have been interesting in learning more about objects for a while and wanted to take this opportunity to attempt to expand my knowledge on JavaScript objects.
@@ -1596,7 +1602,82 @@ I hope that we now have a better understanding of JavaScript Objects. If we look
 * https://en.wikipedia.org/wiki/Object_(computer_science)
 * https://www.geeksforgeeks.org/objects-in-javascript/
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object`
-}
+};
+
+const seventeen = {
+    title: "JavaScript Arrays", id: 17, preview: "A brief look into arrays in JavaScript and some of the ways we can interact with them.", text: `# JavaScript Arrays
+Last week I wrote about JavaScript objects and wanted to continue to write about built-in data structures in JavaScript. We are going to keep a similar structure to last weeks post where we learn about what arrays are before we dig into how they work in JavaScript and look at a few examples.
+
+## Arrays in Computer Science
+
+In computer science, Arrays are both a data structure and a data type. According to Wikipedia, \`an array data structure, or simply an array, is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key.\`
+
+Lets focus on a couple key portions of this definition here. First, \`a collection of elements\` and \`each identified by at least one array index or key\`. In that sense what we have then is a data structure that is a collection of elements identified by at least one index.
+
+## Arrays in JavaScript
+
+If we take a look at Mozilla's JavaScript webdocs, we can have an idea of how an array is defined in JavaScript. Mozilla's definition is \`Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. \`
+
+As JavaScript is not a strictly typed language, arrays can contain several different data types. This is similar to JavaScript objects where the values contained within do not all need to be the same type. Again similarly to objects we can create new arrays using an array literal or the \`new\` keyword.
+
+\`\`\`javascript
+const myArray = [ 0, "apple", [ 0, 1 ] ];
+const newArray = new Array( 0, "apple", [ 0, 1 ] );
+\`\`\`
+
+Much like how we can access the different values of our object by referencing the keys, we can access the different array values using the indices. Since JavaScript arrays are indexed starting at 0, we can access the values in our array using the same bracket notation that we saw with objects.
+
+\`\`\`javascript
+const myArray = [ 0, "apple", [ 0, 1 ] ];
+
+console.log(myArray[1]);
+// => apple
+
+console.log(myArray[2]);
+// => [ 0, 1 ]
+\`\`\`
+
+Another interesting aspect of arrays in JavaScript is that they are actually objects. We can even check that by using \`typeof\`.
+
+\`\`\`javascript
+const myArray = [ 0, "apple", [ 0, 1 ] ];
+
+typeof(myArray);
+// => object
+\`\`\`
+Although our arrays are objects, it would be more accurate to describe them as special objects which function as you would expect for an array.
+
+There are many different built-in methods for arrays such as \`length\`, \`sort\`, \`push\`, \`pop\`, etc. For now let's just take a look at length, push, and pop.
+
+The \`length\` method of our array will return an integer representing the number of elements within an array. The push and pop methods both deal with the end of the array. Push will allow us to add an element to the end of an array and then return the length of the array. Pop takes the opposite action, removing the last element from an array but it instead returns the removed element.
+
+\`\`\`javascript
+const myArray = [ 0, "apple", [ 0, 1 ] ];
+
+myArray.length;
+// => 3
+
+myArray.push(15);
+// => 4
+
+myArray.length;
+// => 4
+
+myArray.pop();
+// => 15
+\`\`\`
+There are many more great built-in methods for arrays in JavaScript and particularly appreciate Geeks for geeks' [list of methods](https://www.geeksforgeeks.org/javascript-basic-array-methods/).
+
+Now we should have a better understanding of what arrays are and how they look in JavaScript. We looked at a couple of ways to create them, how to access different elements, and a few built-in methods. There is certainly much more to dig into regarding arrays but hopefully we have scratched the surface enough to interest you into learning more about JavaScript arrays.
+ 
+## References
+
+* https://en.wikipedia.org/wiki/Array_data_type
+* https://en.wikipedia.org/wiki/Array_data_structure
+* https://www.w3schools.com/js/js_arrays.asp
+* https://www.geeksforgeeks.org/javascript-basic-array-methods/
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array`
+};
 
 export const blogs = [
     one,
@@ -1614,6 +1695,7 @@ export const blogs = [
     thirteen,
     fourteen,
     fifteen,
-    sixteen
+    sixteen,
+    seventeen
 ]
 
