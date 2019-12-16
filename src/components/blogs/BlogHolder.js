@@ -1679,6 +1679,156 @@ Now we should have a better understanding of what arrays are and how they look i
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array`
 };
 
+const eighteen = {
+    title: "A Look at Linked Lists Through the Lens of JavaScript", id: 18, preview: "A review of the linked list data structure with examples and explanations through JavaScript classes.", text: `# A Look at Linked Lists Through the Lens of JavaScript
+Today's post is going to be about another data structure, linked lists. A common contrast for a linked list is an array. While they may contain data in some similar ways, they are also very different in a few key areas. With that in mind, let's take a look at what a linked list is before we compare and contrast it with an array.
+
+## What is a linked list?
+
+I always like to start by defining the data structure before trying to explain using examples. For this post we are going to again start with Wikipedia's definition.
+
+\`In computer science, a linked list is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.\`
+
+This definition is already broken into three specific sentences but lets break each of them down even further. To start, what we need to pay attention to is the last part, \`whose order is not given by their physical placement in memory\`. This is significant because it means that a linked list does not have to be set in a specific physical location in memory.
+
+The second sentence explains this a bit further saying that each element points to the next. This means that each element or node will not necessarily be right next to the next node but rather hold a reference of the location of the next node.
+
+Finally, the third sentence wraps it all up, explaining that a linked list is a collection of nodes making up a sequence. Now that we have some idea of what a linked list is, let's dig into the Wikipedia definition a bit more. The definition elaborates, explaining a few pros and cons:
+
+\`In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex variants add additional links, allowing more efficient insertion or removal of nodes at arbitrary positions. A drawback of linked lists is that access time is linear (and difficult to pipeline). Faster access, such as random access, is not feasible. Arrays have better cache locality compared to linked lists.\`
+
+Again, let's break this big chunk down a bit, to start with, we have a simple explanation of a basic linked list. The definition then explains the benefits of a linked list, efficient insertion or removal of nodes. The arbitrary positions part just means that rather than a stack where we have efficient insertion and removal to the end of the stack, we can efficiently insert or remove nodes at any position.
+
+Furthermore, to elaborate on the use of the phrase efficient here, we can assume that it means that we are dealing with constant rather than linear time.
+
+In the next sentence of the second definition, we see a con of linked lists, that to access a node is linear rather than with arrays where we can access an element in constant rather than linear time.
+
+That was quite a bit of information that we just broke down, let's recap what we have learned about linked lists. First, a linked list is a collection of elements that are not necessarily physically ordered in memory. Each node references the next node and this sequence of nodes is what makes up a linked list. 
+
+Additionally, the pros of linked lists are that we can insert or remove nodes in any location in constant time. In contrast, the cons are that accessing a node is linear rather than constant time.
+
+## How can we create a linked list in JavaScript?
+
+Now that we have an idea of what a linked list is, let's try to create a basic one using JavaScript. For this example, I am going to use classes for both the linked list and the nodes. Since all nodes are effectively the same this will allow us to create a list while keeping our code DRY.
+
+Let's get started with the node class.
+
+\`\`\`javascript
+
+class Node {
+    
+    constructor(value, next = null) {
+        this.value = value;
+        this.next = next
+    };
+};
+\`\`\`
+
+This simple node class will let us create a node using a value and an optional \`next\` argument. We will use this \`next\` attribute to reference the next node in the linked list.
+
+Now let's create our List class.
+
+\`\`\`javascript
+
+class List {
+    
+    constructor(head) {
+        this.head = head;
+    };
+};
+\`\`\`
+
+Again, we have created a very simple class that just has a head attribute. We are going to use this head attribute to reference the first or head node in our linked list.
+
+Time to put our node and list classes together.
+
+
+\`\`\`javascript
+let node1 = new Node(1);
+let node2 = new Node(2, node1);
+let node3 = new Node(3, node2);
+
+let list = new List(node3);
+
+list.head.value;
+// => 3
+\`\`\`
+
+Ok so now we have a basic linked list that starts with a value of 3. Since we used our next argument to reference a new node, our node3 or head of our list references node2, then node1, and then null.
+
+Now let's take a look at our pro and con examples for linked lists. First let's start with the pros. We are able to add a new node to our linked list in any location in constant time. 
+
+\`\`\`javascript
+
+let node1 = new Node(1);
+let node2 = new Node(2, node1);
+let node3 = new Node(3);
+
+let list = new List(node2);
+
+// If we want to add node3 to our list at the end we can do it like this
+
+node1.next = node3;
+
+// If we want to add node3 to our list in between nodes 2 and 3 it looks like this
+
+node3.next = node1;
+node2.next = node3;
+
+// If we want to add node3 to our list at the start we can do it like this
+
+node3.next = node2;
+list.head = node3;
+
+\`\`\`
+
+For all of these actions we are just adjusting the reference of our nodes so that they reference the appropriate node in the order that we want.
+
+### Note on inserting/removing nodes from a linked list
+
+Since we are not actually searching or traversing through our linked list, we can do this in constant time. If we were just provided a list and needed to add a node in between the second and third nodes, we would first need to traverse the list and then insert our new node. That would increase the time it would take from constant to linear. 
+
+One additional thing to consider is the reference of our individual nodes. In my example, since we have variables for each of the nodes we don't worry about it so much but if you are given a linked list and want to insert a node at a specific place in the list, you want to be sure that you do not lose the next reference for the current node that you are trying to update.
+
+Now let's take a look at the example of the con of it taking linear time to access a specific node.
+
+\`\`\`javascript
+
+let node1 = new Node(1);
+let node2 = new Node(2, node1);
+let node3 = new Node(3, node2);
+
+let list = new List(node3);
+
+/*
+If we wanted to access the last node in our list but did not have access to our node1 variable we would need to traverse the entire list to view it as you can see below
+*/
+
+let currentNode = list.head;
+
+while (currentNode.next) {
+    currentNode = currentNode.next;
+};
+
+console.log(currentNode.value);
+
+// => 1
+\`\`\`
+
+So as you can see, we do have to iterate over our linked list each time we want to access a specific node. As a result, accessing a node is a linear action.
+
+Hopefully linked lists make a little more sense and you can at least create a basic linked list using JavaScript now.
+
+To recap what we have learned, a linked list is a collection of nodes which contain data and a reference to the next node. One downside of linked lists is that accessing a value always takes linear time as you have to traverse it to access the node you want. One of the pros is that you can insert or remove nodes at any point in the list in constant time. In the examples that I showed, we had access to the specific node that we wanted to add or remove as well as the node that we wanted to add it to or remove it from.
+
+Additionally, all of the examples that I used were for a singly linked list, if you would like to learn more about other types of linked lists, take a look at the Wikipedia link I provided below.
+
+## References
+
+* https://en.wikipedia.org/wiki/Linked_list
+* https://www.geeksforgeeks.org/linked-list-vs-array/`
+};
+
 export const blogs = [
     one,
     two,
@@ -1696,6 +1846,7 @@ export const blogs = [
     fourteen,
     fifteen,
     sixteen,
-    seventeen
+    seventeen,
+    eighteen
 ]
 
