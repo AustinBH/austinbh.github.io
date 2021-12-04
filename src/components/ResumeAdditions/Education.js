@@ -12,7 +12,7 @@ const Education = props => {
         <Grid columns={1} celled='internally'>
             <Grid.Row>
                 <Grid.Column textAlign='center'>
-                    <Image src='https://pbs.twimg.com/profile_images/1149340751265980417/s0j8V4p3.png' alt='Flatiron logo' size='tiny' centered/>
+                    <Image src='https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/8/original/flatironschool.png' alt='Flatiron logo' size='tiny' centered/>
                     <p><strong>Flatiron School</strong>, Seattle, WA May 2019 - August 2019</p>
                 </Grid.Column>
             </Grid.Row>

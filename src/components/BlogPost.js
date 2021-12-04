@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Pagination } from 'semantic-ui-react';
-import ReactMarkdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
 import { blogs } from './blogs/BlogHolder';
 import CodeBlock from './blogs/CodeBlock';
 

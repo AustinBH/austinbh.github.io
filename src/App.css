@@ -49,6 +49,15 @@ p img {
   margin: auto;
 }
 
+img.ui.tiny {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+img.ui.tiny.mt {
+  width: 180px !important;
+}
+
 ul li a {
   word-wrap: break-word;
   color: black;

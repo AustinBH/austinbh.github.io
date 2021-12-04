@@ -12,6 +12,20 @@ const Experience = props => {
             <Grid columns={1} celled='internally'>
                 <Grid.Row>
                     <Grid.Column textAlign='center'>
+                        <Image src='https://www.mindtree.com/themes/custom/mindtree_theme/mindtree-lnt-logo-png.png' alt='Mindtree logo' size='tiny' className='mt' centered />
+                        <p><strong>Mindtree</strong>, Bellevue, WA August 2021 - Current</p>
+                        <em>Support Engineer</em>
+                    </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column>
+                        <List animated bulleted>
+                            <List.Item content='Provided technical support to Microsoft Defender for Endpoint customers as part of the government federal security team' />
+                        </List>
+                    </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column textAlign='center'>
                         <Image src='https://www.dreamar.org/wp-content/uploads/2018/08/amazon-logo-black-square-e1440610992440.png' alt='Amazon logo' size='tiny' centered />
                         <p><strong>Amazon</strong>, Seattle, WA June 2017 - December 2018</p>
                         <em>Seller Support Associate</em>
